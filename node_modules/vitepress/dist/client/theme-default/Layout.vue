@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import { provide, watch } from 'vue'
-import { useData, useRoute } from 'vitepress'
-import { useSidebar, useCloseSidebarOnEscape } from './composables/sidebar.js'
-import VPSkipLink from './components/VPSkipLink.vue'
+import { useRoute } from 'vitepress'
+import { computed, provide, useSlots, watch } from 'vue'
 import VPBackdrop from './components/VPBackdrop.vue'
-import VPNav from './components/VPNav.vue'
-import VPLocalNav from './components/VPLocalNav.vue'
-import VPSidebar from './components/VPSidebar.vue'
 import VPContent from './components/VPContent.vue'
 import VPFooter from './components/VPFooter.vue'
+import VPLocalNav from './components/VPLocalNav.vue'
+import VPNav from './components/VPNav.vue'
+import VPSidebar from './components/VPSidebar.vue'
+import VPSkipLink from './components/VPSkipLink.vue'
+import { useData } from './composables/data'
+import { useCloseSidebarOnEscape, useSidebar } from './composables/sidebar'
 
 const {
   isOpen: isSidebarOpen,
@@ -21,13 +22,16 @@ watch(() => route.path, closeSidebar)
 
 useCloseSidebarOnEscape(isSidebarOpen, closeSidebar)
 
-provide('close-sidebar', closeSidebar)
-
 const { frontmatter } = useData()
+
+const slots = useSlots()
+const heroImageSlotExists = computed(() => !!slots['home-hero-image'])
+
+provide('hero-image-slot-exists', heroImageSlotExists)
 </script>
 
 <template>
-  <div v-if="frontmatter.layout !== false" class="Layout">
+  <div v-if="frontmatter.layout !== false" class="Layout" :class="frontmatter.pageClass" >
     <slot name="layout-top" />
     <VPSkipLink />
     <VPBackdrop class="backdrop" :show="isSidebarOpen" @click="closeSidebar" />
@@ -47,7 +51,16 @@ const { frontmatter } = useData()
     </VPSidebar>
 
     <VPContent>
+      <template #page-top><slot name="page-top" /></template>
+      <template #page-bottom><slot name="page-bottom" /></template>
+
+      <template #not-found><slot name="not-found" /></template>
       <template #home-hero-before><slot name="home-hero-before" /></template>
+      <template #home-hero-info-before><slot name="home-hero-info-before" /></template>
+      <template #home-hero-info><slot name="home-hero-info" /></template>
+      <template #home-hero-info-after><slot name="home-hero-info-after" /></template>
+      <template #home-hero-actions-after><slot name="home-hero-actions-after" /></template>
+      <template #home-hero-image><slot name="home-hero-image" /></template>
       <template #home-hero-after><slot name="home-hero-after" /></template>
       <template #home-features-before><slot name="home-features-before" /></template>
       <template #home-features-after><slot name="home-features-after" /></template>
@@ -55,6 +68,8 @@ const { frontmatter } = useData()
       <template #doc-footer-before><slot name="doc-footer-before" /></template>
       <template #doc-before><slot name="doc-before" /></template>
       <template #doc-after><slot name="doc-after" /></template>
+      <template #doc-top><slot name="doc-top" /></template>
+      <template #doc-bottom><slot name="doc-bottom" /></template>
 
       <template #aside-top><slot name="aside-top" /></template>
       <template #aside-bottom><slot name="aside-bottom" /></template>

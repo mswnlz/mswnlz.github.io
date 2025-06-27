@@ -1,19 +1,19 @@
 <script setup lang="ts">
 import { useRoute } from 'vitepress'
-import { computed, provide, ref } from 'vue'
-import { useSidebar } from '../composables/sidebar.js'
+import { computed } from 'vue'
+import { useData } from '../composables/data'
+import { useSidebar } from '../composables/sidebar'
 import VPDocAside from './VPDocAside.vue'
 import VPDocFooter from './VPDocFooter.vue'
 
+const { theme } = useData()
+
 const route = useRoute()
-const { hasSidebar, hasAside } = useSidebar()
+const { hasSidebar, hasAside, leftAside } = useSidebar()
 
 const pageName = computed(() =>
   route.path.replace(/[./]+/g, '_').replace(/_html$/, '')
 )
-
-const onContentUpdated = ref()
-provide('onContentUpdated', onContentUpdated)
 </script>
 
 <template>
@@ -21,8 +21,9 @@ provide('onContentUpdated', onContentUpdated)
     class="VPDoc"
     :class="{ 'has-sidebar': hasSidebar, 'has-aside': hasAside }"
   >
+    <slot name="doc-top" />
     <div class="container">
-      <div v-if="hasAside" class="aside">
+      <div v-if="hasAside" class="aside" :class="{'left-aside': leftAside}">
         <div class="aside-curtain" />
         <div class="aside-container">
           <div class="aside-content">
@@ -42,14 +43,22 @@ provide('onContentUpdated', onContentUpdated)
         <div class="content-container">
           <slot name="doc-before" />
           <main class="main">
-            <Content class="vp-doc" :class="pageName" :onContentUpdated="onContentUpdated" />
+            <Content
+              class="vp-doc"
+              :class="[
+                pageName,
+                theme.externalLinkIcon && 'external-link-icon-enabled'
+              ]"
+            />
           </main>
-          <slot name="doc-footer-before" />
-          <VPDocFooter />
+          <VPDocFooter>
+            <template #doc-footer-before><slot name="doc-footer-before" /></template>
+          </VPDocFooter>
           <slot name="doc-after" />
         </div>
       </div>
     </div>
+    <slot name="doc-bottom" />
   </div>
 </template>
 
@@ -67,7 +76,7 @@ provide('onContentUpdated', onContentUpdated)
 
 @media (min-width: 960px) {
   .VPDoc {
-    padding: 32px 32px 0;
+    padding: 48px 32px 0;
   }
 
   .VPDoc:not(.has-sidebar) .container {
@@ -117,11 +126,17 @@ provide('onContentUpdated', onContentUpdated)
   max-width: 256px;
 }
 
+.left-aside {
+  order: 1;
+  padding-left: unset;
+  padding-right: 32px;
+}
+
 .aside-container {
-  position: sticky;
+  position: fixed;
   top: 0;
-  margin-top: calc((var(--vp-nav-height-desktop) + var(--vp-layout-top-height, 0px)) * -1 - 32px);
-  padding-top: calc(var(--vp-nav-height-desktop) + var(--vp-layout-top-height, 0px) + 32px);
+  padding-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + var(--vp-doc-top-height, 0px) + 48px);
+  width: 224px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -144,7 +159,7 @@ provide('onContentUpdated', onContentUpdated)
 .aside-content {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - (var(--vp-nav-height-desktop) + var(--vp-layout-top-height, 0px) + 32px));
+  min-height: calc(100vh - (var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px));
   padding-bottom: 32px;
 }
 

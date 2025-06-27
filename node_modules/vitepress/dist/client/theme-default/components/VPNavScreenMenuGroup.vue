@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
-import VPIconPlus from './icons/VPIconPlus.vue'
 import VPNavScreenMenuGroupLink from './VPNavScreenMenuGroupLink.vue'
 import VPNavScreenMenuGroupSection from './VPNavScreenMenuGroupSection.vue'
 
@@ -28,17 +27,14 @@ function toggle() {
       :aria-expanded="isOpen"
       @click="toggle"
     >
-      <span class="button-text">{{ text }}</span>
-      <VPIconPlus class="button-icon" />
+      <span class="button-text" v-html="text"></span>
+      <span class="vpi-plus button-icon" />
     </button>
 
     <div :id="groupId" class="items">
       <template v-for="item in items" :key="item.text">
         <div v-if="'link' in item" :key="item.text" class="item">
-          <VPNavScreenMenuGroupLink
-            :text="item.text"
-            :link="item.link"
-          />
+          <VPNavScreenMenuGroupLink :item="item" />
         </div>
 
         <div v-else class="group">
@@ -54,7 +50,7 @@ function toggle() {
 
 <style scoped>
 .VPNavScreenMenuGroup {
-  border-bottom: 1px solid var(--vp-c-divider-light);
+  border-bottom: 1px solid var(--vp-c-divider);
   height: 48px;
   overflow: hidden;
   transition: border-color 0.5s;
@@ -75,10 +71,11 @@ function toggle() {
 
 .VPNavScreenMenuGroup.open .button {
   padding-bottom: 6px;
-  color: var(--vp-c-brand);
+  color: var(--vp-c-brand-1);
 }
 
 .VPNavScreenMenuGroup.open .button-icon {
+  /*rtl:ignore*/
   transform: rotate(45deg);
 }
 
@@ -96,14 +93,11 @@ function toggle() {
 }
 
 .button:hover {
-  color: var(--vp-c-brand);
+  color: var(--vp-c-brand-1);
 }
 
 .button-icon {
-  width: 14px;
-  height: 14px;
-  fill: var(--vp-c-text-2);
-  transition: fill 0.5s, transform 0.25s;
+  transition: transform 0.25s;
 }
 
 .group:first-child {

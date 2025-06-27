@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
-import { useSidebar } from '../composables/sidebar.js'
+import { useData } from '../composables/data'
+import { useSidebar } from '../composables/sidebar'
 
-const { theme } = useData()
+const { theme, frontmatter } = useData()
 const { hasSidebar } = useSidebar()
 </script>
 
 <template>
-  <footer v-if="theme.footer" class="VPFooter" :class="{ 'has-sidebar': hasSidebar }">
+  <footer v-if="theme.footer && frontmatter.footer !== false" class="VPFooter" :class="{ 'has-sidebar': hasSidebar }">
     <div class="container">
       <p v-if="theme.footer.message" class="message" v-html="theme.footer.message"></p>
       <p v-if="theme.footer.copyright" class="copyright" v-html="theme.footer.copyright"></p>
@@ -19,13 +19,23 @@ const { hasSidebar } = useSidebar()
 .VPFooter {
   position: relative;
   z-index: var(--vp-z-index-footer);
-  border-top: 1px solid var(--vp-c-divider-light);
+  border-top: 1px solid var(--vp-c-gutter);
   padding: 32px 24px;
   background-color: var(--vp-c-bg);
 }
 
 .VPFooter.has-sidebar {
   display: none;
+}
+
+.VPFooter :deep(a) {
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  transition: color 0.25s;
+}
+
+.VPFooter :deep(a:hover) {
+  color: var(--vp-c-text-1);
 }
 
 @media (min-width: 768px) {
@@ -47,7 +57,4 @@ const { hasSidebar } = useSidebar()
   font-weight: 500;
   color: var(--vp-c-text-2);
 }
-
-.message   { order: 2; }
-.copyright { order: 1; }
 </style>

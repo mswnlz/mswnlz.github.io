@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useData } from 'vitepress'
+import { useData } from '../composables/data'
 import VPSocialLinks from './VPSocialLinks.vue'
 
 const { theme } = useData()

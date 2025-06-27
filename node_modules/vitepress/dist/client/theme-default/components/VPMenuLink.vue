@@ -1,10 +1,11 @@
 <script lang="ts" setup>
-import { useData } from 'vitepress'
-import { isActive } from '../support/utils.js'
+import type { DefaultTheme } from 'vitepress/theme'
+import { useData } from '../composables/data'
+import { isActive } from '../../shared'
 import VPLink from './VPLink.vue'
 
 defineProps<{
-  item: any
+  item: DefaultTheme.NavItemWithLink
 }>()
 
 const { page } = useData()
@@ -12,9 +13,11 @@ const { page } = useData()
 
 <template>
   <div class="VPMenuLink">
-    <VPLink 
-      :class="{ active: isActive(page.relativePath, item.activeMatch || item.link) }"
+    <VPLink
+      :class="{ active: isActive(page.relativePath, item.activeMatch || item.link, !!item.activeMatch) }"
       :href="item.link"
+      :target="item.target"
+      :rel="item.rel"
     >
       {{ item.text }}
     </VPLink>
@@ -24,7 +27,7 @@ const { page } = useData()
 <style scoped>
 .VPMenuGroup + .VPMenuLink {
   margin: 12px -12px 0;
-  border-top: 1px solid var(--vp-c-divider-light);
+  border-top: 1px solid var(--vp-c-divider);
   padding: 12px 12px 0;
 }
 
@@ -41,15 +44,11 @@ const { page } = useData()
 }
 
 .link:hover {
-  color: var(--vp-c-brand);
-  background-color: var(--vp-c-bg-mute);
-}
-
-.dark .link:hover {
-  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-default-soft);
 }
 
 .link.active {
-  color: var(--vp-c-brand);
+  color: var(--vp-c-brand-1);
 }
 </style>
