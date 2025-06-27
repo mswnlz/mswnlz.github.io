@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as r,a4 as t}from"./chunks/framework.Bo042FHC.js";const k=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"book/202506.md","filePath":"book/202506.md"}'),n={name:"book/202506.md"},l=t("",19),h=[l];function s(p,o,i,b,c,f){return r(),e("div",null,h)}const u=a(n,[["render",s]]);export{k as __pageData,u as default};
