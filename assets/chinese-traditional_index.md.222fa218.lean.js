@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as a,a as t}from"./app.c7249fc7.js";const d=JSON.parse('{"title":"chinese-traditional","description":"","frontmatter":{},"headers":[],"relativePath":"chinese-traditional/index.md"}'),n={name:"chinese-traditional/index.md"},i=t("",19),l=[i];function h(o,p,s,m,c,g){return a(),r("div",null,l)}const u=e(n,[["render",h]]);export{d as __pageData,u as default};
