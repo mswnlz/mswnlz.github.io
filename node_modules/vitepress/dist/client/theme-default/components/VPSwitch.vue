@@ -16,29 +16,26 @@
   width: 40px;
   height: 22px;
   flex-shrink: 0;
-  border: 1px solid var(--vp-c-divider);
-  background-color: var(--vp-c-bg-mute);
-  transition: border-color 0.25s;
+  border: 1px solid var(--vp-input-border-color);
+  background-color: var(--vp-input-switch-bg-color);
+  transition: border-color 0.25s !important;
 }
 
 .VPSwitch:hover {
-  border-color: var(--vp-c-gray);
+  border-color: var(--vp-c-brand-1);
 }
 
 .check {
   position: absolute;
   top: 1px;
+  /*rtl:ignore*/
   left: 1px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: var(--vp-c-white);
+  background-color: var(--vp-c-neutral-inverse);
   box-shadow: var(--vp-shadow-1);
-  transition: transform 0.25s;
-}
-
-.dark .check {
-  background-color: var(--vp-c-black);
+  transition: transform 0.25s !important;
 }
 
 .icon {
@@ -50,17 +47,17 @@
   overflow: hidden;
 }
 
-.icon :deep(svg) {
+.icon :deep([class^='vpi-']) {
   position: absolute;
   top: 3px;
   left: 3px;
   width: 12px;
   height: 12px;
-  fill: var(--vp-c-text-2);
+  color: var(--vp-c-text-2);
 }
 
-.dark .icon :deep(svg) {
-  fill: var(--vp-c-text-1);
-  transition: opacity 0.25s;
+.dark .icon :deep([class^='vpi-']) {
+  color: var(--vp-c-text-1);
+  transition: opacity 0.25s !important;
 }
 </style>

@@ -1,41 +1,52 @@
 <script setup lang="ts">
-import type { DefaultTheme } from 'vitepress/theme'
 import docsearch from '@docsearch/js'
-import { onMounted } from 'vue'
-import { useRouter, useRoute, useData } from 'vitepress'
+import { useRoute, useRouter } from 'vitepress'
+import type { DefaultTheme } from 'vitepress/theme'
+import { nextTick, onMounted, watch } from 'vue'
+import { useData } from '../composables/data'
+
+const props = defineProps<{
+  algolia: DefaultTheme.AlgoliaSearchOptions
+}>()
 
 const router = useRouter()
 const route = useRoute()
-const { theme, site } = useData()
+const { site, localeIndex, lang } = useData()
 
-onMounted(() => {
-  initialize(theme.value.algolia)
-  setTimeout(poll, 16)
-})
+type DocSearchProps = Parameters<typeof docsearch>[0]
 
-function poll() {
-  // programmatically open the search box after initialize
-  const e = new Event('keydown') as any
+onMounted(update)
+watch(localeIndex, update)
 
-  e.key = 'k'
-  e.metaKey = true
-
-  window.dispatchEvent(e)
-
-  setTimeout(() => {
-    if (!document.querySelector('.DocSearch-Modal')) {
-      poll()
+async function update() {
+  await nextTick()
+  const options = {
+    ...props.algolia,
+    ...props.algolia.locales?.[localeIndex.value]
+  }
+  const rawFacetFilters = options.searchParameters?.facetFilters ?? []
+  const facetFilters = [
+    ...(Array.isArray(rawFacetFilters)
+      ? rawFacetFilters
+      : [rawFacetFilters]
+    ).filter((f) => !f.startsWith('lang:')),
+    `lang:${lang.value}`
+  ]
+  initialize({
+    ...options,
+    searchParameters: {
+      ...options.searchParameters,
+      facetFilters
     }
-  }, 16)
+  })
 }
 
-const docsearch$ = docsearch.default ?? docsearch
-type DocSearchProps = Parameters<typeof docsearch$>[0]
-
 function initialize(userOptions: DefaultTheme.AlgoliaSearchOptions) {
-  // note: multi-lang search support is removed since the theme
-  // doesn't support multiple locales as of now.
-  const options = Object.assign<{}, {}, DocSearchProps>({}, userOptions, {
+  const options = Object.assign<
+    {},
+    DefaultTheme.AlgoliaSearchOptions,
+    Partial<DocSearchProps>
+  >({}, userOptions, {
     container: '#docsearch',
 
     navigator: {
@@ -62,7 +73,6 @@ function initialize(userOptions: DefaultTheme.AlgoliaSearchOptions) {
       })
     },
 
-    // @ts-expect-error vue-tsc thinks this should return Vue JSX but it returns the required React one
     hitComponent({ hit, children }) {
       return {
         __v: null,
@@ -73,19 +83,14 @@ function initialize(userOptions: DefaultTheme.AlgoliaSearchOptions) {
         props: { href: hit.url, children }
       }
     }
-  })
+  }) as DocSearchProps
 
-  docsearch$(options)
+  docsearch(options)
 }
 
-function getRelativePath(absoluteUrl: string) {
-  const { pathname, hash } = new URL(absoluteUrl)
-  return (
-    pathname.replace(
-      /\.html$/,
-      site.value.cleanUrls === 'disabled' ? '.html' : ''
-    ) + hash
-  )
+function getRelativePath(url: string) {
+  const { pathname, hash } = new URL(url, location.origin)
+  return pathname.replace(/\.html$/, site.value.cleanUrls ? '' : '.html') + hash
 }
 </script>
 

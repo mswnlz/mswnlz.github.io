@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { type Ref, inject } from 'vue'
 import type { DefaultTheme } from 'vitepress/theme'
 import VPButton from './VPButton.vue'
 import VPImage from './VPImage.vue'
@@ -7,6 +8,8 @@ export interface HeroAction {
   theme?: 'brand' | 'alt'
   text: string
   link: string
+  target?: string
+  rel?: string
 }
 
 defineProps<{
@@ -16,17 +19,23 @@ defineProps<{
   image?: DefaultTheme.ThemeableImage
   actions?: HeroAction[]
 }>()
+
+const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
 </script>
 
 <template>
-  <div class="VPHero" :class="{ 'has-image': image }">
+  <div class="VPHero" :class="{ 'has-image': image || heroImageSlotExists }">
     <div class="container">
       <div class="main">
-        <h1 v-if="name" class="name">
-          <span class="clip">{{ name }}</span>
-        </h1>
-        <p v-if="text" class="text">{{ text }}</p>
-        <p v-if="tagline" class="tagline">{{ tagline }}</p>
+        <slot name="home-hero-info-before" />
+        <slot name="home-hero-info">
+          <h1 v-if="name" class="name">
+            <span v-html="name" class="clip"></span>
+          </h1>
+          <p v-if="text" v-html="text" class="text"></p>
+          <p v-if="tagline" v-html="tagline" class="tagline"></p>
+        </slot>
+        <slot name="home-hero-info-after" />
 
         <div v-if="actions" class="actions">
           <div v-for="action in actions" :key="action.link" class="action">
@@ -36,15 +45,20 @@ defineProps<{
               :theme="action.theme"
               :text="action.text"
               :href="action.link"
+              :target="action.target"
+              :rel="action.rel"
             />
           </div>
         </div>
+        <slot name="home-hero-actions-after" />
       </div>
 
-      <div v-if="image" class="image">
+      <div v-if="image || heroImageSlotExists" class="image">
         <div class="image-container">
           <div class="image-bg" />
-          <VPImage class="image-src" :image="image" />
+          <slot name="home-hero-image">
+            <VPImage v-if="image" class="image-src" :image="image" />
+          </slot>
         </div>
       </div>
     </div>
@@ -262,6 +276,7 @@ defineProps<{
     align-items: center;
     width: 100%;
     height: 100%;
+    /*rtl:ignore*/
     transform: translate(-32px, -32px);
   }
 }
@@ -269,12 +284,14 @@ defineProps<{
 .image-bg {
   position: absolute;
   top: 50%;
+  /*rtl:ignore*/
   left: 50%;
   border-radius: 50%;
   width: 192px;
   height: 192px;
   background-image: var(--vp-home-hero-image-background-image);
   filter: var(--vp-home-hero-image-filter);
+  /*rtl:ignore*/
   transform: translate(-50%, -50%);
 }
 
@@ -295,20 +312,25 @@ defineProps<{
 :deep(.image-src) {
   position: absolute;
   top: 50%;
+  /*rtl:ignore*/
   left: 50%;
   max-width: 192px;
+  max-height: 192px;
+  /*rtl:ignore*/
   transform: translate(-50%, -50%);
 }
 
 @media (min-width: 640px) {
   :deep(.image-src) {
     max-width: 256px;
+    max-height: 256px;
   }
 }
 
 @media (min-width: 960px) {
   :deep(.image-src) {
     max-width: 320px;
+    max-height: 320px;
   }
 }
 </style>

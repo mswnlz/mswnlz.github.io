@@ -1,13 +1,16 @@
 <script setup lang="ts">
+import type { DefaultTheme } from 'vitepress/theme'
 import { computed } from 'vue'
 import VPFeature from './VPFeature.vue'
 
 export interface Feature {
-  icon?: string
+  icon?: DefaultTheme.FeatureIcon
   title: string
   details: string
   link?: string
   linkText?: string
+  rel?: string
+  target?: string
 }
 
 const props = defineProps<{
@@ -25,7 +28,7 @@ const grid = computed(() => {
     return 'grid-3'
   } else if (length % 3 === 0) {
     return 'grid-6'
-  } else if (length % 2 === 0) {
+  } else if (length > 3) {
     return 'grid-4'
   }
 })
@@ -35,13 +38,20 @@ const grid = computed(() => {
   <div v-if="features" class="VPFeatures">
     <div class="container">
       <div class="items">
-        <div v-for="feature in features" :key="feature.title" class="item" :class="[grid]">
+        <div
+          v-for="feature in features"
+          :key="feature.title"
+          class="item"
+          :class="[grid]"
+        >
           <VPFeature
             :icon="feature.icon"
             :title="feature.title"
             :details="feature.details"
             :link="feature.link"
             :link-text="feature.linkText"
+            :rel="feature.rel"
+            :target="feature.target"
           />
         </div>
       </div>

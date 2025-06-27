@@ -8,8 +8,12 @@
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vue": "3.2.44",
-    "vitepress": "1.0.0-alpha.28"
+    "vitepress": "1.0.0",
+    "vue": "3.2.44"
+  },
+  "dependencies": {
+    "flexsearch": "^0.8.205",
+    "markdown-it": "^14.1.0"
   },
   "pnpm": {
     "peerDependencyRules": {
