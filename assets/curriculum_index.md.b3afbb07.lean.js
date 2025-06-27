@@ -1,1 +1,0 @@
-import{_ as r,c as e,o as a,a as t}from"./app.2d03d95b.js";const f=JSON.parse('{"title":"curriculum","description":"","frontmatter":{},"headers":[],"relativePath":"curriculum/index.md"}'),l={name:"curriculum/index.md"},n=t("",21),i=[n];function h(p,u,o,m,s,c){return a(),e("div",null,i)}const b=r(l,[["render",h]]);export{f as __pageData,b as default};
