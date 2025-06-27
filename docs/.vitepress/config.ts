@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.vuejs.org/config/app-configs
@@ -13,6 +14,9 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '所有资源', link: '/AIknowledge/' } // 指向第一个资源分类，用户可以通过侧边栏切换
     ],
+    search: {
+      provider: 'local'
+    },
     sidebar: [
       {
         text: '资源分类', // 侧边栏的标题
