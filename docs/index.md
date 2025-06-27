@@ -1,12 +1,12 @@
 ---
 layout: home
 
-title: mswnlz 的资源收集站
+title: 大坝的资源收集站
 titleTemplate: mswnlz's personal resource collection website
 
 hero:
-  name: mswnlz 的资源收集站
-  text: 汇集 mswnlz 在 GitHub 上的所有资源
+  name: 大坝的资源收集站
+  text: 
   tagline: AI, 书籍, 中医, 跨境电商, 自媒体, 教育, 健康, 影视, 工具
   actions:
     - theme: alt
