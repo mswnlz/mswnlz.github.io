@@ -41,3 +41,6 @@
 
 ---------------
 
+
+
+<DateContentViewer repoName="curriculum" />

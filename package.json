@@ -19,6 +19,7 @@
     }
   },
   "dependencies": {
-    "flexsearch": "^0.8.205"
+    "flexsearch": "^0.8.205",
+    "markdown-it": "^14.1.0"
   }
 }
