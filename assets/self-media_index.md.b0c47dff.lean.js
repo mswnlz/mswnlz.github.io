@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as a,a as t}from"./app.2d03d95b.js";const u=JSON.parse('{"title":"self-media","description":"","frontmatter":{},"headers":[],"relativePath":"self-media/index.md"}'),l={name:"self-media/index.md"},n=t("",20),i=[n];function h(p,s,o,m,f,g){return a(),r("div",null,i)}const d=e(l,[["render",h]]);export{u as __pageData,d as default};

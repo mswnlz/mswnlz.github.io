@@ -1,0 +1,1 @@
+import{_ as r,c as e,o as a,a as t}from"./app.2d03d95b.js";const f=JSON.parse('{"title":"cross-border","description":"","frontmatter":{},"headers":[],"relativePath":"cross-border/index.md"}'),o={name:"cross-border/index.md"},s=t("",21),n=[s];function l(h,p,i,m,b,g){return a(),e("div",null,n)}const u=r(o,[["render",l]]);export{f as __pageData,u as default};
