@@ -3,6 +3,9 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
   title: "mswnlz's Resource Collection",
+  vite: {
+    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
+  },
   description: "A collection of resources from mswnlz's GitHub repositories, including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.",
   themeConfig: {
     nav: [
