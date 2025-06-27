@@ -9,32 +9,23 @@ export default defineConfig({
   description: "A collection of resources from mswnlz's GitHub repositories, including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.",
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'AI Knowledge', link: '/AIknowledge/' },
-      { text: 'Books', link: '/book/' },
-      { text: 'Chinese Traditional', link: '/chinese-traditional/' },
-      { text: 'Cross-Border E-commerce', link: '/cross-border/' },
-      { text: 'Curriculum', link: '/curriculum/' },
-      { text: 'Education Knowledge', link: '/edu-knowlege/' },
-      { text: 'Healthy', link: '/healthy/' },
-      { text: 'Movies', link: '/movies/' },
-      { text: 'Self-Media', link: '/self-media/' },
-      { text: 'Tools', link: '/tools/' },
+      { text: '首页', link: '/' },
+      { text: '所有资源', link: '/AIknowledge/' } // 指向第一个资源分类，用户可以通过侧边栏切换
     ],
     sidebar: [
       {
-        text: 'Resources',
+        text: '资源分类', // 侧边栏的标题
         items: [
-          { text: 'AI Knowledge', link: '/AIknowledge/' },
-          { text: 'Books', link: '/book/' },
-          { text: 'Chinese Traditional', link: '/chinese-traditional/' },
-          { text: 'Cross-Border E-commerce', link: '/cross-border/' },
-          { text: 'Curriculum', link: '/curriculum/' },
-          { text: 'Education Knowledge', link: '/edu-knowlege/' },
-          { text: 'Healthy', link: '/healthy/' },
-          { text: 'Movies', link: '/movies/' },
-          { text: 'Self-Media', link: '/self-media/' },
-          { text: 'Tools', link: '/tools/' },
+          { text: 'AI 知识', link: '/AIknowledge/' },
+          { text: '书籍资料', link: '/book/' },
+          { text: '传统文化', link: '/chinese-traditional/' },
+          { text: '跨境电商', link: '/cross-border/' },
+          { text: '课程资料', link: '/curriculum/' },
+          { text: '教育知识', link: '/edu-knowlege/' },
+          { text: '健康养生', link: '/healthy/' },
+          { text: '影视媒体', link: '/movies/' },
+          { text: '自媒体', link: '/self-media/' },
+          { text: '工具合集', link: '/tools/' },
         ]
       }
     ]
