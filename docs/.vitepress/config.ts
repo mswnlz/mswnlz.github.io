@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
-  base: '/mswnlz-website/',
-  title: "100T+ 资源合集",
+  base: '/',
+  title: "mswnlz's Resource Collection",
   vite: {
     assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
   },
