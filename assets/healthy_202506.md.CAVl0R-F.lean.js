@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as r,a2 as t}from"./chunks/framework._3jrunu_.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"healthy/202506.md","filePath":"healthy/202506.md"}'),n={name:"healthy/202506.md"},c=t("",9),l=[c];function h(s,o,p,i,_,f){return r(),e("div",null,l)}const b=a(n,[["render",h]]);export{u as __pageData,b as default};

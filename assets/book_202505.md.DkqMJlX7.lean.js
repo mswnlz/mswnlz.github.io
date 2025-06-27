@@ -1,0 +1,1 @@
+import{_ as a,c as r,o as e,a2 as t}from"./chunks/framework._3jrunu_.js";const k=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"book/202505.md","filePath":"book/202505.md"}'),n={name:"book/202505.md"},h=t("",78),p=[h];function s(o,l,c,d,b,i){return e(),r("div",null,p)}const u=a(n,[["render",s]]);export{k as __pageData,u as default};
