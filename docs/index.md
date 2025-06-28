@@ -2,7 +2,7 @@
 layout: home
 
 title: 大坝的资源收集站
-titleTemplate: mswnlz's personal resource collection website
+titleTemplate: 超过 100T+ 资源
 
 hero:
   name: 大坝的资源收集站
