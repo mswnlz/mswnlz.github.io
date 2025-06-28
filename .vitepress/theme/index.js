@@ -1,7 +1,9 @@
 import DefaultTheme from 'vitepress/theme'
-import Layout from './Layout.vue'
+import CommitHistory from './CommitHistory.vue'
 
 export default {
   ...DefaultTheme,
-  Layout,
+  enhanceApp({ app }) {
+    app.component('CommitHistory', CommitHistory)
+  }
 }
