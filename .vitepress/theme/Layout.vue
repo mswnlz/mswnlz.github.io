@@ -2,7 +2,7 @@
   <DefaultTheme.Layout>
     <template #doc-after>
       <footer class="custom-footer">
-        <p>友情链接: <a href="https://869hr.uk">869hr.uk</a> | 如有侵权，请联系删除。</p>
+        <p>友情链接: <a href="https://869hr.uk">M's Blog</a> | 如有侵权，请联系删除。</p>
         <p>Copyright © 2025-present mswnlz</p>
       </footer>
     </template>
