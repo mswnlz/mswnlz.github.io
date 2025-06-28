@@ -7,7 +7,7 @@ titleTemplate: mswnlz's personal resource collection website
 hero:
   name: 大坝的资源收集站
   text: 
-  tagline: AI, 书籍, 中医, 跨境电商, 自媒体, 教育, 健康, 影视, 工具
+  tagline: AI, 书籍, 跨境, 自媒体, 教育, 健康, 影视, 工具
   actions:
     - theme: alt
       text: 开始探索
