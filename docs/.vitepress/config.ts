@@ -9,6 +9,16 @@ export default defineConfig({
     assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
   },
   description: "A collection of resources from mswnlz's GitHub repositories, including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.",
+  head: [
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2634092855285462',
+        crossorigin: 'anonymous'
+      }
+    ]
+  ],
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
