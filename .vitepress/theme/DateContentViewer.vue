@@ -36,10 +36,10 @@ const activeFile = ref(null)
 const activeContent = ref('')
 
 // New: Use import.meta.glob to import all date MD files
-const modules = import.meta.glob('../../docs/**/??????.md', { as: 'raw', eager: true })
+const modules = import.meta.glob('/docs/**/??????.md', { as: 'raw', eager: true })
 
 const loadContent = async (fileName) => {
-  const fullPath = `../../docs/${props.repoName}/${fileName}`
+  const fullPath = `/docs/${props.repoName}/${fileName}`
   if (modules[fullPath]) {
     const rawContent = modules[fullPath]
     activeContent.value = md.render(rawContent)
