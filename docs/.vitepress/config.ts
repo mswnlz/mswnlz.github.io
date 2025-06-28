@@ -33,6 +33,10 @@ export default defineConfig({
           { text: '工具合集', link: '/tools/' },
         ]
       }
-    ]
+    ],
+    footer: {
+      message: '友情链接: <a href="https://869hr.uk">869hr.uk</a> | 如有侵权，请联系删除。',
+      copyright: 'Copyright © 2025-present mswnlz'
+    }
   }
 })
