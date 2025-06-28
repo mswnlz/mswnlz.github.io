@@ -45,7 +45,7 @@ export default defineConfig({
       }
     ],
     footer: {
-      message: '友情链接: <a href="https://869hr.uk">M's Blog</a> | 如有侵权，请联系删除。',
+      message: '友情链接: <a href="https://869hr.uk">"M's Blog"</a> | 如有侵权，请联系删除。',
       copyright: 'Copyright © 2025-present mswnlz'
     }
   }
