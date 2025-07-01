@@ -66,6 +66,12 @@ for REPO in "${CONTENT_REPOS[@]}"; do
   find "$SOURCE_REPO_PATH" -maxdepth 1 -type f -name "*.md" ! -name "README.md" -exec cp {} "$TARGET_REPO_PATH/" \;
   echo "  - Copied other .md files to $REPO/"
 
+  # Explicitly copy movies/202506.md if it exists, as it seems to be problematic with find -exec cp
+  if [ "$REPO" == "movies" ] && [ -f "$SOURCE_REPO_PATH/202506.md" ]; then
+    cp "$SOURCE_REPO_PATH/202506.md" "$TARGET_REPO_PATH/202506.md"
+    echo "  - Explicitly copied movies/202506.md"
+  fi
+
   # Copy image files to the public directory, maintaining repo structure
   find "$SOURCE_REPO_PATH" -maxdepth 1 -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" -o -name "*.svg" \) -exec cp {} "$TARGET_PUBLIC_REPO_PATH/" \;
   echo "  - Copied image files to public/$REPO/"
