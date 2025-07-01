@@ -1,0 +1,1 @@
+import{_ as a,c as r,o as e,a4 as t}from"./chunks/framework.Bo042FHC.js";const m=JSON.parse('{"title":"auto","description":"","frontmatter":{},"headers":[],"relativePath":"auto/index.md","filePath":"auto/index.md"}'),n={name:"auto/index.md"},p=t("",34),h=[p];function o(s,l,c,u,i,d){return e(),r("div",null,h)}const b=a(n,[["render",o]]);export{m as __pageData,b as default};

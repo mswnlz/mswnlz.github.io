@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as r,a4 as t}from"./chunks/framework.Bo042FHC.js";const k=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"movies/202505.md","filePath":"movies/202505.md"}'),n={name:"movies/202505.md"},h=t("",134),p=[h];function s(l,o,c,d,i,f){return r(),e("div",null,p)}const u=a(n,[["render",s]]);export{k as __pageData,u as default};
