@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the base directory for source content
-SOURCE_BASE_DIR="../"
+SOURCE_BASE_DIR="./"
 # Define the target directory for VitePress docs
 TARGET_DOCS_DIR="docs"
 
@@ -34,9 +34,12 @@ fetch_latest_commit() {
 
 # Fetch commits for all repos and generate JSON
 echo "[" > "$TARGET_DOCS_DIR/public/commits.json"
+REPO_COUNT=${#CONTENT_REPOS[@]}
+CURRENT_REPO_INDEX=0
 for REPO in "${CONTENT_REPOS[@]}"; do
   fetch_latest_commit "$REPO" >> "$TARGET_DOCS_DIR/public/commits.json"
-  if [ "$REPO" != "${CONTENT_REPOS[-1]}" ]; then
+  CURRENT_REPO_INDEX=$((CURRENT_REPO_INDEX + 1))
+  if [ "$CURRENT_REPO_INDEX" -lt "$REPO_COUNT" ]; then
     echo "," >> "$TARGET_DOCS_DIR/public/commits.json"
   fi
 done
