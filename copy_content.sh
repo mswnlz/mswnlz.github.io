@@ -92,7 +92,8 @@ for REPO in "${CONTENT_REPOS[@]}"; do
   for md_file in "$TARGET_REPO_PATH"/*.md; do
     if [ -f "$md_file" ]; then
       # Read content, perform sed replacement, and write back to a temporary file then move
-      sed "s#src=\"\([^\"]\+\\.\(png\|jpg\|jpeg\|gif\|svg\)\)\"#src=\"/$REPO/\1\"#g" "$md_file" > "$md_file.tmp" && \
+      # Use sed with extended regex (-E) for more reliable matching
+      sed -E "s#src=\"([^\"]+\.(png|jpg|jpeg|gif|svg))\"#src=\"/$REPO/\1\"#g" "$md_file" > "$md_file.tmp" && \
       mv "$md_file.tmp" "$md_file"
       echo "  - Modified image paths in $md_file"
     fi
