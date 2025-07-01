@@ -28,7 +28,14 @@ mkdir -p "$TARGET_DOCS_DIR/public"
 # Function to fetch latest commit message for a repo
 fetch_latest_commit() {
   REPO_NAME=$1
-  COMMIT_MESSAGE=$(curl -s "https://api.github.com/repos/mswnlz/$REPO_NAME/commits?per_page=1" | jq -r '.[0].commit.message')
+  # Fetch commits, check if response is a valid JSON array and not empty
+  COMMIT_INFO=$(curl -s "https://api.github.com/repos/mswnlz/$REPO_NAME/commits?per_page=1")
+  # Check if COMMIT_INFO is a valid JSON array and has at least one element
+  if echo "$COMMIT_INFO" | jq -e '.[0].commit.message' >/dev/null 2>&1; then
+    COMMIT_MESSAGE=$(echo "$COMMIT_INFO" | jq -r '.[0].commit.message')
+  else
+    COMMIT_MESSAGE="No recent commits or repository is empty."
+  fi
   echo "{\"repo\": \"$REPO_NAME\", \"message\": \"$COMMIT_MESSAGE\"}"
 }
 
@@ -63,20 +70,30 @@ for REPO in "${CONTENT_REPOS[@]}"; do
   fi
 
   # Copy other .md files (excluding README.md)
-  find "$SOURCE_REPO_PATH" -maxdepth 1 -type f -name "*.md" ! -name "README.md" -exec cp {} "$TARGET_REPO_PATH/" \;
+  # Using a loop instead of find -exec for better compatibility and debugging
+  for md_file_src in "$SOURCE_REPO_PATH"/*.md; do
+    if [ -f "$md_file_src" ] && [ "$(basename "$md_file_src")" != "README.md" ]; then
+      cp "$md_file_src" "$TARGET_REPO_PATH/"
+    fi
+  done
   echo "  - Copied other .md files to $REPO/"
 
   # Copy image files to the public directory, maintaining repo structure
-  find "$SOURCE_REPO_PATH" -maxdepth 1 -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -o -name "*.gif" -o -name "*.svg" \) -exec cp {} "$TARGET_PUBLIC_REPO_PATH/" \;
+  # Using a loop instead of find -exec for better compatibility and debugging
+  for img_file_src in "$SOURCE_REPO_PATH"/*.{png,jpg,jpeg,gif,svg}; do
+    if [ -f "$img_file_src" ]; then
+      cp "$img_file_src" "$TARGET_PUBLIC_REPO_PATH/"
+    fi
+  done
   echo "  - Copied image files to public/$REPO/"
 
   # --- Modify image paths in the copied Markdown files ---
   # Only modify index.md and other .md files within the target repo path
   for md_file in "$TARGET_REPO_PATH"/*.md; do
     if [ -f "$md_file" ]; then
-      # Replace src="image.png" with src="/REPO_NAME/image.png"
-      # Using perl for in-place replacement with regex
-      perl -pi -e "s#src=\"([^\"]+\\.(png|jpg|jpeg|gif|svg))\"#src=\"/$REPO/\$1\"#g" "$md_file"
+      # Read content, perform sed replacement, and write back to a temporary file then move
+      sed "s#src=\"\([^\"]\+\\.\(png\|jpg\|jpeg\|gif\|svg\)\)\"#src=\"/$REPO/\1\"#g" "$md_file" > "$md_file.tmp" && \
+      mv "$md_file.tmp" "$md_file"
       echo "  - Modified image paths in $md_file"
     fi
   done
