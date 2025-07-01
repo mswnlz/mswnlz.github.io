@@ -9,3 +9,15 @@
 ,
 {"repo": "cross-border", "message": "删除不必要的 .DS_Store 文件"}
 ,
+{"repo": "curriculum", "message": "更新 202506.md，新增范勇鹏课程链接；删除不必要的.DS_Store文件"}
+,
+{"repo": "edu-knowlege", "message": "Update README.md"}
+,
+{"repo": "healthy", "message": "新增科学跑步姿势教程链接，提升跑步技巧与体能训练"}
+,
+{"repo": "movies", "message": "Update 202506.md"}
+,
+{"repo": "self-media", "message": "更新 .DS_Store 文件"}
+,
+{"repo": "tools", "message": "更新 .DS_Store 文件，新增单机游戏链接"}
+]

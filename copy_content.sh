@@ -3,7 +3,7 @@
 # Define the base directory for source content
 SOURCE_BASE_DIR="./"
 # Define the target directory for VitePress docs
-TARGET_DOCS_DIR="docs"
+TARGET_DOCS_DIR="mswnlz.github.io/docs"
 
 # List of content repositories (directories)
 CONTENT_REPOS=(

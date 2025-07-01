@@ -11,13 +11,6 @@
 
 ---------------
 
-
-# 赞助声明
-本项目由[ZMTO](https://zmto.com/)的「开源项目免费 VPS计划」提供算力支持。
-感谢 ZMTO 对开源社区的支持！
-
----------------
-
 # 项目更多资源
 
 [🎁重磅资源！原价59880元 绝版中医课程资料大全【收藏版1.18TB】，包括基础、视频、外治、针灸、书籍等等等应有尽有](https://github.com/mswnlz/chinese-traditional)
@@ -60,11 +53,20 @@
 
 ---------------
 
+
+
+# 赞助声明
+本项目由[ZMTO](https://console.vtexs.com/?affid=12967)的「开源项目免费 VPS计划」提供算力支持。
+感谢 ZMTO 对开源社区的支持！
+
+
+---------------
+
 # 支持我
 
 如果您觉得这个项目对您有帮助，您可以扫描以下二维码进行捐赠：
 <p align="left">
-  <img src="/edu-knowlege/support-alipay.png" width="30%">
-  <img src="/edu-knowlege/wechat-qrcode.jpg" width="30%">
+  <img src="support-alipay.png" width="30%">
+  <img src="wechat-qrcode.jpg" width="30%">
 </p>
 
