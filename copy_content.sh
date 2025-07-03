@@ -92,11 +92,15 @@ for REPO in "${CONTENT_REPOS[@]}"; do
   find "$TARGET_REPO_PATH" -type f -name "*.md" -print0 | while IFS= read -r -d $'\0' md_file; do
     if [ -f "$md_file" ]; then
       # Read content, perform sed replacement, and write back to a temporary file then move
+<<<<<<< HEAD
       # Use sed with extended regex (-E) for more reliable matching
       # The replacement path needs to be relative to the docs directory, so we need to calculate it.
       relative_md_path="${md_file#$TARGET_DOCS_DIR/}"
       repo_name_from_md_path=$(echo "$relative_md_path" | cut -d'/' -f1)
       sed -E "s#src=\"([^\"]+\.(png|jpg|jpeg|gif|svg))\"#src=\"/$repo_name_from_md_path/\1\"#g" "$md_file" > "$md_file.tmp" && \
+=======
+      sed "s#src=\"\([^\"]\+\\.\(png\|jpg\|jpeg\|gif\|svg\)\)\"#src=\"/$REPO/\1\"#g" "$md_file" > "$md_file.tmp" && \
+>>>>>>> parent of e49f23c (fix: correct image path rewriting in sync script to resolve build failure)
       mv "$md_file.tmp" "$md_file"
       echo "  - Modified image paths in $md_file"
     fi

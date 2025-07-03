@@ -66,7 +66,7 @@
 
 如果您觉得这个项目对您有帮助，您可以扫描以下二维码进行捐赠：
 <p align="left">
-  <img src="/edu-knowlege/support-alipay.png" width="30%">
-  <img src="/edu-knowlege/wechat-qrcode.jpg" width="30%">
+  <img src="support-alipay.png" width="30%">
+  <img src="wechat-qrcode.jpg" width="30%">
 </p>
 
