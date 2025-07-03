@@ -3,21 +3,21 @@
 ,
 {"repo": "auto", "message": "Update README.md"}
 ,
-{"repo": "book", "message": "增加 柏杨白话版资治通鉴 全72册 柏杨诞辰一百周年纪念，电子书首次发售，用现代人视角看透历史成败因果"}
+{"repo": "book", "message": "Sync changes for 202507.md and README.md"}
 ,
 {"repo": "chinese-traditional", "message": "Create 202505.md"}
 ,
-{"repo": "cross-border", "message": "删除不必要的 .DS_Store 文件"}
+{"repo": "cross-border", "message": "Sync changes for 202507.md and README.md"}
 ,
-{"repo": "curriculum", "message": "更新 202506.md，新增范勇鹏课程链接；删除不必要的.DS_Store文件"}
+{"repo": "curriculum", "message": "Sync changes for 202507.md and README.md"}
 ,
 {"repo": "edu-knowlege", "message": "Update README.md"}
 ,
 {"repo": "healthy", "message": "新增科学跑步姿势教程链接，提升跑步技巧与体能训练"}
 ,
-{"repo": "movies", "message": "Update 202506.md"}
+{"repo": "movies", "message": "更新 README.md，添加 202507 文件链接；新增 202507.md 文件，包含私人纯音乐合集和周杰伦生涯所有歌曲链接"}
 ,
-{"repo": "self-media", "message": "更新 .DS_Store 文件"}
+{"repo": "self-media", "message": "Sync changes for 202507.md and README.md"}
 ,
 {"repo": "tools", "message": "更新 .DS_Store 文件，新增单机游戏链接"}
 ]

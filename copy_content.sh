@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define the base directory for source content
-SOURCE_BASE_DIR="./"
+SOURCE_BASE_DIR="../"
 # Define the target directory for VitePress docs
-TARGET_DOCS_DIR="mswnlz.github.io/docs"
+TARGET_DOCS_DIR="docs"
 
 # List of content repositories (directories)
 CONTENT_REPOS=(
@@ -69,31 +69,34 @@ for REPO in "${CONTENT_REPOS[@]}"; do
     echo "  - Copied README.md to $REPO/index.md (full content)"
   fi
 
-  # Copy other .md files (excluding README.md)
-  # Using a loop instead of find -exec for better compatibility and debugging
-  for md_file_src in "$SOURCE_REPO_PATH"/*.md; do
-    if [ -f "$md_file_src" ] && [ "$(basename "$md_file_src")" != "README.md" ]; then
-      cp "$md_file_src" "$TARGET_REPO_PATH/"
-    fi
+  # Copy other .md files (excluding README.md) recursively
+  find "$SOURCE_REPO_PATH" -maxdepth 1 -type f -name "*.md" ! -name "README.md" -print0 | while IFS= read -r -d $'\0' md_file_src; do
+    relative_path="${md_file_src#$SOURCE_REPO_PATH/}"
+    target_file="$TARGET_REPO_PATH/$relative_path"
+    mkdir -p "$(dirname "$target_file")"
+    cp "$md_file_src" "$target_file"
   done
   echo "  - Copied other .md files to $REPO/"
 
-  # Copy image files to the public directory, maintaining repo structure
-  # Using a loop instead of find -exec for better compatibility and debugging
-  for img_file_src in "$SOURCE_REPO_PATH"/*.{png,jpg,jpeg,gif,svg}; do
-    if [ -f "$img_file_src" ]; then
-      cp "$img_file_src" "$TARGET_PUBLIC_REPO_PATH/"
-    fi
+  # Copy image files to the public directory, maintaining repo structure recursively
+  find "$SOURCE_REPO_PATH" -maxdepth 1 -type f -regex ".*\.\(png\|jpg\|jpeg\|gif\|svg\)" -print0 | while IFS= read -r -d $'\0' img_file_src; do
+    relative_path="${img_file_src#$SOURCE_REPO_PATH/}"
+    target_file="$TARGET_PUBLIC_REPO_PATH/$relative_path"
+    mkdir -p "$(dirname "$target_file")"
+    cp "$img_file_src" "$target_file"
   done
   echo "  - Copied image files to public/$REPO/"
 
   # --- Modify image paths in the copied Markdown files ---
   # Only modify index.md and other .md files within the target repo path
-  for md_file in "$TARGET_REPO_PATH"/*.md; do
+  find "$TARGET_REPO_PATH" -type f -name "*.md" -print0 | while IFS= read -r -d $'\0' md_file; do
     if [ -f "$md_file" ]; then
       # Read content, perform sed replacement, and write back to a temporary file then move
       # Use sed with extended regex (-E) for more reliable matching
-      sed -E "s#src=\"([^\"]+\.(png|jpg|jpeg|gif|svg))\"#src=\"/$REPO/\1\"#g" "$md_file" > "$md_file.tmp" && \
+      # The replacement path needs to be relative to the docs directory, so we need to calculate it.
+      relative_md_path="${md_file#$TARGET_DOCS_DIR/}"
+      repo_name_from_md_path=$(echo "$relative_md_path" | cut -d'/' -f1)
+      sed -E "s#src=\"([^\"]+\.(png|jpg|jpeg|gif|svg))\"#src=\"/$repo_name_from_md_path/\1\"#g" "$md_file" > "$md_file.tmp" && \
       mv "$md_file.tmp" "$md_file"
       echo "  - Modified image paths in $md_file"
     fi
