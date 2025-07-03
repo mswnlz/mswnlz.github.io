@@ -3,7 +3,7 @@
     <h3>最新提交记录</h3>
     <ul>
       <li v-for="commit in commits" :key="commit.repo">
-        <strong>{{ commit.repo }}</strong>: {{ commit.message }}
+        <strong>{{ commit.repo }}</strong>: <span class="commit-message">{{ commit.message }}</span>
       </li>
     </ul>
   </div>
@@ -26,5 +26,11 @@ onMounted(async () => {
   padding: 1rem;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
+}
+
+.commit-message {
+  font-size: 1.1em; /* Make text slightly larger */
+  font-weight: bold; /* Make text bold */
+  color: var(--vp-c-brand-1); /* Use a prominent color, e.g., brand color */
 }
 </style>

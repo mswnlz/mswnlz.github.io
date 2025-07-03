@@ -33,6 +33,10 @@ fetch_latest_commit() {
   # Check if COMMIT_INFO is a valid JSON array and has at least one element
   if echo "$COMMIT_INFO" | jq -e '.[0].commit.message' >/dev/null 2>&1; then
     COMMIT_MESSAGE=$(echo "$COMMIT_INFO" | jq -r '.[0].commit.message')
+    # Add spaces between consecutive 8-digit numbers (e.g., YYYYMMDD)
+    # This will handle cases like 202507202505202506 -> 202507 202505 202506
+    COMMIT_MESSAGE=$(echo "$COMMIT_MESSAGE" | sed -E 's/([0-9]{8})([0-9]{8})/\1 \2/g')
+    COMMIT_MESSAGE=$(echo "$COMMIT_MESSAGE" | sed -E 's/([0-9]{8})([0-9]{8})/\1 \2/g') # Run twice for more than two dates
   else
     COMMIT_MESSAGE="No recent commits or repository is empty."
   fi
