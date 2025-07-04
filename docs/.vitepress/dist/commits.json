@@ -1,11 +1,23 @@
 [
-{"repo": "AIknowledge", "message": "删除不必要的 .DS_Store 文件"}
+{"repo": "AIknowledge", "message": "更新内容"}
 ,
-{"repo": "auto", "message": "Update README.md"}
+{"repo": "auto", "message": "更新内容"}
 ,
-{"repo": "book", "message": "增加 柏杨白话版资治通鉴 全72册 柏杨诞辰一百周年纪念，电子书首次发售，用现代人视角看透历史成败因果"}
+{"repo": "book", "message": "更新内容"}
 ,
 {"repo": "chinese-traditional", "message": "Create 202505.md"}
 ,
-{"repo": "cross-border", "message": "删除不必要的 .DS_Store 文件"}
+{"repo": "cross-border", "message": "更新内容"}
 ,
+{"repo": "curriculum", "message": "更新内容"}
+,
+{"repo": "edu-knowlege", "message": "更新内容"}
+,
+{"repo": "healthy", "message": "更新内容"}
+,
+{"repo": "movies", "message": "更新内容"}
+,
+{"repo": "self-media", "message": "更新内容"}
+,
+{"repo": "tools", "message": "更新内容"}
+]

@@ -3,6 +3,9 @@
     <template #doc-after>
       <footer class="custom-footer">
         <p>友情链接: <a href="https://869hr.uk">"M's Blog"</a> | 如有侵权，请联系删除。</p>
+        <p>
+          <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+        </p>
         <p>Copyright © 2025-present mswnlz</p>
       </footer>
     </template>
