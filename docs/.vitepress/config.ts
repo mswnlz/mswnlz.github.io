@@ -35,7 +35,7 @@ export default defineConfig({
   ],
   themeConfig: {
     nav: [
-      { text: '加入分享QQ群：1041415822', link: 'https://qm.qq.com/q/59EWTaGqfu' },
+      { text: '点击加入QQ群：1041415822', link: 'https://qm.qq.com/q/59EWTaGqfu' },
       { text: '首页', link: '/' },
       { text: '所有资源', link: '/AIknowledge/' } // 指向第一个资源分类，用户可以通过侧边栏切换
     ],
