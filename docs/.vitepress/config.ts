@@ -11,6 +11,13 @@ export default defineConfig({
   description: "A collection of resources from mswnlz's GitHub repositories, including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.",
   head: [
     [
+      'meta',
+      {
+        name: 'google-site-verification',
+        content: 'lI-wB0SQ6fXo-tUmUtTvz_9Qa65EMnPl_9PUuxhCJoI'
+      }
+    ],
+    [
       'script',
       {
         async: true,
