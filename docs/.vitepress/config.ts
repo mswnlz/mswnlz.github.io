@@ -16,6 +16,13 @@ export default defineConfig({
         async: true,
         src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2634092855285462',
         crossorigin: 'anonymous'
+      },
+    ],
+    [
+      'script',
+      {
+        async: true,
+        src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
       }
     ]
   ],
@@ -45,8 +52,8 @@ export default defineConfig({
       }
     ],
     footer: {
-      message: '友情链接: <a href="https://869hr.uk">"M\'s Blog"</a> | 如有侵权，请联系删除。',
-      copyright: 'Copyright © 2025-present mswnlz'
+      message: '友情链接: <a href="https://869hr.uk">"M\'s Blog"</a> | 如有侵权，请联系删除。 | 访客数 <span id="busuanzi_value_site_uv"></span> 人次，本站总访问量 <span id="busuanzi_value_site_pv"></span> 次',
+      copyright: 'Copyright © 2025-present mswnlz@gmail.com'
     }
   }
 })
