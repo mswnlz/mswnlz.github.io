@@ -1,38 +1,23 @@
 [
-  {
-    "repo": "AIknowledge",
-    "message": "更新内容",
-    "date": "2025-07-03T13:34:42Z",
-    "url": "/AIknowledge/"
-  },
-  {
-    "repo": "book",
-    "message": "增加 罗翔荐读书单（50部）",
-    "date": "2025-07-06T11:57:39Z",
-    "url": "/book/202507"
-  },
-  {
-    "repo": "curriculum",
-    "message": "增加 阳台种植课程",
-    "date": "2025-07-06T11:57:57Z",
-    "url": "/curriculum/202507"
-  },
-  {
-    "repo": "healthy",
-    "message": "增加 《keep运动健身》合集",
-    "date": "2025-07-06T11:58:35Z",
-    "url": "/healthy/202507"
-  },
-  {
-    "repo": "movies",
-    "message": "增加 下周无损音乐资源的网站",
-    "date": "2025-07-06T11:56:43Z",
-    "url": "/movies/202507"
-  },
-  {
-    "repo": "tools",
-    "message": "增加 Typora 2025绿色版",
-    "date": "2025-07-06T11:56:24Z",
-    "url": "/tools/202507"
-  }
+{"repo": "AIknowledge", "message": "更新内容"}
+,
+{"repo": "auto", "message": "Update README.md"}
+,
+{"repo": "book", "message": "更新内容"}
+,
+{"repo": "chinese-traditional", "message": "更新内容"}
+,
+{"repo": "cross-border", "message": "更新内容"}
+,
+{"repo": "curriculum", "message": "更新内容"}
+,
+{"repo": "edu-knowlege", "message": "更新内容"}
+,
+{"repo": "healthy", "message": "更新内容"}
+,
+{"repo": "movies", "message": "更新内容"}
+,
+{"repo": "self-media", "message": "更新内容"}
+,
+{"repo": "tools", "message": "更新内容"}
 ]
