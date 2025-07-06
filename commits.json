@@ -1,38 +1,25 @@
 [
-  {
-    "repo": "AIknowledge",
-    "message": "更新内容",
-    "date": "2025-07-03T13:34:42Z",
-    "url": "/AIknowledge/"
-  },
-  {
-    "repo": "book",
-    "message": "更新内容",
-    "date": "2025-07-03T13:23:52Z",
-    "url": "/book/"
-  },
-  {
-    "repo": "curriculum",
-    "message": "更新内容",
-    "date": "2025-07-03T13:35:22Z",
-    "url": "/curriculum/"
-  },
-  {
-    "repo": "healthy",
-    "message": "更新内容",
-    "date": "2025-07-03T13:35:38Z",
-    "url": "/healthy/"
-  },
-  {
-    "repo": "movies",
-    "message": "更新内容",
-    "date": "2025-07-03T13:35:47Z",
-    "url": "/movies/"
-  },
-  {
-    "repo": "tools",
-    "message": "更新内容",
-    "date": "2025-07-03T13:36:06Z",
-    "url": "/tools/"
-  }
+{"repo": "AIknowledge", "message": "更新内容"}
+,
+{"repo": "auto", "message": "Update README.md"}
+,
+{"repo": "book", "message": "增加 罗翔荐读书单（50部）"}
+,
+{"repo": "chinese-traditional", "message": "更新内容"}
+,
+{"repo": "cross-border", "message": "更新内容"}
+,
+{"repo": "curriculum", "message": "增加 阳台种植课程"}
+,
+{"repo": "edu-knowlege", "message": "增加 1000 Basic English Words 精讲视频
+增加 【董宇辉全套英语课程】"}
+,
+{"repo": "healthy", "message": "增加 《keep运动健身》合集"}
+,
+{"repo": "movies", "message": "增加 下周无损音乐资源的网站
+增加 【Big尺📏度°电影】"}
+,
+{"repo": "self-media", "message": "更新内容"}
+,
+{"repo": "tools", "message": "增加 Typora 2025绿色版"}
 ]
