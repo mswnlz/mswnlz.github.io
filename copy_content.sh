@@ -25,36 +25,8 @@ mkdir -p "$TARGET_DOCS_DIR"
 # Create the public directory if it doesn't exist
 mkdir -p "$TARGET_DOCS_DIR/public"
 
-# Function to fetch latest commit message for a repo
-fetch_latest_commit() {
-  REPO_NAME=$1
-  # Fetch commits, check if response is a valid JSON array and not empty
-  COMMIT_INFO=$(curl -s "https://api.github.com/repos/mswnlz/$REPO_NAME/commits?per_page=1")
-  # Check if COMMIT_INFO is a valid JSON array and has at least one element
-  if echo "$COMMIT_INFO" | jq -e '.[0].commit.message' >/dev/null 2>&1; then
-    COMMIT_MESSAGE=$(echo "$COMMIT_INFO" | jq -r '.[0].commit.message')
-    # Add spaces between consecutive 8-digit numbers (e.g., YYYYMMDD)
-    # This will handle cases like 202507202505202506 -> 202507 202505 202506
-    COMMIT_MESSAGE=$(echo "$COMMIT_MESSAGE" | sed -E 's/([0-9]{8})([0-9]{8})/\1 \2/g')
-    COMMIT_MESSAGE=$(echo "$COMMIT_MESSAGE" | sed -E 's/([0-9]{8})([0-9]{8})/\1 \2/g') # Run twice for more than two dates
-  else
-    COMMIT_MESSAGE="No recent commits or repository is empty."
-  fi
-  echo "{\"repo\": \"$REPO_NAME\", \"message\": \"$COMMIT_MESSAGE\"}"
-}
-
-# Fetch commits for all repos and generate JSON
-echo "[" > "$TARGET_DOCS_DIR/public/commits.json"
-REPO_COUNT=${#CONTENT_REPOS[@]}
-CURRENT_REPO_INDEX=0
-for REPO in "${CONTENT_REPOS[@]}"; do
-  fetch_latest_commit "$REPO" >> "$TARGET_DOCS_DIR/public/commits.json"
-  CURRENT_REPO_INDEX=$((CURRENT_REPO_INDEX + 1))
-  if [ "$CURRENT_REPO_INDEX" -lt "$REPO_COUNT" ]; then
-    echo "," >> "$TARGET_DOCS_DIR/public/commits.json"
-  fi
-done
-echo "]" >> "$TARGET_DOCS_DIR/public/commits.json"
+# Copy the commits.json file from the module
+cp docs/public/commits.json "$TARGET_DOCS_DIR/public/commits.json"
 
 for REPO in "${CONTENT_REPOS[@]}"; do
   SOURCE_REPO_PATH="$SOURCE_BASE_DIR/$REPO"
