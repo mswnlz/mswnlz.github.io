@@ -59,5 +59,3 @@ features:
     details: 操作系统、插件、绿色破解版工具等
     link: /tools/
 ---
-
-<CommitHistory />
