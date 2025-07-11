@@ -9,7 +9,7 @@ const { frontmatter } = useData()
 <template>
   <DefaultTheme.Layout>
     <template #home-hero-after>
-      <CommitHistory v-if="frontmatter.layout === 'home'" />
+      <CommitHistory />
     </template>
     <template #doc-footer-before>
       <div class="busuanzi-container">

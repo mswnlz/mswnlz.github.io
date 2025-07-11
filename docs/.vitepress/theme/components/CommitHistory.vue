@@ -45,8 +45,37 @@ const formatDate = (dateString) => {
 
 onMounted(async () => {
   console.log('CommitHistory component mounted');
+  
+  // 立即设置fallback数据，确保组件有内容显示
+  commits.value = [
+    {
+      repo: 'book',
+      message: '增加 《结绳手册 手把手教你打绳结》史上最全的绳结打法',
+      date: '2025-07-11T11:40:40Z',
+      url: '/book/202507'
+    },
+    {
+      repo: 'tools',
+      message: '增加 【PS素材】字体+图标+图表+图片包',
+      date: '2025-07-11T11:41:07Z',
+      url: '/tools/202507'
+    },
+    {
+      repo: 'healthy',
+      message: '增加 塑身操全集视频课',
+      date: '2025-07-11T11:39:49Z',
+      url: '/healthy/202507'
+    },
+    {
+      repo: 'curriculum',
+      message: '增加 阳台种植课程',
+      date: '2025-07-06T11:57:57Z',
+      url: '/curriculum/202507'
+    }
+  ];
+  
   try {
-    // 尝试多个可能的路径
+    // 尝试获取最新数据
     const possiblePaths = ['/commits.json', '../commits.json', './commits.json'];
     let data = null;
     
@@ -66,29 +95,12 @@ onMounted(async () => {
     
     if (data && data.length > 0) {
       commits.value = [...data, ...data];
-      console.log('Commits set:', commits.value.length);
+      console.log('Updated with real data:', commits.value.length);
     } else {
-      console.log('No commits data found');
-      // 如果无法获取数据，使用硬编码的测试数据
-      commits.value = [
-        {
-          repo: 'book',
-          message: '增加 《结绳手册 手把手教你打绳结》史上最全的绳结打法',
-          date: '2025-07-11T11:40:40Z',
-          url: '/book/202507'
-        },
-        {
-          repo: 'tools',
-          message: '增加 【PS素材】字体+图标+图表+图片包',
-          date: '2025-07-11T11:41:07Z',
-          url: '/tools/202507'
-        }
-      ];
-      console.log('Using fallback data:', commits.value);
+      console.log('Using fallback data');
     }
   } catch (error) {
     console.error('Failed to load commit history:', error);
-    commits.value = [];
   }
 });
 </script>
