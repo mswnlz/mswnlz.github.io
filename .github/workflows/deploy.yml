@@ -34,7 +34,7 @@ jobs:
         run: npm install
 
       - name: Copy content from other repos
-        run: sh copy_content.sh
+        run: bash copy_content.sh
 
       - name: Build VitePress site
         run: npm run build
