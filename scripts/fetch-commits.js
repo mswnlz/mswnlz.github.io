@@ -79,14 +79,20 @@ async function getLatestCommit(repo) {
 }
 
 async function main() {
-  const configPath = resolve(process.cwd(), 'docs/.vitepress/config.ts');
-  const configContent = readFileSync(configPath, 'utf-8');
-  
-  // This is a simplified parser. It might fail if the config structure changes significantly.
-  const sidebarText = configContent.match(/sidebar: (\[[\s\S]*?\])/)[1];
-  const repoLinks = sidebarText.matchAll(/\/(\w+)\//g);
-  
-  const repos = [...new Set([...repoLinks].map(match => match[1]))];
+  // Hard-coded list of repositories to avoid config parsing issues
+  const repos = [
+    'AIknowledge',
+    'auto', 
+    'book',
+    'chinese-traditional',
+    'cross-border',
+    'curriculum',
+    'edu-knowlege',
+    'healthy',
+    'movies',
+    'self-media',
+    'tools'
+  ];
   
   console.log('Found repos:', repos);
 

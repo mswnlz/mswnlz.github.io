@@ -6,16 +6,40 @@
     "url": "/AIknowledge/"
   },
   {
+    "repo": "auto",
+    "message": "Update README.md",
+    "date": "2025-07-04T00:33:04Z",
+    "url": "/auto/"
+  },
+  {
     "repo": "book",
     "message": "增加 《结绳手册 手把手教你打绳结》史上最全的绳结打法",
     "date": "2025-07-11T11:40:40Z",
     "url": "/book/202507"
   },
   {
+    "repo": "chinese-traditional",
+    "message": "更新内容",
+    "date": "2025-07-03T13:34:30Z",
+    "url": "/chinese-traditional/"
+  },
+  {
+    "repo": "cross-border",
+    "message": "更新内容",
+    "date": "2025-07-03T13:35:08Z",
+    "url": "/cross-border/"
+  },
+  {
     "repo": "curriculum",
     "message": "增加 阳台种植课程",
     "date": "2025-07-06T11:57:57Z",
     "url": "/curriculum/202507"
+  },
+  {
+    "repo": "edu-knowlege",
+    "message": "增加 1000 Basic English Words 精讲视频",
+    "date": "2025-07-06T11:57:10Z",
+    "url": "/edu-knowlege/202507"
   },
   {
     "repo": "healthy",
@@ -28,6 +52,12 @@
     "message": "增加 下周无损音乐资源的网站",
     "date": "2025-07-06T11:56:43Z",
     "url": "/movies/202507"
+  },
+  {
+    "repo": "self-media",
+    "message": "更新内容",
+    "date": "2025-07-03T13:35:53Z",
+    "url": "/self-media/"
   },
   {
     "repo": "tools",

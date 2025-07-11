@@ -1,23 +1,68 @@
 [
-{"repo": "AIknowledge", "message": "删除不必要的 .DS_Store 文件"}
-,
-{"repo": "auto", "message": "Update README.md"}
-,
-{"repo": "book", "message": "Sync changes for 202507.md and README.md"}
-,
-{"repo": "chinese-traditional", "message": "Create 202505.md"}
-,
-{"repo": "cross-border", "message": "No recent commits or repository is empty."}
-,
-{"repo": "curriculum", "message": "No recent commits or repository is empty."}
-,
-{"repo": "edu-knowlege", "message": "No recent commits or repository is empty."}
-,
-{"repo": "healthy", "message": "No recent commits or repository is empty."}
-,
-{"repo": "movies", "message": "No recent commits or repository is empty."}
-,
-{"repo": "self-media", "message": "No recent commits or repository is empty."}
-,
-{"repo": "tools", "message": "No recent commits or repository is empty."}
+  {
+    "repo": "AIknowledge",
+    "message": "更新内容",
+    "date": "2025-07-03T13:34:42Z",
+    "url": "/AIknowledge/"
+  },
+  {
+    "repo": "auto",
+    "message": "Update README.md",
+    "date": "2025-07-04T00:33:04Z",
+    "url": "/auto/"
+  },
+  {
+    "repo": "book",
+    "message": "增加 《结绳手册 手把手教你打绳结》史上最全的绳结打法",
+    "date": "2025-07-11T11:40:40Z",
+    "url": "/book/202507"
+  },
+  {
+    "repo": "chinese-traditional",
+    "message": "更新内容",
+    "date": "2025-07-03T13:34:30Z",
+    "url": "/chinese-traditional/"
+  },
+  {
+    "repo": "cross-border",
+    "message": "更新内容",
+    "date": "2025-07-03T13:35:08Z",
+    "url": "/cross-border/"
+  },
+  {
+    "repo": "curriculum",
+    "message": "增加 阳台种植课程",
+    "date": "2025-07-06T11:57:57Z",
+    "url": "/curriculum/202507"
+  },
+  {
+    "repo": "edu-knowlege",
+    "message": "增加 1000 Basic English Words 精讲视频",
+    "date": "2025-07-06T11:57:10Z",
+    "url": "/edu-knowlege/202507"
+  },
+  {
+    "repo": "healthy",
+    "message": "增加 塑身操全集视频课",
+    "date": "2025-07-11T11:39:49Z",
+    "url": "/healthy/202507"
+  },
+  {
+    "repo": "movies",
+    "message": "增加 下周无损音乐资源的网站",
+    "date": "2025-07-06T11:56:43Z",
+    "url": "/movies/202507"
+  },
+  {
+    "repo": "self-media",
+    "message": "更新内容",
+    "date": "2025-07-03T13:35:53Z",
+    "url": "/self-media/"
+  },
+  {
+    "repo": "tools",
+    "message": "增加 【PS素材】字体+图标+图表+图片包",
+    "date": "2025-07-11T11:41:07Z",
+    "url": "/tools/202507"
+  }
 ]
