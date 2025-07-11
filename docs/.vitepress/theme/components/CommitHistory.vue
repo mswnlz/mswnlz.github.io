@@ -3,6 +3,9 @@
     <div class="container">
       <div class="commit-history-container">
         <h2>最新动态</h2>
+        <div class="debug-info">
+          <p>组件已加载 - 提交数量: {{ commits.length }}</p>
+        </div>
         <div v-if="commits.length === 0" class="loading-message">
           正在加载最新动态...
         </div>
@@ -95,6 +98,14 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--vp-c-text-1);
+}
+
+.debug-info {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 .loading-message {
