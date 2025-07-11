@@ -52,12 +52,20 @@ const commits = ref([
 ]);
 
 const getRepoChineseName = (repo) => {
-  const sidebar = theme.value?.sidebar;
-  if (sidebar && sidebar[0] && sidebar[0].items) {
-    const item = sidebar[0].items.find(i => i.link && i.link.includes(`/${repo}/`));
-    return item ? item.text : repo;
-  }
-  return repo;
+  const repoNames = {
+    'AIknowledge': 'AI 知识',
+    'auto': '自动化工具',
+    'book': '书籍资料',
+    'chinese-traditional': '传统文化',
+    'cross-border': '跨境电商',
+    'curriculum': '课程资料',
+    'edu-knowlege': '教育资源',
+    'healthy': '健康养生',
+    'movies': '影视媒体',
+    'self-media': '自媒体',
+    'tools': '工具合集'
+  };
+  return repoNames[repo] || repo;
 };
 
 const formatDate = (dateString) => {
@@ -145,7 +153,7 @@ h2 {
   margin: 0;
   position: absolute;
   width: 100%;
-  animation: scroll-up 20s linear infinite;
+  animation: scroll-up 40s linear infinite;
 }
 
 .scroller li {
