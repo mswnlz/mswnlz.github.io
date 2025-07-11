@@ -3,7 +3,10 @@
     <div class="container">
       <div class="commit-history-container">
         <h2>最新动态</h2>
-        <div class="scroller">
+        <div v-if="commits.length === 0" class="loading-message">
+          正在加载最新动态...
+        </div>
+        <div v-else class="scroller">
           <ul>
             <li v-for="(commit, index) in commits" :key="`${commit.repo}-${index}`">
               <a :href="commit.url" class="commit-link">
@@ -41,16 +44,28 @@ const formatDate = (dateString) => {
 };
 
 onMounted(async () => {
+  console.log('CommitHistory component mounted');
   try {
     const response = await fetch('/commits.json');
+    console.log('Fetch response:', response);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
     const data = await response.json();
+    console.log('Commit data loaded:', data);
+    
     if (data && data.length > 0) {
       commits.value = [...data, ...data];
+      console.log('Commits set:', commits.value.length);
     } else {
       commits.value = [];
+      console.log('No commits data found');
     }
   } catch (error) {
     console.error('Failed to load commit history:', error);
+    commits.value = [];
   }
 });
 </script>
@@ -80,6 +95,13 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--vp-c-text-1);
+}
+
+.loading-message {
+  text-align: center;
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+  padding: 20px;
 }
 
 .scroller {
