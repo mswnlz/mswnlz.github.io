@@ -1,0 +1,69 @@
+name: Sync Content from Repositories
+
+on:
+  schedule:
+    # 每天运行一次，北京时间早上9点 (UTC+8 = UTC+0 - 8小时)
+    - cron: '0 1 * * *'
+  workflow_dispatch: # 允许手动触发
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'AIknowledge/**'
+      - 'auto/**'
+      - 'book/**'
+      - 'chinese-traditional/**'
+      - 'cross-border/**'
+      - 'curriculum/**'
+      - 'edu-knowlege/**'
+      - 'healthy/**'
+      - 'movies/**'
+      - 'self-media/**'
+      - 'tools/**'
+
+jobs:
+  sync-content:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Install dependencies
+      run: |
+        cd mswnlz.github.io
+        npm ci
+    
+    - name: Sync content from repositories
+      run: |
+        chmod +x mswnlz.github.io/copy_content.sh
+        ./mswnlz.github.io/copy_content.sh
+    
+    - name: Fetch latest commits
+      run: |
+        cd mswnlz.github.io
+        npm run fetch-commits
+    
+    - name: Build VitePress site
+      run: |
+        cd mswnlz.github.io
+        npm run build
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        if ! git diff --cached --quiet; then
+          git commit -m "Auto-sync content from repositories $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+        else
+          echo "No changes to commit"
+        fi
