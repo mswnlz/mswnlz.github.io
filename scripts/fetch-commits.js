@@ -102,6 +102,11 @@ async function main() {
   const outputPath = resolve(process.cwd(), 'docs/public/commits.json');
   writeFileSync(outputPath, JSON.stringify(commitData, null, 2));
   console.log(`Successfully wrote commit data to ${outputPath}`);
+
+  // Copy to mswnlz.github.io/docs/public/commits.json
+  const targetPath = resolve(process.cwd(), 'mswnlz.github.io/docs/public/commits.json');
+  writeFileSync(targetPath, JSON.stringify(commitData, null, 2));
+  console.log(`Successfully copied commit data to ${targetPath}`);
 }
 
 main();
