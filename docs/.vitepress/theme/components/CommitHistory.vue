@@ -3,10 +3,7 @@
     <div class="container">
       <div class="commit-history-container">
         <h2>最新动态</h2>
-        <div v-if="commits.length === 0" class="loading-message">
-          正在加载最新动态...
-        </div>
-        <div v-else class="scroller">
+        <div class="scroller">
           <ul>
             <li v-for="(commit, index) in commits" :key="`${commit.repo}-${index}`">
               <a :href="commit.url" class="commit-link">
