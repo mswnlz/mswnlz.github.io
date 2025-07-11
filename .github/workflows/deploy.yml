@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -33,8 +34,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Copy content from other repos
-        run: bash copy_content.sh
+      - name: Fetch latest commits
+        run: npm run fetch-commits
 
       - name: Build VitePress site
         run: npm run build
