@@ -39,6 +39,22 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Checkout parent repository content
+        uses: actions/checkout@v3
+        with:
+          repository: mswnlz/mswnlz-github
+          path: content-source
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Copy latest content from all repositories
+        run: |
+          # Set up paths
+          export SOURCE_BASE_DIR="./content-source"
+          export TARGET_DOCS_DIR="./docs"
+          
+          # Run the content synchronization
+          bash ./copy_content.sh
+
       - name: Fetch latest commits
         run: npm run fetch-commits
 
