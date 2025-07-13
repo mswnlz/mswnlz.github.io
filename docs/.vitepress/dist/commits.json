@@ -1,68 +1,23 @@
 [
-  {
-    "repo": "AIknowledge",
-    "message": "增加 AI绘画进阶课：手把手详细教学，30堂从入门到高手，掌握主流AI绘画技法",
-    "date": "2025-07-13T09:03:39Z",
-    "url": "/AIknowledge/202507"
-  },
-  {
-    "repo": "auto",
-    "message": "Update README.md",
-    "date": "2025-07-04T00:33:04Z",
-    "url": "/auto/"
-  },
-  {
-    "repo": "book",
-    "message": "增加 711豆瓣心理书单（2024年12月更新，100部心理学高分经典好书）",
-    "date": "2025-07-13T09:02:42Z",
-    "url": "/book/202507"
-  },
-  {
-    "repo": "chinese-traditional",
-    "message": "更新内容",
-    "date": "2025-07-03T13:34:30Z",
-    "url": "/chinese-traditional/"
-  },
-  {
-    "repo": "cross-border",
-    "message": "更新内容",
-    "date": "2025-07-03T13:35:08Z",
-    "url": "/cross-border/"
-  },
-  {
-    "repo": "curriculum",
-    "message": "增加 0713-01",
-    "date": "2025-07-13T09:06:25Z",
-    "url": "/curriculum/202507"
-  },
-  {
-    "repo": "edu-knowlege",
-    "message": "增加 2022-2024版【初中必刷题】",
-    "date": "2025-07-13T09:03:04Z",
-    "url": "/edu-knowlege/202507"
-  },
-  {
-    "repo": "healthy",
-    "message": "增加 身心整合疗愈90天深度训练营",
-    "date": "2025-07-13T09:07:01Z",
-    "url": "/healthy/202507"
-  },
-  {
-    "repo": "movies",
-    "message": "增加 ==纪录片合集==（一共6000GB不要直接保存文件夹点进去找到视频分批转存不然提示VIp）",
-    "date": "2025-07-13T09:03:28Z",
-    "url": "/movies/202507"
-  },
-  {
-    "repo": "self-media",
-    "message": "增加 培养持证上岗的互联网营销师的专业课程",
-    "date": "2025-07-13T09:06:44Z",
-    "url": "/self-media/202507"
-  },
-  {
-    "repo": "tools",
-    "message": "增加 最新Office 2024办公软件全家桶 一键安装一键激活永久使用（含2013-2024）",
-    "date": "2025-07-13T09:07:22Z",
-    "url": "/tools/202507"
-  }
+{"repo": "AIknowledge", "message": "删除不必要的 .DS_Store 文件"}
+,
+{"repo": "auto", "message": "Update README.md"}
+,
+{"repo": "book", "message": "Sync changes for 202507.md and README.md"}
+,
+{"repo": "chinese-traditional", "message": "Create 202505.md"}
+,
+{"repo": "cross-border", "message": "No recent commits or repository is empty."}
+,
+{"repo": "curriculum", "message": "No recent commits or repository is empty."}
+,
+{"repo": "edu-knowlege", "message": "No recent commits or repository is empty."}
+,
+{"repo": "healthy", "message": "No recent commits or repository is empty."}
+,
+{"repo": "movies", "message": "No recent commits or repository is empty."}
+,
+{"repo": "self-media", "message": "No recent commits or repository is empty."}
+,
+{"repo": "tools", "message": "No recent commits or repository is empty."}
 ]
