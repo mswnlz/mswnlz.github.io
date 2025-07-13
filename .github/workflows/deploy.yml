@@ -39,12 +39,21 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Checkout parent repository content
-        uses: actions/checkout@v3
-        with:
-          repository: mswnlz/mswnlz-github
-          path: content-source
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout content repositories
+        run: |
+          # Create directory for content sources
+          mkdir -p content-source
+          
+          # List of content repositories
+          repos=("AIknowledge" "auto" "book" "chinese-traditional" "cross-border" "curriculum" "edu-knowlege" "healthy" "movies" "self-media" "tools")
+          
+          # Clone each repository
+          for repo in "${repos[@]}"; do
+            echo "Cloning $repo..."
+            git clone "https://github.com/mswnlz/$repo.git" "content-source/$repo" || {
+              echo "Warning: Failed to clone $repo, skipping..."
+            }
+          done
 
       - name: Copy latest content from all repositories
         run: |

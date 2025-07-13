@@ -109,10 +109,8 @@ async function main() {
   writeFileSync(outputPath, JSON.stringify(commitData, null, 2));
   console.log(`Successfully wrote commit data to ${outputPath}`);
 
-  // Copy to mswnlz.github.io/docs/public/commits.json
-  const targetPath = resolve(process.cwd(), 'mswnlz.github.io/docs/public/commits.json');
-  writeFileSync(targetPath, JSON.stringify(commitData, null, 2));
-  console.log(`Successfully copied commit data to ${targetPath}`);
+  // The main output path is sufficient for the build process
+  console.log(`Commit data ready for build process`);
 }
 
 main();
