@@ -61,7 +61,7 @@ export default defineConfig({
           const maxChecks = 50; // 最多检查5秒
           
           function checkBusuanziReady() {
-            if (window.busuanzi && window.bszTag) {
+            if (window.bszCaller && window.bszTag) {
               window.busuanziReady = true;
               console.log('不蒜子统计已就绪');
               return;
@@ -81,9 +81,15 @@ export default defineConfig({
         
         // 刷新不蒜子统计的全局函数
         window.refreshBusuanzi = function() {
-          if (window.busuanziReady && window.busuanzi) {
+          if (window.busuanziReady && window.bszCaller) {
             try {
-              window.busuanzi.fetch();
+              // 直接调用不蒜子的 fetch 方法
+              window.bszCaller.fetch('//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback', function(data) {
+                if (window.bszTag) {
+                  window.bszTag.texts(data);
+                  window.bszTag.shows();
+                }
+              });
               console.log('不蒜子统计已刷新');
             } catch (e) {
               console.error('刷新不蒜子统计失败:', e);

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
 import { useSidebar } from 'vitepress/theme'
-import { onMounted, nextTick } from 'vue'
+import { onMounted, nextTick, watch } from 'vue'
 import { useRouter } from 'vitepress'
 
 const { theme, frontmatter } = useData()
@@ -24,13 +24,12 @@ onMounted(() => {
 })
 
 // 监听路由变化，每次切换页面时刷新统计
-if (router.onAfterRouteChanged) {
-  router.onAfterRouteChanged(() => {
-    nextTick(() => {
-      setTimeout(refreshBusuanzi, 800)
-    })
+const route = router.route
+watch(() => route.path, () => {
+  nextTick(() => {
+    setTimeout(refreshBusuanzi, 800)
   })
-}
+})
 </script>
 
 <template>
