@@ -1,9 +1,36 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
 import { useSidebar } from 'vitepress/theme'
+import { onMounted, nextTick } from 'vue'
+import { useRouter } from 'vitepress'
 
 const { theme, frontmatter } = useData()
 const { hasSidebar } = useSidebar()
+const router = useRouter()
+
+// 使用全局的不蒜子刷新函数
+const refreshBusuanzi = () => {
+  if (typeof window !== 'undefined' && window.refreshBusuanzi) {
+    window.refreshBusuanzi()
+  }
+}
+
+// 页面加载时刷新统计
+onMounted(() => {
+  nextTick(() => {
+    // 延迟执行以确保 DOM 完全加载
+    setTimeout(refreshBusuanzi, 1500)
+  })
+})
+
+// 监听路由变化，每次切换页面时刷新统计
+if (router.onAfterRouteChanged) {
+  router.onAfterRouteChanged(() => {
+    nextTick(() => {
+      setTimeout(refreshBusuanzi, 800)
+    })
+  })
+}
 </script>
 
 <template>

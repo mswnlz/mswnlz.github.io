@@ -52,24 +52,44 @@ export default defineConfig({
       'script',
       {},
       `
-        // 确保 busuanzi 在页面加载后执行
+        // 全局不蒜子统计管理
+        window.busuanziReady = false;
+        
+        // 等待不蒜子脚本加载完成
         (function() {
-          function initBusuanzi() {
-            if (window.busuanzi) {
-              window.busuanzi.fetch();
+          let checkCount = 0;
+          const maxChecks = 50; // 最多检查5秒
+          
+          function checkBusuanziReady() {
+            if (window.busuanzi && window.bszTag) {
+              window.busuanziReady = true;
+              console.log('不蒜子统计已就绪');
+              return;
+            }
+            
+            checkCount++;
+            if (checkCount < maxChecks) {
+              setTimeout(checkBusuanziReady, 100);
             } else {
-              setTimeout(initBusuanzi, 100);
+              console.warn('不蒜子统计加载超时');
             }
           }
           
-          if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', function() {
-              setTimeout(initBusuanzi, 500);
-            });
-          } else {
-            setTimeout(initBusuanzi, 500);
-          }
+          // 开始检查
+          checkBusuanziReady();
         })();
+        
+        // 刷新不蒜子统计的全局函数
+        window.refreshBusuanzi = function() {
+          if (window.busuanziReady && window.busuanzi) {
+            try {
+              window.busuanzi.fetch();
+              console.log('不蒜子统计已刷新');
+            } catch (e) {
+              console.error('刷新不蒜子统计失败:', e);
+            }
+          }
+        };
       `
     ]
   ],
@@ -170,7 +190,7 @@ export default defineConfig({
       }
     ],
     footer: {
-      message: '友情链接: <a href="https://869hr.uk">M\'s Blog</a> | 如有侵权，请联系删除。<br>访客数 <span id="busuanzi_value_site_uv"></span> 人次，本站总访问量 <span id="busuanzi_value_site_pv"></span> 次',
+      message: '友情链接: <a href="https://869hr.uk">M\'s Blog</a> | 如有侵权，请联系删除。<br><span id="busuanzi_container_site_uv">访客数 <span id="busuanzi_value_site_uv"></span> 人次</span>，<span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次</span>',
       copyright: 'Copyright © 2025-present mswnlz@gmail.com'
     }
   }
