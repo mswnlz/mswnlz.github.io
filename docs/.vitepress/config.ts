@@ -45,8 +45,32 @@ export default defineConfig({
       'script',
       {
         async: true,
-        src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+        src: 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
       }
+    ],
+    [
+      'script',
+      {},
+      `
+        // 确保 busuanzi 在页面加载后执行
+        (function() {
+          function initBusuanzi() {
+            if (window.busuanzi) {
+              window.busuanzi.fetch();
+            } else {
+              setTimeout(initBusuanzi, 100);
+            }
+          }
+          
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+              setTimeout(initBusuanzi, 500);
+            });
+          } else {
+            setTimeout(initBusuanzi, 500);
+          }
+        })();
+      `
     ]
   ],
   themeConfig: {
