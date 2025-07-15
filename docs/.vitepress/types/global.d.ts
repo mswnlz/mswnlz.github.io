@@ -5,6 +5,7 @@ declare global {
     bszCaller: any
     busuanziReady: boolean
     refreshBusuanzi: () => void
+    showBusuanziError: () => void
   }
 }
 

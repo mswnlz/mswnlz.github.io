@@ -83,18 +83,48 @@ export default defineConfig({
         window.refreshBusuanzi = function() {
           if (window.busuanziReady && window.bszCaller) {
             try {
+              // 设置超时处理
+              const timeout = setTimeout(() => {
+                console.warn('不蒜子统计请求超时，显示默认提示');
+                window.showBusuanziError();
+              }, 8000); // 8秒超时
+              
               // 直接调用不蒜子的 fetch 方法
               window.bszCaller.fetch('//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback', function(data) {
-                if (window.bszTag) {
+                clearTimeout(timeout);
+                if (window.bszTag && data) {
                   window.bszTag.texts(data);
                   window.bszTag.shows();
+                  console.log('不蒜子统计已刷新');
+                } else {
+                  console.error('不蒜子数据无效');
+                  window.showBusuanziError();
                 }
               });
-              console.log('不蒜子统计已刷新');
             } catch (e) {
               console.error('刷新不蒜子统计失败:', e);
+              window.showBusuanziError();
             }
+          } else {
+            console.warn('不蒜子未就绪，稍后重试');
+            setTimeout(() => window.refreshBusuanzi(), 2000);
           }
+        };
+        
+        // 显示错误信息的函数
+        window.showBusuanziError = function() {
+          const uvElement = document.getElementById('busuanzi_value_site_uv');
+          const pvElement = document.getElementById('busuanzi_value_site_pv');
+          
+          if (uvElement) uvElement.textContent = '统计服务暂时不可用';
+          if (pvElement) pvElement.textContent = '统计服务暂时不可用';
+          
+          // 隐藏容器以避免显示奇怪的文本
+          const uvContainer = document.getElementById('busuanzi_container_site_uv');
+          const pvContainer = document.getElementById('busuanzi_container_site_pv');
+          
+          if (uvContainer) uvContainer.style.display = 'none';
+          if (pvContainer) pvContainer.style.display = 'none';
         };
       `
     ]
