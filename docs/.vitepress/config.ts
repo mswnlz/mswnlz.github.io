@@ -26,6 +26,48 @@ export default defineConfig({
   },
   description: "A collection of resources from mswnlz's GitHub repositories, including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.",
   head: [
+    // 基础网站图标配置
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
+    
+    // Apple 设备图标
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '152x152', href: '/apple-touch-icon-152x152.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '144x144', href: '/apple-touch-icon-144x144.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '120x120', href: '/apple-touch-icon-120x120.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '114x114', href: '/apple-touch-icon-114x114.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '76x76', href: '/apple-touch-icon-76x76.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '72x72', href: '/apple-touch-icon-72x72.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '60x60', href: '/apple-touch-icon-60x60.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '57x57', href: '/apple-touch-icon-57x57.png' }],
+    
+    // Android Chrome 图标
+    ['link', { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/android-chrome-192x192.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/android-chrome-512x512.png' }],
+    
+    // PWA 相关
+    ['link', { rel: 'manifest', href: '/site.webmanifest' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#2d89ef' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/mstile-144x144.png' }],
+    ['meta', { name: 'msapplication-config', content: '/browserconfig.xml' }],
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
+    
+    // Open Graph / 社交媒体分享图标
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: '大坝的资源收集站 | 超过 100T+ 资源' }],
+    ['meta', { property: 'og:description', content: 'A collection of resources including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.' }],
+    ['meta', { property: 'og:image', content: '/og-image.png' }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { property: 'og:url', content: 'https://mswnlz.github.io' }],
+    
+    // Twitter Card
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: '大坝的资源收集站 | 超过 100T+ 资源' }],
+    ['meta', { name: 'twitter:description', content: 'A collection of resources including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.' }],
+    ['meta', { name: 'twitter:image', content: '/og-image.png' }],
+    
     [
       'meta',
       {

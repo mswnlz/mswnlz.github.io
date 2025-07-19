@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as a,a5 as t}from"./chunks/framework.Cxps7QyS.js";const k=JSON.parse('{"title":"book","description":"","frontmatter":{},"headers":[],"relativePath":"book/index.md","filePath":"book/index.md"}'),o={name:"book/index.md"},n=t("",21),l=[n];function h(p,i,s,m,b,g){return a(),r("div",null,l)}const u=e(o,[["render",h]]);export{k as __pageData,u as default};

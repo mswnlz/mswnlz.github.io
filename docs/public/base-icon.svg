@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="256" cy="256" r="240" fill="url(#grad1)" stroke="#3730A3" stroke-width="8"/>
+  
+  <!-- 主要图标 - 数据库/收集站图标 -->
+  <g transform="translate(256,256)">
+    <!-- 数据库图标 -->
+    <ellipse cx="0" cy="-80" rx="120" ry="30" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="-120" y="-80" width="240" height="120" fill="#FFFFFF" opacity="0.9"/>
+    <ellipse cx="0" cy="40" rx="120" ry="30" fill="#FFFFFF" opacity="0.9"/>
+    
+    <!-- 数据流线条 -->
+    <g stroke="#4F46E5" stroke-width="4" fill="none" opacity="0.8">
+      <path d="M-80,-40 L-40,-20 L40,-20 L80,-40"/>
+      <path d="M-80,0 L-40,20 L40,20 L80,0"/>
+    </g>
+    
+    <!-- 中心点 -->
+    <circle cx="0" cy="-20" r="8" fill="#4F46E5"/>
+  </g>
+  
+  <!-- 装饰元素 -->
+  <g opacity="0.3">
+    <circle cx="150" cy="150" r="4" fill="#FFFFFF"/>
+    <circle cx="362" cy="150" r="4" fill="#FFFFFF"/>
+    <circle cx="150" cy="362" r="4" fill="#FFFFFF"/>
+    <circle cx="362" cy="362" r="4" fill="#FFFFFF"/>
+  </g>
+</svg>

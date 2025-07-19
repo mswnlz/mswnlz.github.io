@@ -1,0 +1,1 @@
+import{_ as r,c as a,o as e,a5 as t}from"./chunks/framework.Cxps7QyS.js";const o=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"movies/202506.md","filePath":"movies/202506.md"}'),n={name:"movies/202506.md"},l=t("",60),p=[l];function f(h,s,i,c,k,u){return e(),a("div",null,p)}const d=r(n,[["render",f]]);export{o as __pageData,d as default};
