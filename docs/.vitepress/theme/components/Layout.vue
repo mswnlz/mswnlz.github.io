@@ -167,7 +167,7 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .item .VPFeature .box {
   padding: 28px;
-  height: 240px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -202,11 +202,6 @@ const { frontmatter } = useData()
   line-height: 1.5;
   color: var(--vp-c-text-2);
   flex-grow: 1;
-  height: 108px;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
   padding-top: 2px;
 }
 
@@ -280,7 +275,6 @@ const { frontmatter } = useData()
   
   .VPHome .VPHomeFeatures .item .VPFeature .box {
     padding: 20px;
-    height: 200px;
   }
   
   .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
@@ -294,8 +288,7 @@ const { frontmatter } = useData()
   }
   
   .VPHome .VPHomeFeatures .item .VPFeature .box .details {
-    height: 96px;
-    -webkit-line-clamp: 3;
+    /* 移除固定高度，让内容自然撑开 */
   }
 }
 
