@@ -136,10 +136,12 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .items {
-  gap: 22px;
-  /* 3-column layout with wider cards */
+  gap: 24px;
+  /* 2-column layout with much wider cards */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Remove specific responsive rules as auto-fit handles it automatically */
@@ -161,15 +163,15 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box {
-  padding: 24px;
-  height: 200px;
+  padding: 32px;
+  height: 280px;
   display: flex;
   flex-direction: column;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
-  font-size: 2.2rem;
-  margin-bottom: 12px;
+  font-size: 3rem;
+  margin-bottom: 18px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -178,20 +180,27 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .title {
   color: var(--vp-c-brand-1);
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   line-height: 1.3;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .details {
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: var(--vp-c-text-2);
   flex-grow: 1;
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .VPHome .VPHomeFeatures .items {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+}
+
 @media (max-width: 768px) {
   .VPHome .VPHomeHero {
     padding: 60px 20px 48px !important;
@@ -213,9 +222,22 @@ const { frontmatter } = useData()
     padding: 0 20px 48px;
   }
   
+  .VPHome .VPHomeFeatures .items {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
   .VPHome .VPHomeFeatures .item .VPFeature .box {
-    padding: 20px;
-    height: 180px;
+    padding: 24px;
+    height: 240px;
+  }
+  
+  .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
+    font-size: 2.5rem;
+  }
+  
+  .VPHome .VPHomeFeatures .item .VPFeature .box .title {
+    font-size: 1.2rem;
   }
 }
 
