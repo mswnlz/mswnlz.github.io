@@ -224,6 +224,12 @@ const { frontmatter } = useData()
   box-sizing: border-box;
 }
 
+[data-v-a6181336] {
+  width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box;
+}
+
 /* 核心类别卡片增强样式 - 前4个 */
 .VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature {
   border: 2px solid var(--vp-c-brand-soft);
