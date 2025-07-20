@@ -7,61 +7,61 @@ description: 免费提供超过100T海量资源下载，包含AI知识、书籍�
 hero:
   name: 大坝的资源收集站
   text: 超过100T免费资源下载
-  tagline: 🚀 免费 · 海量 · 持续更新 | 🎯 AI知识 📚 书籍资料 🌐 跨境电商 📱 自媒体 🎓 教育 ❤️ 健康 🎬 影视 🛠️ 工具
+  tagline: 🚀 免费 · 海量 · 持续更新 | 专注提供优质免费资源下载
   actions:
     - theme: alt
       text: 🚀 开始探索免费资源
       link: /AIknowledge/
 
 features:
-  - icon: 🎬
-    title: 影视在线看
-    details: 免费观看影视资源，资源丰富更新快。包含使用说明和访问链接密码
-    link: /movie-recommendations/
-  - icon: 💡
+  - icon: 🤖
     title: AI 知识
-    details: AI 相关知识、提示词、教程、视频教程、变现课程等
+    details: 人工智能学习资料、提示词工程、AI工具教程、机器学习课程
     link: /AIknowledge/
-  - icon: 💻
-    title: 自动化工具
-    details: 各种自动化脚本和工具
-    link: /auto/
-  - icon: 📚
+  - icon: 📖
     title: 书籍资料
-    details: 各种教程、小说等
+    details: 电子书、技术文档、学术论文、小说文学、专业教材
     link: /book/
+  - icon: 🌍
+    title: 跨境电商
+    details: 亚马逊开店、TikTok营销、外贸实操、选品工具、数据分析
+    link: /cross-border/
+  - icon: 📱
+    title: 自媒体
+    details: 流量获取、内容创作、变现策略、短视频制作、直播运营
+    link: /self-media/
+  - icon: 🎓
+    title: 教育资源
+    details: 从幼儿园到大学的全阶段教育材料、考试资料、职业培训
+    link: /edu-knowlege/
+  - icon: 💪
+    title: 健康养生
+    details: 健身教程、营养指南、心理健康、中医养生、康复训练
+    link: /healthy/
+  - icon: 🎬
+    title: 影视娱乐
+    details: 高清电影、纪录片、音乐资源、演唱会、综艺节目
+    link: /movies/
+  - icon: 🔧
+    title: 工具合集
+    details: 软件工具、浏览器插件、系统优化、开发工具、设计素材
+    link: /tools/
   - icon: 🏛️
     title: 传统文化
     details: 中医课程、传统文化资料等
     link: /chinese-traditional/
-  - icon: 🌐
-    title: 跨境电商
-    details: 申请、支付、外贸、TikTok、亚马逊等资源
-    link: /cross-border/
   - icon: 📝
     title: 课程资料
     details: 得到、网上流行材料等综合课程资料
     link: /curriculum/
-  - icon: 🎓
-    title: 教育资源
-    details: 幼儿园到大学的各类教育资料
-    link: /edu-knowlege/
-  - icon: ❤️‍🩹
-    title: 健康养生
-    details: 健身、锻炼、饮食、营养、健康、睡眠等
-    link: /healthy/
-  - icon: 🎬
-    title: 影视媒体
-    details: 电影、纪录片、音乐、演唱会等资源
-    link: /movies/
-  - icon: 📈
-    title: 自媒体 
-    details: 拉新、流量玩法、获客，转化、变现等资料
-    link: /self-media/
-  - icon: 🛠️
-    title: 工具合集
-    details: 操作系统、插件、绿色破解版工具等
-    link: /tools/
+  - icon: 💻
+    title: 自动化工具
+    details: 各种自动化脚本和工具
+    link: /auto/
+  - icon: 🎭
+    title: 影视在线观看
+    details: 免费观看影视资源，资源丰富更新快。包含使用说明和访问链接密码
+    link: /movie-recommendations/
 ---
 
 ## 🚀 关于大坝的资源收集站
@@ -69,36 +69,6 @@ features:
 > 🎯 **专注免费** · 🌟 **品质保证** · 📈 **持续更新** · 🔥 **社区驱动**
 
 大坝的资源收集站是一个专注于提供**免费优质资源下载**的开放平台。我们坚信知识和资源应该人人可得，致力于为全球用户提供超过**100T的海量优质资源**，覆盖学习、工作、娱乐等各个生活场景。
-
-### 📊 资源分类概览
-
-<div class="resource-grid">
-
-**🤖 AI知识资源**  
-人工智能学习资料、提示词工程、AI工具教程、机器学习课程
-
-**📖 书籍资料库**  
-电子书、技术文档、学术论文、小说文学、专业教材
-
-**🌍 跨境电商**  
-亚马逊开店、TikTok营销、外贸实操、选品工具、数据分析
-
-**📱 自媒体营销**  
-流量获取、内容创作、变现策略、短视频制作、直播运营
-
-**🎓 教育资源**  
-从幼儿园到大学的全阶段教育材料、考试资料、职业培训
-
-**💪 健康养生**  
-健身教程、营养指南、心理健康、中医养生、康复训练
-
-**🎭 影视娱乐**  
-高清电影、纪录片、音乐资源、演唱会、综艺节目
-
-**🔧 实用工具**  
-软件工具、浏览器插件、系统优化、开发工具、设计素材
-
-</div>
 
 ### 🎯 为什么选择我们？
 
@@ -136,7 +106,7 @@ features:
 
 <div class="keyword-tags">
 
-`免费资源下载` `AI教程` `电子书下载` `跨境电商教程` `自媒体运营` `在线教育` `健身视频` `电影资源` `软件工具` `设计素材` `编程教程` `考试资料`
+`免费资源下载` `AI教程` `电子书下载` `跨境电商教程` `自媒体运营` `在线教育` `健身视频` `电影资源` `软件工具` `设计素材` `编程教程` `考试资料` `夸克网盘` `阿里网盘` `TikTok营销` `亚马逊开店` `提示词工程` `机器学习`
 
 </div>
 

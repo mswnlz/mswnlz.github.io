@@ -296,52 +296,7 @@ const { frontmatter } = useData()
   text-align: center;
 }
 
-.resource-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin: 2rem 0;
-}
-
-.resource-grid > p {
-  background: var(--vp-c-bg);
-  border: 1px solid var(--vp-c-divider-light);
-  border-radius: 12px;
-  padding: 20px;
-  margin: 0;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.resource-grid > p::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-3));
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.resource-grid > p:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  border-color: var(--vp-c-brand-soft);
-}
-
-.resource-grid > p:hover::before {
-  opacity: 1;
-}
-
-.resource-grid > p strong {
-  color: var(--vp-c-brand-1);
-  font-size: 1.1rem;
-  display: block;
-  margin-bottom: 8px;
-}
+/* Resource grid styles removed - no longer needed */
 
 .advantages {
   display: grid;
@@ -445,11 +400,6 @@ const { frontmatter } = useData()
 
 /* Responsive adjustments for content */
 @media (max-width: 768px) {
-  .resource-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  
   .advantages {
     grid-template-columns: 1fr;
     gap: 14px;
