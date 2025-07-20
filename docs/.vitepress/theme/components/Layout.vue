@@ -137,9 +137,9 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .items {
   gap: 24px;
-  /* 2-column layout with much wider cards */
+  /* 2-column layout with standard cards */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -164,7 +164,7 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .item .VPFeature .box {
   padding: 32px;
-  height: 280px;
+  aspect-ratio: 1.45; /* 350:240的比例 */
   display: flex;
   flex-direction: column;
 }
@@ -229,7 +229,7 @@ const { frontmatter } = useData()
   
   .VPHome .VPHomeFeatures .item .VPFeature .box {
     padding: 24px;
-    height: 240px;
+    aspect-ratio: 1.45; /* 保持相同比例 */
   }
   
   .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
