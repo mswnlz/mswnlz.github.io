@@ -136,10 +136,10 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .items {
-  gap: 16px;
-  /* Use auto-fit grid with optimized sizing */
+  gap: 22px;
+  /* 3-column layout with wider cards */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 /* Remove specific responsive rules as auto-fit handles it automatically */
@@ -161,11 +161,10 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box {
-  padding: 22px;
-  height: 100%;
+  padding: 24px;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  min-height: 180px;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
@@ -216,7 +215,7 @@ const { frontmatter } = useData()
   
   .VPHome .VPHomeFeatures .item .VPFeature .box {
     padding: 20px;
-    min-height: 160px;
+    height: 180px;
   }
 }
 
