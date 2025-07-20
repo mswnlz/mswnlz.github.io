@@ -136,10 +136,10 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .items {
-  gap: 20px;
-  /* Use auto-fit grid with larger minimum width for better aspect ratio */
+  gap: 18px;
+  /* Use auto-fit grid like advantages section */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 /* Remove specific responsive rules as auto-fit handles it automatically */
@@ -161,16 +161,15 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box {
-  padding: 24px;
+  padding: 22px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 160px;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
-  font-size: 2.8rem;
-  margin-bottom: 16px;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -179,21 +178,17 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .title {
   color: var(--vp-c-brand-1);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 12px;
-  line-height: 1.2;
+  margin-bottom: 10px;
+  line-height: 1.3;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .details {
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.6;
   color: var(--vp-c-text-2);
   flex-grow: 1;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
 }
 
 /* Responsive adjustments */
