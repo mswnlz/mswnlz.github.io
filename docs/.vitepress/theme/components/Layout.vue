@@ -136,111 +136,59 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .items {
-  gap: 16px;
-  /* Override VitePress default grid to show 4 columns on desktop for 12 items */
+  gap: 18px;
+  /* Use auto-fit grid like advantages section */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-/* Large screens (desktop) - 4 columns for 12 items */
-@media (min-width: 1200px) {
-  .VPHome .VPHomeFeatures .items {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-  }
-}
-
-/* Medium screens (tablets) - 3 columns */
-@media (max-width: 1199px) and (min-width: 900px) {
-  .VPHome .VPHomeFeatures .items {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-  }
-}
-
-/* Small tablets - 2 columns */
-@media (max-width: 899px) and (min-width: 600px) {
-  .VPHome .VPHomeFeatures .items {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-}
-
-/* Mobile screens - 1 column */
-@media (max-width: 599px) {
-  .VPHome .VPHomeFeatures .items {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-}
+/* Remove specific responsive rules as auto-fit handles it automatically */
 
 .VPHome .VPHomeFeatures .item .VPFeature {
-  border-radius: 16px;
-  padding: 0;
-  overflow: hidden;
-  background: var(--vp-c-bg-soft);
+  background: linear-gradient(135deg, var(--vp-c-bg) 0%, var(--vp-c-bg-soft) 100%);
   border: 1px solid var(--vp-c-divider-light);
+  border-radius: 14px;
+  padding: 0;
   transition: all 0.3s ease;
   position: relative;
-}
-
-.VPHome .VPHomeFeatures .item .VPFeature::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2), var(--vp-c-brand-3));
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: var(--vp-c-brand-soft);
-}
-
-.VPHome .VPHomeFeatures .item .VPFeature:hover::before {
-  opacity: 1;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  border-color: var(--vp-c-brand-2);
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box {
-  padding: 24px 20px;
+  padding: 22px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 200px;
-  aspect-ratio: 1 / 1.1;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
-  font-size: 2.5rem;
-  margin-bottom: 16px;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  color: var(--vp-c-brand-1);
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .title {
-  font-size: 1.2rem;
+  color: var(--vp-c-brand-1);
+  font-size: 1.1rem;
   font-weight: 700;
-  color: var(--vp-c-text-1);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   line-height: 1.3;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .details {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: var(--vp-c-text-2);
   flex-grow: 1;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
 }
 
 /* Responsive adjustments */
