@@ -257,13 +257,16 @@ h2::after {
 .repo-name {
   font-weight: 600;
   width: 120px;
-  text-align: left;
+  text-align: center;
   color: var(--vp-c-brand-1);
   font-size: 0.9rem;
   background: var(--vp-c-brand-soft);
   padding: 4px 8px;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid var(--vp-c-brand-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .commit-date {

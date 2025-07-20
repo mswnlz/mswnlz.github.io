@@ -137,6 +137,25 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .items {
   gap: 20px;
+  /* Override VitePress default grid to show 3 columns on desktop */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Medium screens (tablets) - 2 columns */
+@media (max-width: 1024px) {
+  .VPHome .VPHomeFeatures .items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Small screens (mobile) - 1 column */
+@media (max-width: 640px) {
+  .VPHome .VPHomeFeatures .items {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature {
@@ -360,6 +379,46 @@ const { frontmatter } = useData()
   box-shadow: 0 4px 12px rgba(52, 81, 178, 0.3);
 }
 
+/* Platform Stats Grid */
+.platform-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 2rem 0;
+}
+
+.platform-stats > p {
+  background: linear-gradient(135deg, var(--vp-c-bg) 0%, var(--vp-c-bg-soft) 100%);
+  border: 1px solid var(--vp-c-divider-light);
+  border-radius: 12px;
+  padding: 20px 16px;
+  margin: 0;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.platform-stats > p:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: var(--vp-c-brand-soft);
+}
+
+.platform-stats > p strong {
+  color: var(--vp-c-brand-1);
+  font-size: 1rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.platform-stats > p:not(:has(strong)) {
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 .footer-info {
   background: linear-gradient(135deg, var(--vp-c-bg-alt) 0%, var(--vp-c-bg-soft) 100%);
   border: 1px solid var(--vp-c-divider);
@@ -405,6 +464,15 @@ const { frontmatter } = useData()
     gap: 14px;
   }
   
+  .platform-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .platform-stats > p {
+    padding: 16px 12px;
+  }
+  
   .keyword-tags {
     padding: 20px 16px;
   }
@@ -418,6 +486,12 @@ const { frontmatter } = useData()
   .footer-info {
     padding: 24px 20px;
     margin: 2rem 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .platform-stats {
+    grid-template-columns: 1fr;
   }
 }
 
