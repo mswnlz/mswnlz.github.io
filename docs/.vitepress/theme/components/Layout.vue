@@ -165,6 +165,9 @@ const { frontmatter } = useData()
   transition: all 0.3s ease;
   position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  /* 设置外层容器高度匹配内部box：201.63px + 2px边框 = 203.63px */
+  height: 203.63px;
+  width: 321.33px;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature:hover {
@@ -231,6 +234,8 @@ const { frontmatter } = useData()
 .VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature {
   border: 2px solid var(--vp-c-brand-soft);
   background: linear-gradient(135deg, var(--vp-c-bg) 0%, var(--vp-c-brand-soft) 100%);
+  /* 前4个卡片2px边框，高度需要额外+2px：201.63 + 4px = 205.63px */
+  height: 205.63px;
 }
 
 .VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature:hover {
