@@ -135,24 +135,22 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .container {
-  max-width: 1300px;
+  /* 统一容器宽度，与主页其他区域保持一致 */
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 .VPHome .VPHomeFeatures .items {
-  gap: 20px;
-  /* 固定卡片宽度布局：适配321.33px的box尺寸，支持多列 */
+  /* 固定卡片尺寸的网格布局优化 */
   display: grid;
-  grid-template-columns: repeat(auto-fit, 321.33px);
-  max-width: 1400px;
-  margin: 0 auto;
-  /* 自动调整行高以适应内容 */
-  align-items: start;
+  grid-template-columns: repeat(auto-fill, 321.33px);
+  gap: 20px;
   justify-content: center;
-  /* 确保网格容器高度适应内容 */
-  min-height: fit-content;
-  /* 防止内容溢出 */
-  overflow: visible;
+  align-items: start;
+  /* 为了解决小屏幕问题，在容器宽度不够时自动调整 */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Remove specific responsive rules as auto-fit handles it automatically */
@@ -269,22 +267,17 @@ const { frontmatter } = useData()
   border-color: var(--vp-c-divider);
 }
 
-/* 小屏幕专用布局 - 保持box固定尺寸但居中显示 */
+/* 小屏幕专用布局 - 保持box固定尺寸但确保布局稳定 */
 @media (max-width: 640px) {
+  .VPHome .VPHomeFeatures .container {
+    padding: 0 16px;
+  }
+  
   .VPHome .VPHomeFeatures .items {
     /* 保持固定321.33px宽度，单列显示 */
     grid-template-columns: 321.33px;
-    max-width: 100%;
-    padding: 0 20px;
-    /* 如果屏幕太窄，允许水平滚动 */
-    overflow-x: auto;
-  }
-  
-  /* 确保在小屏幕上box尺寸不变 */
-  .VPHome .VPHomeFeatures .item .VPFeature .box {
-    width: 321.33px;
-    height: 201.63px;
-    padding: 20px;
+    justify-content: center;
+    /* 如果屏幕太窄，卡片居中显示 */
   }
 }
 
