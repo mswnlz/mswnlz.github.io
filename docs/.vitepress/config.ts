@@ -26,7 +26,7 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   sitemap: {
-    hostname: 'https://mswnlz.github.io'
+    hostname: 'https://doc.869hr.uk'
   },
   vite: {
     assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
@@ -67,7 +67,7 @@ export default defineConfig({
     ['meta', { property: 'og:image', content: '/og-image.png' }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
-    ['meta', { property: 'og:url', content: 'https://mswnlz.github.io' }],
+    ['meta', { property: 'og:url', content: 'https://doc.869hr.uk' }],
     
     // Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
@@ -92,21 +92,21 @@ export default defineConfig({
         '@type': 'WebSite',
         name: '大坝的资源收集站',
         description: '超过100T免费资源下载站，包含AI知识、书籍资料、跨境电商、自媒体、教育、健康、影视、工具等海量资源',
-        url: 'https://mswnlz.github.io',
+        url: 'https://doc.869hr.uk',
         potentialAction: {
           '@type': 'SearchAction',
-          target: 'https://mswnlz.github.io/?q={search_term_string}',
+          target: 'https://doc.869hr.uk/?q={search_term_string}',
           'query-input': 'required name=search_term_string'
         },
         author: {
           '@type': 'Organization',
           name: '大坝的资源收集站',
-          url: 'https://mswnlz.github.io'
+          url: 'https://doc.869hr.uk'
         },
         publisher: {
           '@type': 'Organization',
           name: '大坝的资源收集站',
-          url: 'https://mswnlz.github.io'
+          url: 'https://doc.869hr.uk'
         }
       })
     ],
