@@ -16,52 +16,52 @@ hero:
 features:
   - icon: 🤖
     title: AI 知识
-    details: 人工智能学习资料、提示词工程、AI工具教程、机器学习课程
+    details: 人工智能学习资料、提示词工程、AI工具教程、机器学习课程等前沿技术内容
     link: /AIknowledge/
   - icon: 📖
     title: 书籍资料
-    details: 电子书、技术文档、学术论文、小说文学、专业教材
+    details: 电子书、技术文档、学术论文、小说文学、专业教材等丰富阅读资源
     link: /book/
   - icon: 🌍
     title: 跨境电商
-    details: 亚马逊开店、TikTok营销、外贸实操、选品工具、数据分析
+    details: 亚马逊开店、TikTok营销、外贸实操、选品工具、数据分析完整教程
     link: /cross-border/
   - icon: 📱
-    title: 自媒体
-    details: 流量获取、内容创作、变现策略、短视频制作、直播运营
+    title: 自媒体运营
+    details: 流量获取、内容创作、变现策略、短视频制作、直播运营全套资料
     link: /self-media/
   - icon: 🎓
     title: 教育资源
-    details: 从幼儿园到大学的全阶段教育材料、考试资料、职业培训
+    details: 从幼儿园到大学全阶段教育材料、考试资料、职业培训精选内容
     link: /edu-knowlege/
-  - icon: 💪
-    title: 健康养生
-    details: 健身教程、营养指南、心理健康、中医养生、康复训练
-    link: /healthy/
-  - icon: 🎬
-    title: 影视娱乐
-    details: 高清电影、纪录片、音乐资源、演唱会、综艺节目
-    link: /movies/
   - icon: 🔧
     title: 工具合集
-    details: 软件工具、浏览器插件、系统优化、开发工具、设计素材
+    details: 软件工具、浏览器插件、系统优化、开发工具、设计素材应有尽有
     link: /tools/
-  - icon: 🏛️
-    title: 传统文化
-    details: 中医课程、传统文化资料等
-    link: /chinese-traditional/
-  - icon: 📝
-    title: 课程资料
-    details: 得到、网上流行材料等综合课程资料
-    link: /curriculum/
-  - icon: 💻
-    title: 自动化工具
-    details: 各种自动化脚本和工具
-    link: /auto/
+  - icon: 🎬
+    title: 影视娱乐
+    details: 高清电影、纪录片、音乐资源、演唱会、综艺节目海量收藏
+    link: /movies/
+  - icon: 💪
+    title: 健康养生
+    details: 健身教程、营养指南、心理健康、中医养生、康复训练系统资源
+    link: /healthy/
   - icon: 🎭
     title: 影视在线观看
-    details: 免费观看影视资源，资源丰富更新快。包含使用说明和访问链接密码
+    details: 免费观看影视资源，资源丰富更新快，含使用说明和访问密码
     link: /movie-recommendations/
+  - icon: 📝
+    title: 课程资料
+    details: 得到、网上流行课程等综合学习资料精选合集
+    link: /curriculum/
+  - icon: 🏛️
+    title: 传统文化
+    details: 中医课程、传统文化资料等国学精华内容
+    link: /chinese-traditional/
+  - icon: 💻
+    title: 自动化工具
+    details: 各种自动化脚本和工具，提升工作效率必备
+    link: /auto/
 ---
 
 ## 🚀 关于大坝的资源收集站

@@ -136,12 +136,14 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .items {
-  gap: 24px;
-  /* 2-column layout with standard cards */
+  gap: 20px;
+  /* 智能网格布局：3-2-1列响应式 */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1400px;
   margin: 0 auto;
+  /* 自动调整行高以适应内容 */
+  align-items: start;
 }
 
 /* Remove specific responsive rules as auto-fit handles it automatically */
@@ -163,41 +165,98 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box {
-  padding: 32px;
-  aspect-ratio: 1.45; /* 350:240的比例 */
+  padding: 28px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
-  font-size: 3rem;
-  margin-bottom: 18px;
+  font-size: 2.8rem;
+  margin-bottom: 14px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   color: var(--vp-c-brand-1);
+  flex-shrink: 0;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .title {
   color: var(--vp-c-brand-1);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   line-height: 1.3;
+  flex-shrink: 0;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .details {
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: var(--vp-c-text-2);
   flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 核心类别卡片增强样式 - 前4个 */
+.VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature {
+  border: 2px solid var(--vp-c-brand-soft);
+  background: linear-gradient(135deg, var(--vp-c-bg) 0%, var(--vp-c-brand-soft) 100%);
+}
+
+.VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 15px 35px rgba(52, 81, 178, 0.15);
+}
+
+.VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature .box .icon {
+  color: var(--vp-c-brand-1);
+  font-size: 3rem;
+}
+
+/* 特色类别卡片样式 - 第5-8个 */
+.VPHome .VPHomeFeatures .items .item:nth-child(n+5):nth-child(-n+8) .VPFeature {
+  border: 1px solid var(--vp-c-divider);
+}
+
+.VPHome .VPHomeFeatures .items .item:nth-child(n+5):nth-child(-n+8) .VPFeature:hover {
+  border-color: var(--vp-c-brand-soft);
+}
+
+/* 补充类别卡片样式 - 第9-12个 */
+.VPHome .VPHomeFeatures .items .item:nth-child(n+9) .VPFeature {
+  opacity: 0.95;
+  border: 1px solid var(--vp-c-divider-light);
+}
+
+.VPHome .VPHomeFeatures .items .item:nth-child(n+9) .VPFeature:hover {
+  opacity: 1;
+  border-color: var(--vp-c-divider);
 }
 
 /* Responsive adjustments */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+  .VPHome .VPHomeFeatures .items {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 900px) {
+  .VPHome .VPHomeFeatures .items {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
   .VPHome .VPHomeFeatures .items {
     grid-template-columns: 1fr;
-    max-width: 600px;
+    max-width: 400px;
   }
 }
 
@@ -228,8 +287,8 @@ const { frontmatter } = useData()
   }
   
   .VPHome .VPHomeFeatures .item .VPFeature .box {
-    padding: 24px;
-    aspect-ratio: 1.45; /* 保持相同比例 */
+    padding: 20px;
+    min-height: 180px;
   }
   
   .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
