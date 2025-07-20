@@ -179,6 +179,14 @@ const { frontmatter } = useData()
   box-sizing: border-box;
 }
 
+/* data-v-a6181336宽高设置为和article.box相同的固定尺寸 */
+[data-v-a6181336] {
+  width: 321.33px !important;
+  height: 201.63px !important;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
   font-size: 2.8rem;
   margin-bottom: 16px;
