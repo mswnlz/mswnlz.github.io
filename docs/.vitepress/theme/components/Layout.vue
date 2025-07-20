@@ -128,6 +128,10 @@ const { frontmatter } = useData()
 /* Enhanced Feature Cards */
 .VPHome .VPHomeFeatures {
   padding: 0 24px 64px;
+  /* 确保卡片区域与其他内容间的足够间距 */
+  margin-bottom: 40px;
+  /* 清除浮动影响 */
+  clear: both;
 }
 
 .VPHome .VPHomeFeatures .container {
@@ -137,7 +141,7 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .items {
   gap: 20px;
-  /* 固定卡片宽度布局：适配321.33px的box尺寸 */
+  /* 固定卡片宽度布局：适配321.33px的box尺寸，支持多列 */
   display: grid;
   grid-template-columns: repeat(auto-fit, 321.33px);
   max-width: 1400px;
@@ -145,6 +149,10 @@ const { frontmatter } = useData()
   /* 自动调整行高以适应内容 */
   align-items: start;
   justify-content: center;
+  /* 确保网格容器高度适应内容 */
+  min-height: fit-content;
+  /* 防止内容溢出 */
+  overflow: visible;
 }
 
 /* Remove specific responsive rules as auto-fit handles it automatically */
