@@ -137,9 +137,9 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .items {
   gap: 20px;
-  /* 响应式网格布局：确保大屏幕卡片不会比小屏幕更窄 */
+  /* 固定卡片宽度布局：宽度不变，只改变列数，高度自适应 */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+  grid-template-columns: repeat(auto-fit, 360px);
   max-width: 1400px;
   margin: 0 auto;
   /* 自动调整行高以适应内容 */
