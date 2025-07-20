@@ -137,13 +137,14 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .items {
   gap: 20px;
-  /* 智能网格布局：3-2-1列响应式 */
+  /* 智能网格布局：固定卡片尺寸，自动适应行数 */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
   max-width: 1400px;
   margin: 0 auto;
   /* 自动调整行高以适应内容 */
   align-items: start;
+  justify-content: center;
 }
 
 /* Remove specific responsive rules as auto-fit handles it automatically */
@@ -246,27 +247,7 @@ const { frontmatter } = useData()
   border-color: var(--vp-c-divider);
 }
 
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-  .VPHome .VPHomeFeatures .items {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 900px;
-  }
-}
-
-@media (max-width: 900px) {
-  .VPHome .VPHomeFeatures .items {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    max-width: 600px;
-  }
-}
-
-@media (max-width: 640px) {
-  .VPHome .VPHomeFeatures .items {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-  }
-}
+/* Responsive adjustments - cards already use single column layout */
 
 @media (max-width: 768px) {
   .VPHome .VPHomeHero {
@@ -287,11 +268,6 @@ const { frontmatter } = useData()
   
   .VPHome .VPHomeFeatures {
     padding: 0 20px 48px;
-  }
-  
-  .VPHome .VPHomeFeatures .items {
-    grid-template-columns: 1fr;
-    gap: 20px;
   }
   
   .VPHome .VPHomeFeatures .item .VPFeature .box {
