@@ -166,29 +166,34 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .item .VPFeature .box {
   padding: 28px;
-  min-height: 200px;
+  height: 240px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
   font-size: 2.8rem;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   color: var(--vp-c-brand-1);
   flex-shrink: 0;
+  height: 48px;
+  line-height: 1;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .title {
   color: var(--vp-c-brand-1);
   font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   line-height: 1.3;
   flex-shrink: 0;
+  height: 36px;
+  display: flex;
+  align-items: center;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .details {
@@ -196,10 +201,12 @@ const { frontmatter } = useData()
   line-height: 1.5;
   color: var(--vp-c-text-2);
   flex-grow: 1;
+  height: 108px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  padding-top: 2px;
 }
 
 /* 核心类别卡片增强样式 - 前4个 */
@@ -216,6 +223,7 @@ const { frontmatter } = useData()
 .VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature .box .icon {
   color: var(--vp-c-brand-1);
   font-size: 3rem;
+  height: 52px;
 }
 
 /* 特色类别卡片样式 - 第5-8个 */
@@ -288,15 +296,22 @@ const { frontmatter } = useData()
   
   .VPHome .VPHomeFeatures .item .VPFeature .box {
     padding: 20px;
-    min-height: 180px;
+    height: 200px;
   }
   
   .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
     font-size: 2.5rem;
+    height: 40px;
   }
   
   .VPHome .VPHomeFeatures .item .VPFeature .box .title {
     font-size: 1.2rem;
+    height: 32px;
+  }
+  
+  .VPHome .VPHomeFeatures .item .VPFeature .box .details {
+    height: 96px;
+    -webkit-line-clamp: 3;
   }
 }
 
