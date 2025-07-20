@@ -137,9 +137,9 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .items {
   gap: 20px;
-  /* 固定卡片宽度布局：宽度不变，只改变列数，高度自适应 */
+  /* 固定卡片宽度布局：适配321.33px的box尺寸 */
   display: grid;
-  grid-template-columns: repeat(auto-fit, 360px);
+  grid-template-columns: repeat(auto-fit, 321.33px);
   max-width: 1400px;
   margin: 0 auto;
   /* 自动调整行高以适应内容 */
@@ -166,11 +166,17 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box {
-  padding: 28px;
-  height: 100%;
+  /* 固定box尺寸：321.33 x 201.63px (截图显示的精确尺寸) */
+  width: 321.33px;
+  height: 201.63px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  /* 确保box不会被拉伸或压缩 */
+  flex-shrink: 0;
+  flex-grow: 0;
+  box-sizing: border-box;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
@@ -242,12 +248,22 @@ const { frontmatter } = useData()
   border-color: var(--vp-c-divider);
 }
 
-/* 小屏幕专用布局 - 避免卡片过宽 */
+/* 小屏幕专用布局 - 保持box固定尺寸但居中显示 */
 @media (max-width: 640px) {
   .VPHome .VPHomeFeatures .items {
-    grid-template-columns: 1fr;
+    /* 保持固定321.33px宽度，单列显示 */
+    grid-template-columns: 321.33px;
     max-width: 100%;
     padding: 0 20px;
+    /* 如果屏幕太窄，允许水平滚动 */
+    overflow-x: auto;
+  }
+  
+  /* 确保在小屏幕上box尺寸不变 */
+  .VPHome .VPHomeFeatures .item .VPFeature .box {
+    width: 321.33px;
+    height: 201.63px;
+    padding: 20px;
   }
 }
 
@@ -273,9 +289,7 @@ const { frontmatter } = useData()
     padding: 0 20px 48px;
   }
   
-  .VPHome .VPHomeFeatures .item .VPFeature .box {
-    padding: 20px;
-  }
+  /* box尺寸已在全局固定，这里只调整padding */
   
   .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
     font-size: 2.5rem;
