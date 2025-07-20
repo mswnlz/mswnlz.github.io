@@ -131,30 +131,46 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
 .VPHome .VPHomeFeatures .items {
-  gap: 20px;
-  /* Override VitePress default grid to show 3 columns on desktop */
+  gap: 16px;
+  /* Override VitePress default grid to show 4 columns on desktop for 12 items */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
-/* Medium screens (tablets) - 2 columns */
-@media (max-width: 1024px) {
+/* Large screens (desktop) - 4 columns for 12 items */
+@media (min-width: 1200px) {
+  .VPHome .VPHomeFeatures .items {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Medium screens (tablets) - 3 columns */
+@media (max-width: 1199px) and (min-width: 900px) {
+  .VPHome .VPHomeFeatures .items {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Small tablets - 2 columns */
+@media (max-width: 899px) and (min-width: 600px) {
   .VPHome .VPHomeFeatures .items {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
 }
 
-/* Small screens (mobile) - 1 column */
-@media (max-width: 640px) {
+/* Mobile screens - 1 column */
+@media (max-width: 599px) {
   .VPHome .VPHomeFeatures .items {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 14px;
   }
 }
 
@@ -191,10 +207,12 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box {
-  padding: 28px 24px;
+  padding: 24px 20px;
   height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 200px;
+  aspect-ratio: 1 / 1.1;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
@@ -207,7 +225,7 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--vp-c-text-1);
   margin-bottom: 12px;
@@ -219,6 +237,10 @@ const { frontmatter } = useData()
   line-height: 1.6;
   color: var(--vp-c-text-2);
   flex-grow: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 /* Responsive adjustments */
