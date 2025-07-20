@@ -74,36 +74,36 @@ const formatDate = (dateString) => {
 };
 
 onMounted(async () => {
-  console.log('CommitHistory component mounted');
-  
-  try {
-    // 尝试获取最新数据
-    const possiblePaths = ['/commits.json', '../commits.json', './commits.json'];
-    let data = null;
-    
-    for (const path of possiblePaths) {
-      try {
-        console.log(`Trying to fetch from: ${path}`);
-        const response = await fetch(path);
-        if (response.ok) {
-          data = await response.json();
-          console.log(`Successfully loaded data from ${path}:`, data);
-          break;
-        }
-      } catch (e) {
-        console.log(`Failed to fetch from ${path}:`, e);
-      }
-    }
-    
-    if (data && data.length > 0) {
-      commits.value = [...data, ...data];
-      console.log('Updated with real data:', commits.value.length);
-    } else {
-      console.log('Using default data');
-    }
-  } catch (error) {
-    console.error('Failed to load commit history:', error);
-  }
+  console.log('CommitHistory component mounted - using static data only');
+  // Temporarily disable API calls to test if they're causing layout issues
+  // try {
+  //   // 尝试获取最新数据
+  //   const possiblePaths = ['/commits.json', '../commits.json', './commits.json'];
+  //   let data = null;
+  //   
+  //   for (const path of possiblePaths) {
+  //     try {
+  //       console.log(`Trying to fetch from: ${path}`);
+  //       const response = await fetch(path);
+  //       if (response.ok) {
+  //         data = await response.json();
+  //         console.log(`Successfully loaded data from ${path}:`, data);
+  //         break;
+  //       }
+  //     } catch (e) {
+  //       console.log(`Failed to fetch from ${path}:`, e);
+  //     }
+  //   }
+  //   
+  //   if (data && data.length > 0) {
+  //     commits.value = [...data, ...data];
+  //     console.log('Updated with real data:', commits.value.length);
+  //   } else {
+  //     console.log('Using default data');
+  //   }
+  // } catch (error) {
+  //   console.error('Failed to load commit history:', error);
+  // }
 });
 </script>
 
