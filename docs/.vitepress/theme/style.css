@@ -1,0 +1,210 @@
+/* 优化首页卡片样式 */
+
+/* Hero 区域优化 */
+.VPHero .name, .VPHero .text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.VPHero .tagline {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* 功能卡片优化 */
+.VPFeatures {
+  padding: 2rem 0;
+}
+
+.VPFeature {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 16px;
+  padding: 2rem;
+  height: auto;
+  min-height: 180px;
+  transition: all 0.3s ease;
+  background: var(--vp-c-bg-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.VPFeature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  border-color: var(--vp-c-brand-1);
+}
+
+.VPFeature:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  opacity: 1;
+}
+
+.VPFeature .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.VPFeature .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--vp-c-text-1);
+  text-align: center;
+}
+
+.VPFeature .details {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* 添加卡片底部链接样式 */
+.VPFeature .link-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.VPFeature:hover .link-text {
+  opacity: 1;
+}
+
+/* 优势介绍区域 */
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.advantages p {
+  background: var(--vp-c-bg-soft);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--vp-c-brand-1);
+  margin: 0;
+}
+
+/* 平台数据展示 */
+.platform-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.platform-stats p {
+  background: linear-gradient(135deg, var(--vp-c-brand-soft), var(--vp-c-bg-soft));
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 0;
+  border: 1px solid var(--vp-c-border);
+}
+
+/* 关键词标签优化 */
+.keyword-tags {
+  margin: 2rem 0;
+}
+
+.keyword-tags code {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--vp-c-brand-1);
+  transition: all 0.2s ease;
+}
+
+.keyword-tags code:hover {
+  background: var(--vp-c-brand-1);
+  color: var(--vp-c-white);
+  transform: scale(1.05);
+}
+
+/* 页脚信息优化 */
+.footer-info {
+  background: var(--vp-c-bg-alt);
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+  text-align: center;
+  border: 1px solid var(--vp-c-border);
+}
+
+.footer-info p {
+  margin: 0.5rem 0;
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+  .VPFeature {
+    min-height: 150px;
+    padding: 1.5rem;
+  }
+  
+  .VPFeature .icon {
+    font-size: 2.5rem;
+  }
+  
+  .VPFeature .title {
+    font-size: 1.1rem;
+  }
+  
+  .VPFeature .details {
+    font-size: 0.9rem;
+  }
+  
+  .advantages {
+    grid-template-columns: 1fr;
+  }
+  
+  .platform-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 暗黑模式适配 */
+.dark .VPFeature {
+  background: var(--vp-c-bg-elv);
+  border-color: var(--vp-c-divider);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* 添加渐变边框效果 */
+.VPFeature {
+  background: linear-gradient(var(--vp-c-bg-soft), var(--vp-c-bg-soft)) padding-box,
+              linear-gradient(135deg, transparent, var(--vp-c-brand-soft)) border-box;
+}
+
+.dark .VPFeature {
+  background: linear-gradient(var(--vp-c-bg-elv), var(--vp-c-bg-elv)) padding-box,
+              linear-gradient(135deg, transparent, var(--vp-c-brand-soft)) border-box;
+}
