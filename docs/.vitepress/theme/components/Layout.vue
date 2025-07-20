@@ -136,10 +136,10 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .items {
-  gap: 18px;
-  /* Use auto-fit grid like advantages section */
+  gap: 16px;
+  /* Use auto-fit grid with optimized sizing */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 /* Remove specific responsive rules as auto-fit handles it automatically */
@@ -165,6 +165,7 @@ const { frontmatter } = useData()
   height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 180px;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
@@ -214,7 +215,8 @@ const { frontmatter } = useData()
   }
   
   .VPHome .VPHomeFeatures .item .VPFeature .box {
-    padding: 24px 20px;
+    padding: 20px;
+    min-height: 160px;
   }
 }
 
