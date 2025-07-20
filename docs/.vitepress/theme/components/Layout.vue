@@ -142,13 +142,12 @@ const { frontmatter } = useData()
 }
 
 .VPHome .VPHomeFeatures .items {
-  /* 固定卡片尺寸的网格布局优化 */
+  /* 动态响应式网格布局 */
   display: grid;
-  grid-template-columns: repeat(auto-fill, 321.33px);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   justify-content: center;
   align-items: start;
-  /* 为了解决小屏幕问题，在容器宽度不够时自动调整 */
   width: 100%;
   box-sizing: border-box;
 }
@@ -159,13 +158,13 @@ const { frontmatter } = useData()
   background: linear-gradient(135deg, var(--vp-c-bg) 0%, var(--vp-c-bg-soft) 100%);
   border: 1px solid var(--vp-c-divider-light);
   border-radius: 14px;
-  padding: 0;
+  padding: 24px;
   transition: all 0.3s ease;
   position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  /* 设置外层容器高度匹配内部box：201.63px + 2px边框 = 203.63px */
-  height: 203.63px;
-  width: 321.33px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
 }
 
 .VPHome .VPHomeFeatures .item .VPFeature:hover {
@@ -174,29 +173,7 @@ const { frontmatter } = useData()
   border-color: var(--vp-c-brand-2);
 }
 
-.VPHome .VPHomeFeatures .item .VPFeature .box {
-  /* 固定box尺寸：321.33 x 201.63px (截图显示的精确尺寸) */
-  width: 321.33px;
-  height: 201.63px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /* 确保box不会被拉伸或压缩 */
-  flex-shrink: 0;
-  flex-grow: 0;
-  box-sizing: border-box;
-}
-
-/* data-v-a6181336宽高设置为和article.box相同的固定尺寸 */
-[data-v-a6181336] {
-  width: 321.33px !important;
-  height: 201.63px !important;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.VPHome .VPHomeFeatures .item .VPFeature .box .icon {
+.VPHome .VPHomeFeatures .item .VPFeature .icon {
   font-size: 2.8rem;
   margin-bottom: 16px;
   display: flex;
@@ -204,36 +181,53 @@ const { frontmatter } = useData()
   justify-content: flex-start;
   color: var(--vp-c-brand-1);
   flex-shrink: 0;
-  height: 48px;
   line-height: 1;
 }
 
-.VPHome .VPHomeFeatures .item .VPFeature .box .title {
+.VPHome .VPHomeFeatures .item .VPFeature .title {
   color: var(--vp-c-brand-1);
   font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   line-height: 1.3;
   flex-shrink: 0;
-  height: 36px;
-  display: flex;
-  align-items: center;
 }
 
-.VPHome .VPHomeFeatures .item .VPFeature .box .details {
+.VPHome .VPHomeFeatures .item .VPFeature .details {
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--vp-c-text-2);
   flex-grow: 1;
-  padding-top: 2px;
+  margin-bottom: 12px;
+}
+
+.VPHome .VPHomeFeatures .item .VPFeature .link {
+  color: var(--vp-c-brand-1);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s ease;
+}
+
+.VPHome .VPHomeFeatures .item .VPFeature .link:hover {
+  color: var(--vp-c-brand-2);
+  transform: translateX(2px);
+}
+
+/* VitePress生成的data属性样式 */
+[data-v-f5090ebe] {
+  width: 100% !important;
+  box-sizing: border-box;
 }
 
 /* 核心类别卡片增强样式 - 前4个 */
 .VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature {
   border: 2px solid var(--vp-c-brand-soft);
   background: linear-gradient(135deg, var(--vp-c-bg) 0%, var(--vp-c-brand-soft) 100%);
-  /* 前4个卡片2px边框，高度需要额外+2px：201.63 + 4px = 205.63px */
-  height: 205.63px;
 }
 
 .VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature:hover {
@@ -241,10 +235,9 @@ const { frontmatter } = useData()
   box-shadow: 0 15px 35px rgba(52, 81, 178, 0.15);
 }
 
-.VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature .box .icon {
+.VPHome .VPHomeFeatures .items .item:nth-child(-n+4) .VPFeature .icon {
   color: var(--vp-c-brand-1);
   font-size: 3rem;
-  height: 52px;
 }
 
 /* 特色类别卡片样式 - 第5-8个 */
@@ -267,17 +260,16 @@ const { frontmatter } = useData()
   border-color: var(--vp-c-divider);
 }
 
-/* 小屏幕专用布局 - 保持box固定尺寸但确保布局稳定 */
+/* 小屏幕专用布局 - 动态响应式 */
 @media (max-width: 640px) {
   .VPHome .VPHomeFeatures .container {
     padding: 0 16px;
   }
   
   .VPHome .VPHomeFeatures .items {
-    /* 保持固定321.33px宽度，单列显示 */
-    grid-template-columns: 321.33px;
-    justify-content: center;
-    /* 如果屏幕太窄，卡片居中显示 */
+    /* 小屏幕使用更小的最小宽度，单列显示 */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
   }
 }
 
@@ -303,20 +295,12 @@ const { frontmatter } = useData()
     padding: 0 20px 48px;
   }
   
-  /* box尺寸已在全局固定，这里只调整padding */
-  
-  .VPHome .VPHomeFeatures .item .VPFeature .box .icon {
+  .VPHome .VPHomeFeatures .item .VPFeature .icon {
     font-size: 2.5rem;
-    height: 40px;
   }
   
-  .VPHome .VPHomeFeatures .item .VPFeature .box .title {
+  .VPHome .VPHomeFeatures .item .VPFeature .title {
     font-size: 1.2rem;
-    height: 32px;
-  }
-  
-  .VPHome .VPHomeFeatures .item .VPFeature .box .details {
-    /* 移除固定高度，让内容自然撑开 */
   }
 }
 
