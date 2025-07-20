@@ -137,9 +137,9 @@ const { frontmatter } = useData()
 
 .VPHome .VPHomeFeatures .items {
   gap: 20px;
-  /* 智能网格布局：固定卡片尺寸，自动适应行数 */
+  /* 响应式网格布局：确保大屏幕卡片不会比小屏幕更窄 */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
   max-width: 1400px;
   margin: 0 auto;
   /* 自动调整行高以适应内容 */
@@ -247,8 +247,16 @@ const { frontmatter } = useData()
   border-color: var(--vp-c-divider);
 }
 
-/* Responsive adjustments - cards already use single column layout */
+/* 小屏幕专用布局 - 避免卡片过宽 */
+@media (max-width: 640px) {
+  .VPHome .VPHomeFeatures .items {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
 
+/* 中等屏幕响应式调整 */
 @media (max-width: 768px) {
   .VPHome .VPHomeHero {
     padding: 60px 20px 48px !important;
