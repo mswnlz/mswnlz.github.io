@@ -205,7 +205,7 @@ h2::after {
   margin: 0;
   position: absolute;
   width: 100%;
-  animation: scroll-up 30s linear infinite;
+  animation: scroll-up 20s linear infinite;
 }
 
 .scroller:hover ul {

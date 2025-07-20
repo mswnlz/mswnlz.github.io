@@ -8,7 +8,7 @@
 ### 解决方案
 
 #### 方法一：手动触发（推荐）
-1. 访问：https://github.com/mswnlz/mswnlz.github.io/actions
+1. 访问：https://github.com/mswnlz/mswnlz.github.io/actions （注意：对外访问请使用 https://doc.869hr.uk）
 2. 点击左侧的 "Deploy VitePress site to GitHub Pages"
 3. 点击右侧的 "Run workflow" → "Run workflow"
 4. 等待 3-5 分钟，网站会自动获取最新 commit 信息并重新部署

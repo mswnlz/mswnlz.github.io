@@ -22,7 +22,7 @@ Allow: /auto/
 Allow: /movie-recommendations/
 
 # Sitemap
-Sitemap: https://mswnlz.github.io/sitemap.xml
+Sitemap: https://doc.869hr.uk/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
