@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import Layout from './components/Layout.vue'
 import CommitHistory from './components/CommitHistory.vue'
 import VPFooter from './components/VPFooter.vue'
+import './style.css'
 
 export default {
   ...DefaultTheme,

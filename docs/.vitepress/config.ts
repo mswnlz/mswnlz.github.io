@@ -21,10 +21,17 @@ function getSidebarItems(dir: string) {
 export default defineConfig({
   base: '/',
   title: "超过 100T 的资源",
+  titleTemplate: ":title - 大坝的资源收集站 | 免费资源下载",
+  lang: 'zh-CN',
+  lastUpdated: true,
+  cleanUrls: true,
+  sitemap: {
+    hostname: 'https://doc.869hr.uk'
+  },
   vite: {
     assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
   },
-  description: "A collection of resources from mswnlz's GitHub repositories, including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.",
+  description: "超过100T免费资源下载站，包含AI知识、书籍资料、跨境电商、自媒体、教育、健康、影视、工具等海量资源，持续更新中",
   head: [
     // 基础网站图标配置
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -60,13 +67,49 @@ export default defineConfig({
     ['meta', { property: 'og:image', content: '/og-image.png' }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
-    ['meta', { property: 'og:url', content: 'https://mswnlz.github.io' }],
+    ['meta', { property: 'og:url', content: 'https://doc.869hr.uk' }],
     
     // Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: '大坝的资源收集站 | 超过 100T+ 资源' }],
     ['meta', { name: 'twitter:description', content: 'A collection of resources including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.' }],
     ['meta', { name: 'twitter:image', content: '/og-image.png' }],
+    
+    // SEO 关键字和其他元标签
+    ['meta', { name: 'keywords', content: '免费资源下载,AI知识,书籍资料,跨境电商,自媒体,教育资源,健康养生,影视资源,工具软件,100T资源,网盘资源,夸克网盘,阿里网盘' }],
+    ['meta', { name: 'author', content: '大坝的资源收集站' }],
+    ['meta', { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' }],
+    ['meta', { name: 'revisit-after', content: '1 days' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['meta', { property: 'og:site_name', content: '大坝的资源收集站' }],
+    
+    // 结构化数据 (JSON-LD)
+    [
+      'script',
+      { type: 'application/ld+json' },
+      JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: '大坝的资源收集站',
+        description: '超过100T免费资源下载站，包含AI知识、书籍资料、跨境电商、自媒体、教育、健康、影视、工具等海量资源',
+        url: 'https://doc.869hr.uk',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: 'https://doc.869hr.uk/?q={search_term_string}',
+          'query-input': 'required name=search_term_string'
+        },
+        author: {
+          '@type': 'Organization',
+          name: '大坝的资源收集站',
+          url: 'https://doc.869hr.uk'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: '大坝的资源收集站',
+          url: 'https://doc.869hr.uk'
+        }
+      })
+    ],
     
     [
       'meta',

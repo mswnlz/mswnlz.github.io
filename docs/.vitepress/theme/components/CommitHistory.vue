@@ -74,36 +74,36 @@ const formatDate = (dateString) => {
 };
 
 onMounted(async () => {
-  console.log('CommitHistory component mounted');
-  
-  try {
-    // 尝试获取最新数据
-    const possiblePaths = ['/commits.json', '../commits.json', './commits.json'];
-    let data = null;
-    
-    for (const path of possiblePaths) {
-      try {
-        console.log(`Trying to fetch from: ${path}`);
-        const response = await fetch(path);
-        if (response.ok) {
-          data = await response.json();
-          console.log(`Successfully loaded data from ${path}:`, data);
-          break;
-        }
-      } catch (e) {
-        console.log(`Failed to fetch from ${path}:`, e);
-      }
-    }
-    
-    if (data && data.length > 0) {
-      commits.value = [...data, ...data];
-      console.log('Updated with real data:', commits.value.length);
-    } else {
-      console.log('Using default data');
-    }
-  } catch (error) {
-    console.error('Failed to load commit history:', error);
-  }
+  console.log('CommitHistory component mounted - using static data only');
+  // Temporarily disable API calls to test if they're causing layout issues
+  // try {
+  //   // 尝试获取最新数据
+  //   const possiblePaths = ['/commits.json', '../commits.json', './commits.json'];
+  //   let data = null;
+  //   
+  //   for (const path of possiblePaths) {
+  //     try {
+  //       console.log(`Trying to fetch from: ${path}`);
+  //       const response = await fetch(path);
+  //       if (response.ok) {
+  //         data = await response.json();
+  //         console.log(`Successfully loaded data from ${path}:`, data);
+  //         break;
+  //       }
+  //     } catch (e) {
+  //       console.log(`Failed to fetch from ${path}:`, e);
+  //     }
+  //   }
+  //   
+  //   if (data && data.length > 0) {
+  //     commits.value = [...data, ...data];
+  //     console.log('Updated with real data:', commits.value.length);
+  //   } else {
+  //     console.log('Using default data');
+  //   }
+  // } catch (error) {
+  //   console.error('Failed to load commit history:', error);
+  // }
 });
 </script>
 
@@ -119,19 +119,47 @@ onMounted(async () => {
 }
 
 .commit-history-container {
-  margin-top: 16px;
+  margin-top: 32px;
   margin-bottom: 48px;
-  padding: 20px 24px;
-  border-radius: 8px;
-  background-color: var(--vp-c-bg-soft);
+  padding: 32px 28px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--vp-c-bg-soft) 0%, var(--vp-c-bg-alt) 100%);
+  border: 1px solid var(--vp-c-divider-light);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.commit-history-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3451b2, #5672cd, #3a5ccc);
+  border-radius: 20px 20px 0 0;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  font-weight: 600;
+  margin-bottom: 28px;
+  font-size: 1.75rem;
+  font-weight: 700;
   color: var(--vp-c-text-1);
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-3));
+  border-radius: 2px;
 }
 
 .loading-message {
@@ -142,9 +170,33 @@ h2 {
 }
 
 .scroller {
-  height: 150px;
+  height: 200px;
   overflow: hidden;
   position: relative;
+  border-radius: 12px;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+}
+
+.scroller::before,
+.scroller::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 30px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.scroller::before {
+  top: 0;
+  background: linear-gradient(to bottom, var(--vp-c-bg), transparent);
+}
+
+.scroller::after {
+  bottom: 0;
+  background: linear-gradient(to top, var(--vp-c-bg), transparent);
 }
 
 .scroller ul {
@@ -153,37 +205,76 @@ h2 {
   margin: 0;
   position: absolute;
   width: 100%;
-  animation: scroll-up 40s linear infinite;
+  animation: scroll-up 20s linear infinite;
+}
+
+.scroller:hover ul {
+  animation-play-state: paused;
 }
 
 .scroller li {
-  border-bottom: 1px solid var(--vp-c-divider);
+  border-bottom: 1px solid var(--vp-c-divider-light);
+  transition: all 0.3s ease;
+}
+
+.scroller li:hover {
+  background-color: var(--vp-c-bg-soft);
+  transform: scale(1.01);
 }
 
 .commit-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 16px 20px;
   color: inherit;
   text-decoration: none;
-  transition: background-color 0.25s;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.commit-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--vp-c-brand-1);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.commit-link:hover::before {
+  opacity: 1;
 }
 
 .commit-link:hover {
   background-color: var(--vp-c-bg-soft-up);
+  padding-left: 24px;
 }
 
 .repo-name {
   font-weight: 600;
   width: 120px;
-  text-align: left;
+  text-align: center;
+  color: var(--vp-c-brand-1);
+  font-size: 0.9rem;
+  background: var(--vp-c-brand-soft);
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-brand-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .commit-date {
   width: 150px;
   text-align: center;
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-3);
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .commit-message {
@@ -193,14 +284,58 @@ h2 {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-left: 20px;
+  color: var(--vp-c-text-1);
+  font-weight: 500;
 }
 
 @keyframes scroll-up {
-  from {
+  0% {
     transform: translateY(0);
   }
-  to {
+  100% {
     transform: translateY(-50%);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .commit-history-container {
+    padding: 24px 16px;
+    margin-top: 24px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .scroller {
+    height: 160px;
+  }
+  
+  .commit-link {
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .repo-name {
+    width: auto;
+  }
+  
+  .commit-date {
+    width: auto;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  
+  .commit-message {
+    padding-left: 0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+    line-height: 1.4;
   }
 }
 </style>

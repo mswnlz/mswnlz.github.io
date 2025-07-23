@@ -1,5 +1,20 @@
-# AIknowledge
-AI相关知识，提示词，教程，视频教程，变现课程等资料，持续更新中
+---
+title: AI知识资源下载 - 人工智能学习教程大全
+description: 免费提供AI知识资源下载，包含人工智能学习教程、提示词工程、AI工具使用指南、机器学习视频课程等优质资源，持续更新中
+keywords: AI知识,人工智能教程,提示词工程,机器学习,深度学习,AI工具,ChatGPT教程,免费AI资源
+---
+
+# 🤖 AI知识资源下载 - 人工智能学习教程大全
+
+✨ **免费提供最新AI知识资源下载**，包含人工智能学习教程、提示词工程、AI工具使用指南、机器学习视频课程等优质资源，持续更新中。
+
+## 📊 热门AI知识分类
+
+- 🤖 **ChatGPT与大语言模型** - GPT使用技巧、提示词工程
+- 🎨 **AI绘画与创作** - Midjourney、Stable Diffusion教程
+- 📊 **机器学习基础** - Python、TensorFlow、PyTorch
+- 🔍 **深度学习实战** - 神经网络、计算机视觉
+- 💼 **AI商业应用** - AI创业、变现模式
 
 
 [English](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=en) | [简体中文](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=zh-CN) | [繁體中文](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=zh-TW) | [日本語](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=ja) | [한국어](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=ko) | [हिन्दी](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=hi) | [ไทย](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=th) | [Français](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=fr) | [Deutsch](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=de) | [Español](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=es) | [Italiano](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=it) | [Русский](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=ru) | [Português](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=pt) | [Nederlands](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=nl) | [Polski](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=pl) | [العربية](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=ar) | [فارسی](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=fa) | [Türkçe](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=tr) | [Tiếng Việt](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=vi) | [Bahasa Indonesia](https://openaitx.github.io/view.html?user=mswnlz&project=AIknowledge&lang=id)

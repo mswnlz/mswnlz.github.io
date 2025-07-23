@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+
+# 禁止爬取的目录
+Disallow: /node_modules/
+Disallow: /.vitepress/
+Disallow: /.git/
+Disallow: /assets/chunks/
+
+# 允许爬取的重要页面
+Allow: /AIknowledge/
+Allow: /book/
+Allow: /cross-border/
+Allow: /self-media/
+Allow: /edu-knowlege/
+Allow: /curriculum/
+Allow: /healthy/
+Allow: /movies/
+Allow: /tools/
+Allow: /chinese-traditional/
+Allow: /auto/
+Allow: /movie-recommendations/
+
+# Sitemap
+Sitemap: https://mswnlz.github.io/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# 热门搜索引擎特定设置
+User-agent: Googlebot
+Crawl-delay: 0
+
+User-agent: Baiduspider
+Crawl-delay: 1
+
+User-agent: Bingbot
+Crawl-delay: 1
