@@ -208,3 +208,14 @@
   background: linear-gradient(var(--vp-c-bg-elv), var(--vp-c-bg-elv)) padding-box,
               linear-gradient(135deg, transparent, var(--vp-c-brand-soft)) border-box;
 }
+
+/* Support button styles */
+.support-button {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+stripe-buy-button {
+  display: inline-block;
+  margin: 0 auto;
+}
