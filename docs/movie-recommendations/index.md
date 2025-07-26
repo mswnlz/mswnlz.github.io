@@ -20,6 +20,7 @@
 对于 Android TV 或智能电视用户，可以使用 **OrionTV** 应用：
 
 1. **下载安装 OrionTV**
+   - **下载地址：** [https://pan.quark.cn/s/bed414389f3a](https://pan.quark.cn/s/bed414389f3a)
    - 支持 Android TV、手机等设备
    - 可在桌面生成应用图标
 
