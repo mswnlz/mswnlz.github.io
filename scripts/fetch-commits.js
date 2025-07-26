@@ -108,6 +108,14 @@ async function main() {
   const outputPath = resolve(process.cwd(), 'docs/public/commits.json');
   writeFileSync(outputPath, JSON.stringify(commitData, null, 2));
   console.log(`Successfully wrote commit data to ${outputPath}`);
+  
+  // 同时生成更新时间文件
+  const updateTime = {
+    time: new Date().toISOString()
+  };
+  const timeOutputPath = resolve(process.cwd(), 'docs/public/update-time.json');
+  writeFileSync(timeOutputPath, JSON.stringify(updateTime, null, 2));
+  console.log(`Successfully wrote update time to ${timeOutputPath}`);
 
   // The main output path is sufficient for the build process
   console.log(`Commit data ready for build process`);

@@ -1,23 +1,68 @@
 [
-{"repo": "AIknowledge", "message": "删除不必要的 .DS_Store 文件"}
-,
-{"repo": "auto", "message": "Update README.md"}
-,
-{"repo": "book", "message": "Sync changes for 202507.md and README.md"}
-,
-{"repo": "chinese-traditional", "message": "Create 202505.md"}
-,
-{"repo": "cross-border", "message": "No recent commits or repository is empty."}
-,
-{"repo": "curriculum", "message": "No recent commits or repository is empty."}
-,
-{"repo": "edu-knowlege", "message": "No recent commits or repository is empty."}
-,
-{"repo": "healthy", "message": "No recent commits or repository is empty."}
-,
-{"repo": "movies", "message": "No recent commits or repository is empty."}
-,
-{"repo": "self-media", "message": "No recent commits or repository is empty."}
-,
-{"repo": "tools", "message": "No recent commits or repository is empty."}
+  {
+    "repo": "AIknowledge",
+    "message": "优化通知格式，添加网站链接",
+    "date": "2025-07-13T13:00:03Z",
+    "url": "/AIknowledge/"
+  },
+  {
+    "repo": "auto",
+    "message": "Update README.md",
+    "date": "2025-07-20T11:17:31Z",
+    "url": "/auto/"
+  },
+  {
+    "repo": "book",
+    "message": "增加 300本商业经典书籍",
+    "date": "2025-07-26T12:32:17Z",
+    "url": "/book/202507"
+  },
+  {
+    "repo": "chinese-traditional",
+    "message": "添加 .gitignore 排除 .DS_Store 文件，清理已跟踪的 .DS_Store 文件",
+    "date": "2025-07-13T12:58:34Z",
+    "url": "/chinese-traditional/"
+  },
+  {
+    "repo": "cross-border",
+    "message": "优化通知格式，添加网站链接",
+    "date": "2025-07-13T13:00:09Z",
+    "url": "/cross-border/"
+  },
+  {
+    "repo": "curriculum",
+    "message": "增加 零基础学习奇门遁甲从入门到精通",
+    "date": "2025-07-26T12:33:57Z",
+    "url": "/curriculum/202507"
+  },
+  {
+    "repo": "edu-knowlege",
+    "message": "增加 Android 疯狂刷题",
+    "date": "2025-07-26T12:33:32Z",
+    "url": "/edu-knowlege/202507"
+  },
+  {
+    "repo": "healthy",
+    "message": "清理剩余的 .DS_Store 文件",
+    "date": "2025-07-13T12:59:42Z",
+    "url": "/healthy/"
+  },
+  {
+    "repo": "movies",
+    "message": "增加迪士尼系列动画139部 蓝光珍藏版",
+    "date": "2025-07-19T08:45:42Z",
+    "url": "/movies/202507"
+  },
+  {
+    "repo": "self-media",
+    "message": "优化通知格式，添加网站链接",
+    "date": "2025-07-13T13:00:14Z",
+    "url": "/self-media/"
+  },
+  {
+    "repo": "tools",
+    "message": "增加 Android 抖音海外版 TikTok",
+    "date": "2025-07-26T12:32:56Z",
+    "url": "/tools/202507"
+  }
 ]

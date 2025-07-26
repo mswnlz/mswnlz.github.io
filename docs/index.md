@@ -170,6 +170,6 @@ QQ群 1041415822
 
 📧 **联系方式**: mswnlz@gmail.com | QQ群: [1041415822](https://qm.qq.com/q/59EWTaGqfu)
 
-🕐 *最后更新时间：2025年7月*
+<UpdateTime />
 
 </div>
