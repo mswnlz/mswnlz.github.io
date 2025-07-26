@@ -14,7 +14,7 @@
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
 
-### 💎 **探索终极资源宝库 - Doc.869hr**
+### 💎 **探索终极资源宝库,超过 100T,持续整理中- [doc.869hr.uk](https://doc.869hr.uk)**
 
 **🌟 不止于影视，更是你的数字生活全能助手！**
 
