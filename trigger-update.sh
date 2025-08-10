@@ -1,8 +1,29 @@
 #!/bin/bash
 
 # 脚本：触发网站更新
+# 功能：
+# 1. 自动同步ResourceTabs配置（检测新的年月文件）
+# 2. 触发网站重新构建
 # 用法：当资源仓库更新后，运行此脚本来触发网站重新构建
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+echo "🚀 开始网站更新流程..."
+echo ""
+
+# 步骤1：自动同步ResourceTabs配置
+echo "📋 第1步：检查并同步ResourceTabs配置"
+echo "----------------------------------------"
+if [ -f "$SCRIPT_DIR/scripts/sync-tabs.sh" ]; then
+    # 运行Tab同步脚本（静默模式，自动提交）
+    bash "$SCRIPT_DIR/scripts/sync-tabs.sh" --auto
+else
+    echo "⚠️  Tab同步脚本不存在，跳过Tab配置检查"
+fi
+
+echo ""
+echo "🌐 第2步：触发网站重新构建"
+echo "----------------------------------------"
 echo "正在触发网站更新..."
 
 # 方法1：使用GitHub CLI触发workflow（需要先安装gh cli并登录）
