@@ -121,7 +121,8 @@ export default {
       tabs[tabId].error = null
 
       try {
-        const response = await fetch(`/${props.category}/${tabId}.md`)
+        // 使用相对路径访问同目录下的markdown文件
+        const response = await fetch(`./${tabId}.md`)
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}: ${response.statusText}`)
         }
