@@ -721,6 +721,10 @@ const parseResourceLine = (line) => {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  word-break: break-all;
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .markdown-content a:hover {
