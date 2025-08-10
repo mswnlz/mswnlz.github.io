@@ -91,7 +91,8 @@ for REPO in "${CONTENT_REPOS[@]}"; do
   for md_file in "$TARGET_REPO_PATH"/*.md; do
     if [ -f "$md_file" ]; then
       # Use sed with extended regex (-E) for more reliable matching
-      sed -E "s#src=\"([^\"]+\.(png|jpg|jpeg|gif|svg))\"#src=\"/$REPO/\1\"#g" "$md_file" > "$md_file.tmp" && \
+      # Only modify relative paths that don't already start with /
+      sed -E "s#src=\"([^/][^\"]+\.(png|jpg|jpeg|gif|svg))\"#src=\"/$REPO/\1\"#g" "$md_file" > "$md_file.tmp" && \
       mv "$md_file.tmp" "$md_file"
       echo "  - Modified image paths in $(basename "$md_file")"
     fi
