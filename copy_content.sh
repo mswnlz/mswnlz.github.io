@@ -55,9 +55,14 @@ for REPO in "${CONTENT_REPOS[@]}"; do
   mkdir -p "$TARGET_PUBLIC_REPO_PATH"
 
   # Copy README.md to index.md in the target directory (full content)
+  # But preserve existing index.md files that use ResourceTabs component
   if [ -f "$SOURCE_REPO_PATH/README.md" ]; then
-    cp "$SOURCE_REPO_PATH/README.md" "$TARGET_REPO_PATH/index.md"
-    echo "  - Copied README.md to $REPO/index.md"
+    if [ -f "$TARGET_REPO_PATH/index.md" ] && grep -q "ResourceTabs" "$TARGET_REPO_PATH/index.md"; then
+      echo "  - Skipping $REPO/index.md (uses ResourceTabs component)"
+    else
+      cp "$SOURCE_REPO_PATH/README.md" "$TARGET_REPO_PATH/index.md"
+      echo "  - Copied README.md to $REPO/index.md"
+    fi
   else
     echo "  - Warning: README.md not found in $REPO"
   fi
