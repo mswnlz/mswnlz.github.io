@@ -176,26 +176,25 @@ export default {
         // 水平线
         .replace(/^---+$/gm, '<hr>')
       
-      // 处理各种URL格式，使其变为可点击链接
+      // 先处理换行，防止URL跨行处理问题
       html = html
-        // 处理 "链接：URL" 格式
-        .replace(/链接[：:]\s*(https?:\/\/[^\s<]+)/g, '链接：<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
-        // 处理纯URL（不在链接标签内的）
-        .replace(/(^|\s|>)(https?:\/\/[^\s<>"]+)($|\s|<)/g, '$1<a href="$2" target="_blank" rel="noopener noreferrer">$2</a>$3')
-        // 处理换行
         .replace(/\n\n/g, '</p><p>')
         .replace(/\n/g, '<br>')
       
+      // 处理各种URL格式，使其变为可点击链接
+      html = html
+        // 处理 "链接：URL" 格式 - 确保链接文本显示完整URL
+        .replace(/链接[：:]\s*(https?:\/\/[^\s<br>]+)/g, '链接：<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
+        // 处理纯URL（不在链接标签内的）- 避免重复处理已经在a标签内的URL
+        .replace(/(^|\s|>|<br>)(https?:\/\/[^\s<>"]+)(?!.*<\/a>)($|\s|<br>|<)/g, '$1<a href="$2" target="_blank" rel="noopener noreferrer">$2</a>$3')
+      
       // 包装段落
       html = '<p>' + html + '</p>'
-      // 清理空段落和重复标签
+      // 清理空段落和标签重叠问题
       html = html.replace(/<p><\/p>/g, '')
       html = html.replace(/<p><h([1-6])>/g, '<h$1>')
       html = html.replace(/<\/h([1-6])><\/p>/g, '</h$1>')
       html = html.replace(/<p><hr><\/p>/g, '<hr>')
-      // 清理可能产生的重复链接
-      html = html.replace(/<a[^>]*><a[^>]*>/g, '<a')
-      html = html.replace(/<\/a><\/a>/g, '</a>')
       
       return html
     }
