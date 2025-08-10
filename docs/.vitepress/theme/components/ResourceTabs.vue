@@ -176,17 +176,13 @@ export default {
         // 水平线
         .replace(/^---+$/gm, '<hr>')
       
-      // 先处理换行，防止URL跨行处理问题
+      // 先处理换行
       html = html
         .replace(/\n\n/g, '</p><p>')
         .replace(/\n/g, '<br>')
       
-      // 处理各种URL格式，使其变为可点击链接
-      html = html
-        // 处理 "链接：URL" 格式 - 确保链接文本显示完整URL
-        .replace(/链接[：:]\s*(https?:\/\/[^\s<br>]+)/g, '链接：<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
-        // 处理纯URL（不在链接标签内的）- 避免重复处理已经在a标签内的URL
-        .replace(/(^|\s|>|<br>)(https?:\/\/[^\s<>"]+)(?!.*<\/a>)($|\s|<br>|<)/g, '$1<a href="$2" target="_blank" rel="noopener noreferrer">$2</a>$3')
+      // 优化的URL处理逻辑 - 分步骤处理，避免截断
+      html = processUrlsInHtml(html)
       
       // 包装段落
       html = '<p>' + html + '</p>'
@@ -195,6 +191,27 @@ export default {
       html = html.replace(/<p><h([1-6])>/g, '<h$1>')
       html = html.replace(/<\/h([1-6])><\/p>/g, '</h$1>')
       html = html.replace(/<p><hr><\/p>/g, '<hr>')
+      
+      return html
+    }
+
+    // 专门的URL处理函数
+    const processUrlsInHtml = (html) => {
+      // 第一步：处理 "链接：URL" 格式
+      html = html.replace(/链接[：:]\s*(https?:\/\/[^\s<>]+)/g, (match, url) => {
+        // 确保URL完整，去掉可能的HTML标签干扰
+        const cleanUrl = url.replace(/<\/?[^>]+(>|$)/g, '')
+        return `链接：<a href="${cleanUrl}" target="_blank" rel="noopener noreferrer" class="full-url-link">${cleanUrl}</a>`
+      })
+      
+      // 第二步：处理独立的URL（不在a标签内的）
+      // 使用更精确的正则，避免匹配已经在链接内的URL
+      const urlRegex = /(^|[^"']|\s|<br>|>)(https?:\/\/[^\s<>"']+)(?![^<]*<\/a>)/g
+      html = html.replace(urlRegex, (match, prefix, url) => {
+        // 清理URL，移除可能的HTML标签
+        const cleanUrl = url.replace(/<\/?[^>]+(>|$)/g, '')
+        return `${prefix}<a href="${cleanUrl}" target="_blank" rel="noopener noreferrer" class="full-url-link">${cleanUrl}</a>`
+      })
       
       return html
     }
@@ -759,5 +776,27 @@ const parseResourceLine = (line) => {
 
 .dark .markdown-content {
   background: var(--vp-c-bg-elv);
+}
+
+/* 完整URL链接的特殊样式 */
+.markdown-content .full-url-link {
+  word-break: break-all !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+  display: inline !important;
+  max-width: none !important;
+  /* 确保长URL可以正确换行和显示 */
+  hyphens: auto;
+  line-break: anywhere;
+}
+
+.markdown-content .full-url-link:before {
+  content: "";
+  /* 防止URL被CSS截断 */
+}
+
+.markdown-content .full-url-link:after {
+  content: "";
+  /* 防止URL被CSS截断 */
 }
 </style>

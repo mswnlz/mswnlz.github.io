@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL处理测试</title>
+    <style>
+        .test-result { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+        .original { background: #f0f0f0; }
+        .processed { background: #e0ffe0; }
+    </style>
+</head>
+<body>
+    <h1>URL处理测试</h1>
+    
+    <div class="test-result">
+        <h3>测试用例1: 链接：URL格式</h3>
+        <div class="original">原始文本：链接：https://pan.quark.cn/s/8ef4ae227b84</div>
+        <div class="processed" id="test1"></div>
+    </div>
+    
+    <div class="test-result">
+        <h3>测试用例2: 纯URL格式</h3>
+        <div class="original">原始文本：https://pan.quark.cn/s/9146a3fe87cb</div>
+        <div class="processed" id="test2"></div>
+    </div>
+    
+    <div class="test-result">
+        <h3>测试用例3: 多行混合格式</h3>
+        <div class="original">原始文本：<br>### 「让你比同龄人年轻10岁的表情管理课」<br>链接：https://pan.quark.cn/s/8ef4ae227b84<br><br>### 郎咸平世界经济学36集<br>https://pan.quark.cn/s/9146a3fe87cb</div>
+        <div class="processed" id="test3"></div>
+    </div>
+
+    <script>
+        // 复制ResourceTabs组件中的渲染函数
+        const renderMarkdownToHtml = (markdown) => {
+            let html = markdown
+                // 标题
+                .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+                .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+                .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+                // 加粗
+                .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                // 斜体
+                .replace(/\*(.+?)\*/g, '<em>$1</em>')
+                // 链接 - markdown格式 [text](url)
+                .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+                // 行内代码
+                .replace(/`([^`]+)`/g, '<code>$1</code>')
+                // 水平线
+                .replace(/^---+$/gm, '<hr>')
+            
+            // 先处理换行，防止URL跨行处理问题
+            html = html
+                .replace(/\n\n/g, '</p><p>')
+                .replace(/\n/g, '<br>')
+            
+            // 处理各种URL格式，使其变为可点击链接
+            html = html
+                // 处理 "链接：URL" 格式 - 确保链接文本显示完整URL
+                .replace(/链接[：:]\s*(https?:\/\/[^\s<br>]+)/g, '链接：<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
+                // 处理纯URL（不在链接标签内的）- 避免重复处理已经在a标签内的URL
+                .replace(/(^|\s|>|<br>)(https?:\/\/[^\s<>"]+)(?!.*<\/a>)($|\s|<br>|<)/g, '$1<a href="$2" target="_blank" rel="noopener noreferrer">$2</a>$3')
+            
+            // 包装段落
+            html = '<p>' + html + '</p>'
+            // 清理空段落和标签重叠问题
+            html = html.replace(/<p><\/p>/g, '')
+            html = html.replace(/<p><h([1-6])>/g, '<h$1>')
+            html = html.replace(/<\/h([1-6])><\/p>/g, '</h$1>')
+            html = html.replace(/<p><hr><\/p>/g, '<hr>')
+            
+            return html
+        }
+
+        // 测试用例
+        const test1 = "链接：https://pan.quark.cn/s/8ef4ae227b84"
+        const test2 = "https://pan.quark.cn/s/9146a3fe87cb"
+        const test3 = `### 「让你比同龄人年轻10岁的表情管理课」
+链接：https://pan.quark.cn/s/8ef4ae227b84
+
+### 郎咸平世界经济学36集 
+https://pan.quark.cn/s/9146a3fe87cb`
+
+        // 执行测试
+        document.getElementById('test1').innerHTML = renderMarkdownToHtml(test1)
+        document.getElementById('test2').innerHTML = renderMarkdownToHtml(test2)
+        document.getElementById('test3').innerHTML = renderMarkdownToHtml(test3)
+    </script>
+</body>
+</html>
