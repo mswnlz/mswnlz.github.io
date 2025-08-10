@@ -3,6 +3,7 @@ import Layout from './components/Layout.vue'
 import CommitHistory from './components/CommitHistory.vue'
 import VPFooter from './components/VPFooter.vue'
 import UpdateTime from './components/UpdateTime.vue'
+import ResourceTabs from './components/ResourceTabs.vue'
 import './style.css'
 
 export default {
@@ -11,6 +12,7 @@ export default {
   enhanceApp({ app }) {
     app.component('CommitHistory', CommitHistory)
     app.component('UpdateTime', UpdateTime)
+    app.component('ResourceTabs', ResourceTabs)
     // 覆盖默认的 VPFooter 组件
     app.component('VPFooter', VPFooter)
   }

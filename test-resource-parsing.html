@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>资源解析测试</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-case { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+        .original { background: #f0f0f0; padding: 10px; margin: 10px 0; }
+        .parsed { background: #e8f5e8; padding: 10px; margin: 10px 0; }
+        .failed { background: #ffe8e8; }
+    </style>
+</head>
+<body>
+    <h1>资源解析逻辑测试</h1>
+    
+    <div id="results"></div>
+
+    <script>
+        // 复制ResourceTabs组件中的解析逻辑
+        const parseResourceLine = (line) => {
+            // 格式1: - [标题](链接)
+            let match = line.match(/^-\s*\[(.*?)\]\((.*?)\)$/)
+            if (match) {
+                return {
+                    title: match[1].trim(),
+                    url: match[2].trim(),
+                    icon: '🔗',
+                    format: '- [标题](链接)'
+                }
+            }
+
+            // 格式2: [标题](链接)
+            match = line.match(/^\[(.*?)\]\((.*?)\)$/)
+            if (match) {
+                return {
+                    title: match[1].trim(),
+                    url: match[2].trim(),
+                    icon: '📎',
+                    format: '[标题](链接)'
+                }
+            }
+
+            // 格式3: 「标题」链接：URL
+            match = line.match(/^「(.*?)」.*?链接[：:]\s*(https?:\/\/\S+)/)
+            if (match) {
+                return {
+                    title: match[1].trim(),
+                    url: match[2].trim(),
+                    icon: '🔗',
+                    format: '「标题」链接：URL'
+                }
+            }
+
+            // 格式4: 数字 | 标题 | URL
+            match = line.match(/^\d+\s*\|\s*(.*?)\s*\|\s*(https?:\/\/\S+)$/)
+            if (match) {
+                return {
+                    title: match[1].trim(),
+                    url: match[2].trim(),
+                    icon: '🔢',
+                    format: '数字 | 标题 | URL'
+                }
+            }
+
+            // 格式5: 标题 | URL (无数字)
+            match = line.match(/^(.*?)\s*\|\s*(https?:\/\/\S+)$/)
+            if (match && !match[1].match(/^\d+$/)) {
+                return {
+                    title: match[1].trim(),
+                    url: match[2].trim(),
+                    icon: '📎',
+                    format: '标题 | URL'
+                }
+            }
+
+            // 格式6: 标题 链接：URL
+            match = line.match(/^(.+?)\s+链接[：:]\s*(https?:\/\/\S+)/)
+            if (match) {
+                return {
+                    title: match[1].trim(),
+                    url: match[2].trim(),
+                    icon: '🔗',
+                    format: '标题 链接：URL'
+                }
+            }
+
+            // 格式7: 标题 https://...
+            match = line.match(/^(.+?)\s+(https?:\/\/\S+)$/)
+            if (match && match[1].length > 5) {
+                return {
+                    title: match[1].trim(),
+                    url: match[2].trim(),
+                    icon: '🌐',
+                    format: '标题 https://...'
+                }
+            }
+
+            // 格式8: 纯URL行
+            match = line.match(/^(https?:\/\/\S+)$/)
+            if (match) {
+                return {
+                    title: '点击访问资源',
+                    url: match[1].trim(),
+                    icon: '🔗',
+                    format: '纯URL'
+                }
+            }
+
+            return null
+        }
+
+        // 测试用例
+        const testCases = [
+            // 当前文件中的格式
+            '[DirectoryOpus-超过100T资料总站网站-doc.869hr.uk](https://pan.quark.cn/s/0125148c9887)',
+            '[office2024直装激活版，无需激活、直装即是专业增强版-超过100T资料总站网站-doc.869hr.uk](https://pan.quark.cn/s/ecda6d05fbfd)',
+            
+            // 从实际文件中的格式
+            '- [AI绘画进阶课：手把手详细教学，30堂从入门到高手，掌握主流AI绘画技法](https://pan.quark.cn/s/279d76d31f5d)',
+            '「Typora 2025绿色版」链接：https://pan.quark.cn/s/1bd54834fa11',
+            '- [2025年全球免费VPS白嫖指南（16个免费服务器资源大盘点）](https://s.869hr.uk/r55)',
+            '2 | 罗翔荐读书单（50部） | https://pan.quark.cn/s/78842141a8ca',
+            
+            // 实际问题格式
+            '链接：https://pan.quark.cn/s/1b37e446b009',
+            'https://pan.quark.cn/s/3b44afaa9cc7',
+            '链接：https://pan.quark.cn/s/280211e789d6',
+            '链接：https://pan.quark.cn/s/57d63abe8711',
+            '链接：https://pan.quark.cn/s/72e3a08581dc',
+            '链接：https://pan.quark.cn/s/7aaa3ce4e864',
+            
+            // 标准markdown格式
+            '[图灵编程电子书合集｜229本PDF下载（Python 机器学习 全栈开发+技术教程）](https://pan.quark.cn/s/e9bfa548c04f)',
+            '[私人纯音乐合集](https://pan.quark.cn/s/3f62aa12e867)',
+            '[7天涨粉10W解说爆款视频课](https://pan.quark.cn/s/802cf3ce1a66)',
+            
+            // 边界情况测试
+            'https://pan.quark.cn/s/123456',
+            '这是一个测试 https://pan.quark.cn/s/test123',
+            '1 | 测试标题 | https://test.com',
+            '测试标题 | https://test.com',
+            '「测试」链接：https://test.com'
+        ]
+
+        // 运行测试
+        const results = document.getElementById('results')
+        
+        testCases.forEach((testCase, index) => {
+            const result = parseResourceLine(testCase)
+            const div = document.createElement('div')
+            div.className = 'test-case'
+            
+            if (result) {
+                div.className += ' parsed'
+                div.innerHTML = `
+                    <strong>测试 ${index + 1}: ✅ 成功解析</strong>
+                    <div class="original"><strong>原文:</strong> ${testCase}</div>
+                    <div class="parsed">
+                        <strong>解析结果:</strong><br>
+                        🏷️ 格式: ${result.format}<br>
+                        ${result.icon} 标题: ${result.title}<br>
+                        🔗 链接: ${result.url}
+                    </div>
+                `
+            } else {
+                div.className += ' failed'
+                div.innerHTML = `
+                    <strong>测试 ${index + 1}: ❌ 解析失败</strong>
+                    <div class="original"><strong>原文:</strong> ${testCase}</div>
+                    <div class="failed">未能识别为资源格式</div>
+                `
+            }
+            
+            results.appendChild(div)
+        })
+    </script>
+</body>
+</html>
