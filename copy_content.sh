@@ -72,10 +72,12 @@ for REPO in "${CONTENT_REPOS[@]}"; do
   for md_file_src in "$SOURCE_REPO_PATH"/*.md; do
     if [ -f "$md_file_src" ] && [ "$(basename "$md_file_src")" != "README.md" ]; then
       cp "$md_file_src" "$TARGET_REPO_PATH/"
+      # Also copy to public directory as static resources for ResourceTabs component
+      cp "$md_file_src" "$TARGET_PUBLIC_REPO_PATH/"
       md_files_count=$((md_files_count + 1))
     fi
   done
-  echo "  - Copied $md_files_count .md files to $REPO/"
+  echo "  - Copied $md_files_count .md files to $REPO/ and public/$REPO/"
 
   # Copy image files to the public directory, maintaining repo structure
   img_files_count=0
