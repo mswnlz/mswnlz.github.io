@@ -6,7 +6,7 @@
 超过 100T，各种资料、知识、影视、记录片、音乐、书籍、媒体、健身，健康营养等聚集地，持续整理中 https://doc.869hr.uk
 ------------------
 
-<ResourceTabs category="edu-knowlege" :months="['202507', '202506', '202505']" />
+<ResourceTabs category="edu-knowlege" :months="['202508', '202507', '202506', '202505']" />
 
 
 ---------------

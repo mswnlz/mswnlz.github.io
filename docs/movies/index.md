@@ -12,7 +12,7 @@
 
 -------
 
-<ResourceTabs category="movies" :months="['202507', '202506', '202505']" />
+<ResourceTabs category="movies" :months="['202508', '202507', '202506', '202505']" />
 
 
 ---------------

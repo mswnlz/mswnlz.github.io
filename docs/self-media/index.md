@@ -5,7 +5,7 @@
 
 
 
-<ResourceTabs category="self-media" :months="['202507', '202506', '202505']" />
+<ResourceTabs category="self-media" :months="['202508', '202507', '202506', '202505']" />
 
 ---------------
 ### 项目更多资源
