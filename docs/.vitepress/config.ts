@@ -226,7 +226,8 @@ export default defineConfig({
       { text: '点击加入QQ群：1041415822', link: 'https://qm.qq.com/q/59EWTaGqfu' },
       { text: '首页', link: '/' },
       { text: '所有资源', link: '/AIknowledge/' }, // 指向第一个资源分类，用户可以通过侧边栏切换
-      { text: '💖 赞赏支持', link: '/support' }
+      { text: '💖 赞赏支持', link: '/support' },
+      { text: '免责声明', link: '/disclaimer' }
     ],
     search: {
       provider: 'local'
@@ -319,7 +320,7 @@ export default defineConfig({
       }
     ],
     footer: {
-      message: '友情链接: <a href="https://869hr.uk">M\'s Blog</a> | 如有侵权，请联系删除。<br><span id="busuanzi_container_site_uv">访客数 <span id="busuanzi_value_site_uv"></span> 人次</span>，<span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次</span>',
+      message: '友情链接: <a href="https://869hr.uk">M\'s Blog</a> | <a href="/disclaimer">免责声明</a> | 如有侵权，请联系删除。<br><span id="busuanzi_container_site_uv">访客数 <span id="busuanzi_value_site_uv"></span> 人次</span>，<span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次</span>',
       copyright: 'Copyright © 2025-present mswnlz@gmail.com'
     }
   }
