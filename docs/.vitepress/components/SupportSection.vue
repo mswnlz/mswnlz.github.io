@@ -6,31 +6,13 @@
     </div>
     
     <div class="support-methods">
-      <!-- Stripe 支付 -->
-      <div class="support-method stripe-method">
-        <div class="method-header">
-          <h4>💳 国际支付</h4>
-        </div>
-        <div class="method-content">
-          <div class="support-button">
-            <stripe-buy-button
-              buy-button-id="buy_btn_1Qur4TFE3lcYYI0Qm47QfSxG"
-              publishable-key="pk_live_51Quq6zFE3lcYYI0QaKgeMb4WjyVVeUGqeXlVaT12Hz14n4c0DQaw6lhn8x28usxLa15qWNQJtGDJXdl7mWEy8qs400dkwj9I0J">
-            </stripe-buy-button>
-          </div>
-        </div>
-        <div class="method-footer">
-          <p class="method-desc">支持信用卡、PayPal等</p>
-        </div>
-      </div>
-
       <!-- 支付宝支付 -->
       <div class="support-method alipay-method">
         <div class="method-header">
           <h4>💰 支付宝</h4>
         </div>
         <div class="method-content">
-          <div class="qr-code">
+          <div class="payment-display">
             <img src="/edu-knowlege/support-alipay.png" alt="支付宝赞赏二维码" />
           </div>
         </div>
@@ -45,12 +27,30 @@
           <h4>💚 微信支付</h4>
         </div>
         <div class="method-content">
-          <div class="qr-code">
+          <div class="payment-display">
             <img src="/edu-knowlege/wechat-qrcode.jpg" alt="微信赞赏二维码" />
           </div>
         </div>
         <div class="method-footer">
           <p class="method-desc">扫码使用微信赞赏</p>
+        </div>
+      </div>
+
+      <!-- Stripe 支付 -->
+      <div class="support-method stripe-method">
+        <div class="method-header">
+          <h4>💳 国际支付</h4>
+        </div>
+        <div class="method-content">
+          <div class="payment-display">
+            <stripe-buy-button
+              buy-button-id="buy_btn_1Qur4TFE3lcYYI0Qm47QfSxG"
+              publishable-key="pk_live_51Quq6zFE3lcYYI0QaKgeMb4WjyVVeUGqeXlVaT12Hz14n4c0DQaw6lhn8x28usxLa15qWNQJtGDJXdl7mWEy8qs400dkwj9I0J">
+            </stripe-buy-button>
+          </div>
+        </div>
+        <div class="method-footer">
+          <p class="method-desc">支持信用卡、PayPal等</p>
         </div>
       </div>
     </div>
@@ -158,24 +158,31 @@ defineProps({
   margin-top: 1rem;
 }
 
-/* Stripe 方法样式 */
-.stripe-method .support-button {
+/* 统一支付显示区域样式 */
+.payment-display {
   width: 100%;
   max-width: 280px;
-}
-
-/* 二维码样式 */
-.qr-code {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 1rem 0;
 }
 
-.qr-code img {
+/* 二维码图片样式 */
+.payment-display img {
   max-width: 200px;
   max-height: 200px;
   width: auto;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stripe 按钮样式 */
+.payment-display stripe-buy-button {
+  width: 100%;
+  max-width: 280px;
 }
 
 .method-desc {
@@ -221,7 +228,11 @@ defineProps({
     padding: 1.25rem;
   }
   
-  .qr-code img {
+  .payment-display {
+    max-width: 250px;
+  }
+  
+  .payment-display img {
     max-width: 180px;
     max-height: 180px;
   }
@@ -237,7 +248,11 @@ defineProps({
     padding: 1rem;
   }
   
-  .qr-code img {
+  .payment-display {
+    max-width: 200px;
+  }
+  
+  .payment-display img {
     max-width: 160px;
     max-height: 160px;
   }
