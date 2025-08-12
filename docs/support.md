@@ -14,14 +14,7 @@ comment: false
 - 🌟 **高质量保证**：由专业团队筛选，杜绝低质灌水内容，确保资源质量
 - 👥 **社区互动**：加入我们的QQ群，与其他用户交流分享，共同成长
 
-## 赞赏支持
-
-<div class="support-button">
-  <stripe-buy-button
-    buy-button-id="buy_btn_1Qur4TFE3lcYYI0Qm47QfSxG"
-    publishable-key="pk_live_51Quq6zFE3lcYYI0QaKgeMb4WjyVVeUGqeXlVaT12Hz14n4c0DQaw6lhn8x28usxLa15qWNQJtGDJXdl7mWEy8qs400dkwj9I0J">
-  </stripe-buy-button>
-</div>
+<SupportSection title="赞赏支持" description="" />
 
 ## 其他支持方式
 

@@ -149,18 +149,7 @@ QQ群 1041415822
 
 </div>
 
-### 💖 支持我们
-
-<div style="text-align: center; margin: 2rem 0;">
-  <p style="font-size: 1.1em; margin-bottom: 1rem; color: #666;">如果您觉得我们的资源对您有帮助，欢迎赞赏支持！</p>
-  <div class="support-button">
-    <stripe-buy-button
-      buy-button-id="buy_btn_1Qur4TFE3lcYYI0Qm47QfSxG"
-      publishable-key="pk_live_51Quq6zFE3lcYYI0QaKgeMb4WjyVVeUGqeXlVaT12Hz14n4c0DQaw6lhn8x28usxLa15qWNQJtGDJXdl7mWEy8qs400dkwj9I0J">
-    </stripe-buy-button>
-  </div>
-  <p style="font-size: 0.9em; margin-top: 1rem; color: #999;">您的支持将帮助我们提供更多优质免费资源</p>
-</div>
+<SupportSection />
 
 ---
 
