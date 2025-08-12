@@ -9,7 +9,7 @@ hero:
   text: "超过100T免费资源下载"
   tagline: "🚀 免费 · 海量 · 持续更新 | 专注提供优质免费资源下载"
   actions:
-    - theme: brand
+    - theme: alt
       text: "🚀 开始探索免费资源"
       link: "/AIknowledge/"
     - theme: alt
