@@ -5,6 +5,7 @@ import VPFooter from './components/VPFooter.vue'
 import UpdateTime from './components/UpdateTime.vue'
 import ResourceTabs from './components/ResourceTabs.vue'
 import SupportSection from '../components/SupportSection.vue'
+import GitHubLink from '../components/GitHubLink.vue'
 import './style.css'
 
 export default {
@@ -15,6 +16,7 @@ export default {
     app.component('UpdateTime', UpdateTime)
     app.component('ResourceTabs', ResourceTabs)
     app.component('SupportSection', SupportSection)
+    app.component('GitHubLink', GitHubLink)
     // 覆盖默认的 VPFooter 组件
     app.component('VPFooter', VPFooter)
   }

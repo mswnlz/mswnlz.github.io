@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: "📞 加入QQ群交流"
       link: "https://qm.qq.com/q/59EWTaGqfu"
+    - theme: alt
+      text: "⭐ 项目开源 GitHub"
+      link: "https://github.com/mswnlz"
 
 features:
   - icon: "🤖"
@@ -148,6 +151,8 @@ QQ群 1041415822
 `免费资源下载` `AI教程` `电子书下载` `跨境电商教程` `自媒体运营` `在线教育` `健身视频` `电影资源` `软件工具` `设计素材` `编程教程` `考试资料` `夸克网盘` `阿里网盘` `TikTok营销` `亚马逊开店` `提示词工程` `机器学习`
 
 </div>
+
+<GitHubLink />
 
 <SupportSection />
 
