@@ -14,6 +14,8 @@
           <span class="badge">Vue 3</span>
           <span class="badge">VitePress</span>
         </div>
+      </div>
+      <div class="github-action-section">
         <a 
           href="https://github.com/mswnlz" 
           target="_blank" 
@@ -25,6 +27,16 @@
           </svg>
           GitHub 源代码
         </a>
+        <div class="github-stats">
+          <div class="stat-item">
+            <span class="stat-label">开源协议</span>
+            <span class="stat-value">MIT</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">技术栈</span>
+            <span class="stat-value">Vue 3 + VitePress</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -32,100 +44,162 @@
 
 <style scoped>
 .github-link-section {
-  margin: 40px 0;
+  margin: 48px 0;
   padding: 0 24px;
 }
 
 .github-banner {
   display: flex;
   align-items: center;
-  gap: 24px;
-  padding: 32px;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 48px;
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   border: 1px solid var(--vp-c-border);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .github-banner:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
 }
 
 .github-icon {
   flex-shrink: 0;
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #24292e 0%, #1a1e22 100%);
   border-radius: 50%;
   color: white;
-  box-shadow: 0 4px 12px rgba(36, 41, 46, 0.3);
+  box-shadow: 0 6px 16px rgba(36, 41, 46, 0.25);
+}
+
+.github-icon svg {
+  width: 40px;
+  height: 40px;
 }
 
 .github-content {
   flex: 1;
+  max-width: 600px;
 }
 
 .github-content h3 {
-  margin: 0 0 8px 0;
-  font-size: 24px;
+  margin: 0 0 12px 0;
+  font-size: 28px;
   font-weight: 700;
   color: var(--vp-c-text-1);
   line-height: 1.2;
 }
 
 .github-content p {
-  margin: 0 0 16px 0;
-  font-size: 16px;
+  margin: 0 0 20px 0;
+  font-size: 18px;
   color: var(--vp-c-text-2);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .github-badges {
   display: flex;
-  gap: 8px;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 24px;
   flex-wrap: wrap;
 }
 
 .badge {
   display: inline-block;
-  padding: 4px 12px;
+  padding: 6px 16px;
   background: var(--vp-c-brand);
   color: white;
-  border-radius: 16px;
-  font-size: 12px;
+  border-radius: 20px;
+  font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .github-button {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
+  gap: 10px;
+  padding: 14px 28px;
   background: #24292e;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  box-shadow: 0 4px 12px rgba(36, 41, 46, 0.2);
 }
 
 .github-button:hover {
   background: #1a1e22;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(36, 41, 46, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(36, 41, 46, 0.3);
   text-decoration: none;
   color: white;
+}
+
+.github-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.github-action-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  min-width: 200px;
+}
+
+.github-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 180px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid var(--vp-c-border-soft);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+}
+
+.stat-item:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateX(-2px);
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--vp-c-text-2);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 13px;
+  color: var(--vp-c-text-1);
+  font-weight: 600;
 }
 
 /* 深色模式适配 */
@@ -140,6 +214,23 @@ html.dark .github-content h3 {
 
 html.dark .github-content p {
   color: var(--vp-c-text-2);
+}
+
+html.dark .stat-item {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: var(--vp-c-border-soft);
+}
+
+html.dark .stat-item:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+html.dark .stat-label {
+  color: var(--vp-c-text-2);
+}
+
+html.dark .stat-value {
+  color: var(--vp-c-text-1);
 }
 
 /* 响应式设计 */
