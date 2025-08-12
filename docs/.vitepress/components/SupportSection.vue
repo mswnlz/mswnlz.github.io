@@ -8,32 +8,50 @@
     <div class="support-methods">
       <!-- Stripe 支付 -->
       <div class="support-method stripe-method">
-        <h4>💳 国际支付</h4>
-        <div class="support-button">
-          <stripe-buy-button
-            buy-button-id="buy_btn_1Qur4TFE3lcYYI0Qm47QfSxG"
-            publishable-key="pk_live_51Quq6zFE3lcYYI0QaKgeMb4WjyVVeUGqeXlVaT12Hz14n4c0DQaw6lhn8x28usxLa15qWNQJtGDJXdl7mWEy8qs400dkwj9I0J">
-          </stripe-buy-button>
+        <div class="method-header">
+          <h4>💳 国际支付</h4>
         </div>
-        <p class="method-desc">支持信用卡、PayPal等</p>
+        <div class="method-content">
+          <div class="support-button">
+            <stripe-buy-button
+              buy-button-id="buy_btn_1Qur4TFE3lcYYI0Qm47QfSxG"
+              publishable-key="pk_live_51Quq6zFE3lcYYI0QaKgeMb4WjyVVeUGqeXlVaT12Hz14n4c0DQaw6lhn8x28usxLa15qWNQJtGDJXdl7mWEy8qs400dkwj9I0J">
+            </stripe-buy-button>
+          </div>
+        </div>
+        <div class="method-footer">
+          <p class="method-desc">支持信用卡、PayPal等</p>
+        </div>
       </div>
 
       <!-- 支付宝支付 -->
       <div class="support-method alipay-method">
-        <h4>💰 支付宝</h4>
-        <div class="qr-code">
-          <img src="/edu-knowlege/support-alipay.png" alt="支付宝赞赏二维码" />
+        <div class="method-header">
+          <h4>💰 支付宝</h4>
         </div>
-        <p class="method-desc">扫码使用支付宝赞赏</p>
+        <div class="method-content">
+          <div class="qr-code">
+            <img src="/edu-knowlege/support-alipay.png" alt="支付宝赞赏二维码" />
+          </div>
+        </div>
+        <div class="method-footer">
+          <p class="method-desc">扫码使用支付宝赞赏</p>
+        </div>
       </div>
 
       <!-- 微信支付 -->
       <div class="support-method wechat-method">
-        <h4>💚 微信支付</h4>
-        <div class="qr-code">
-          <img src="/edu-knowlege/wechat-qrcode.jpg" alt="微信赞赏二维码" />
+        <div class="method-header">
+          <h4>💚 微信支付</h4>
         </div>
-        <p class="method-desc">扫码使用微信赞赏</p>
+        <div class="method-content">
+          <div class="qr-code">
+            <img src="/edu-knowlege/wechat-qrcode.jpg" alt="微信赞赏二维码" />
+          </div>
+        </div>
+        <div class="method-footer">
+          <p class="method-desc">扫码使用微信赞赏</p>
+        </div>
       </div>
     </div>
 
@@ -87,8 +105,10 @@ defineProps({
 .support-methods {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   margin: 2rem 0;
+  align-items: stretch; /* 确保所有卡片高度一致 */
+  justify-items: center;
 }
 
 .support-method {
@@ -97,22 +117,48 @@ defineProps({
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 360px; /* 设置最小高度确保一致性 */
 }
 
 .support-method:hover {
   border-color: var(--vp-c-brand);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px); /* 添加轻微上移效果 */
 }
 
-.support-method h4 {
+/* 卡片内部结构样式 */
+.method-header {
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+
+.method-header h4 {
   color: var(--vp-c-text-1);
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.method-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px; /* 确保内容区域有足够空间 */
+}
+
+.method-footer {
+  flex-shrink: 0;
+  margin-top: 1rem;
 }
 
 /* Stripe 方法样式 */
 .stripe-method .support-button {
-  margin: 1rem 0;
+  width: 100%;
+  max-width: 280px;
 }
 
 /* 二维码样式 */
