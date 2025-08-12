@@ -104,11 +104,13 @@ defineProps({
 
 .support-methods {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 三列等宽布局 */
   gap: 1.5rem;
   margin: 2rem 0;
   align-items: stretch; /* 确保所有卡片高度一致 */
-  justify-items: center;
+  max-width: 900px; /* 限制最大宽度 */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .support-method {
@@ -121,6 +123,7 @@ defineProps({
   flex-direction: column;
   justify-content: space-between;
   min-height: 360px; /* 设置最小高度确保一致性 */
+  width: 100%; /* 确保占满网格单元格 */
 }
 
 .support-method:hover {
@@ -194,10 +197,24 @@ defineProps({
 }
 
 /* 响应式设计 */
+/* 中等屏幕（平板） */
+@media (max-width: 1024px) {
+  .support-methods {
+    max-width: 750px;
+    gap: 1.2rem;
+  }
+  
+  .support-method {
+    padding: 1.25rem;
+  }
+}
+
+/* 小屏幕（手机横屏/小平板） */
 @media (max-width: 768px) {
   .support-methods {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    max-width: 400px; /* 移动端限制宽度 */
   }
   
   .support-method {
@@ -210,6 +227,7 @@ defineProps({
   }
 }
 
+/* 超小屏幕（手机） */
 @media (max-width: 480px) {
   .support-section {
     padding: 0 0.5rem;
