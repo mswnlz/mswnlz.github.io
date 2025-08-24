@@ -2,7 +2,7 @@
 跨境电商相关的资料，申请，支付、外贸，tiktok，亚马逊，开店铺，拉新等资源，持续更新中
 ------------
 
-<ResourceTabs category="cross-border" :months="['202507', '202506', '202505']" />
+<ResourceTabs category="cross-border" :months="['202508', '202507', '202506', '202505']" />
 
 ---------------
 ### 项目更多资源
