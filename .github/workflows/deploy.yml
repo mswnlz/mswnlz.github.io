@@ -8,8 +8,8 @@ on:
   repository_dispatch:
     types: [content-updated]
   schedule:
-    # 每天早上8点自动检查更新（北京时间，UTC+8，所以是UTC 0点）
-    - cron: '0 0 * * *'
+    # 每20天早上8点自动检查更新（北京时间，UTC+8，所以是UTC 0点）
+    - cron: '0 0 */20 * *'
 
 jobs:
   deploy:
