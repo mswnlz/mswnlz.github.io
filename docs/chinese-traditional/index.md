@@ -1,6 +1,6 @@
 # chinese-traditional
 🎁重磅资源！原价59880元 绝版中医课程资料大全【收藏版1.18TB】，包括基础、视频、外治、针灸、书籍等等等应有尽有
-<ResourceTabs category="chinese-traditional" :months="['202505']" />
+<ResourceTabs category="chinese-traditional" :months="['202510', '202505']" />
 ---------------
 ### 项目更多资源
 
