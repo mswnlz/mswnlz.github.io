@@ -14,7 +14,7 @@ hero:
       link: "/AIknowledge/"
     - theme: alt
       text: "📞 加入QQ群交流"
-      link: "https://qm.qq.com/q/59EWTaGqfu"
+      link: "https://qm.qq.com/q/M9U9Hhd1wQ"
     - theme: alt
       text: "⭐ 项目开源 GitHub"
       link: "https://github.com/mswnlz"
@@ -162,7 +162,7 @@ QQ群 1019984660
 
 💡 **温馨提示**: 所有资源仅供学习交流使用，请支持正版。如有版权问题，请及时联系我们处理。
 
-📧 **联系方式**: mswnlz@gmail.com | QQ群: [1019984660](https://qm.qq.com/q/59EWTaGqfu)
+📧 **联系方式**: mswnlz@gmail.com | QQ群: [1019984660](https://qm.qq.com/q/M9U9Hhd1wQ)
 
 <UpdateTime />
 
