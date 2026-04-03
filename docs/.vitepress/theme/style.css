@@ -219,3 +219,51 @@ stripe-buy-button {
   display: inline-block;
   margin: 0 auto;
 }
+
+/* Footer social links */
+.VPFooter .footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.VPFooter .footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--vp-c-text-2) !important;
+  text-decoration: none !important;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--vp-c-divider-light);
+  transition: all 0.25s ease;
+  background: var(--vp-c-bg);
+}
+
+.VPFooter .footer-social-link:hover {
+  color: var(--vp-c-brand-1) !important;
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  text-decoration: none !important;
+}
+
+.VPFooter .footer-social-link svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .VPFooter .footer-social-links {
+    gap: 6px;
+  }
+  .VPFooter .footer-social-link {
+    padding: 3px 7px;
+    font-size: 12px;
+  }
+}
