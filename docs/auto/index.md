@@ -1,3 +1,9 @@
+---
+title: 自动化工具与脚本 - AI驱动资源管理 | 大坝的资源收集站
+description: 基于AI+GitHub的自动化资源管理工具，包含批量转存、分类提交、网站自动更新等脚本与配置说明
+keywords: 自动化工具,AI工具,GitHub自动化,批量转存,资源管理,vscode,cline,DeepSeek,Gemini
+---
+
 # auto
 此项目自动化相关（涉及到的工具，vscode+cline插件+各种AI的key，下面主要使用了DeepSeek，Gemini等）
 

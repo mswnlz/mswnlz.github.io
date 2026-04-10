@@ -18,6 +18,11 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(dirname "$SCRIPT_DIR")"
 DOCS_DIR="$ROOT_DIR/docs"
 
+# 内容源目录：优先用环境变量（CI/CD 中传入），否则用 public/ 目录下已有文件推断
+# CI: deploy.yml 设置 CONTENT_SOURCE_DIR=./content-source
+# 本地: 默认从 docs/public/ 已存在的文件推断（不依赖源仓库路径）
+CONTENT_SOURCE_DIR="${CONTENT_SOURCE_DIR:-}"
+
 # 定义仓库列表
 REPOSITORIES=(
   "AIknowledge"
@@ -38,15 +43,28 @@ echo ""
 # 函数：获取仓库中的年月文件列表
 get_month_files() {
     local repo_name=$1
-    local repo_path="../$repo_name"
-    
-    if [ ! -d "$repo_path" ]; then
-        echo ""
+
+    # 优先级1: CI/CD 中通过 CONTENT_SOURCE_DIR 环境变量指定的源目录
+    if [ -n "$CONTENT_SOURCE_DIR" ] && [ -d "$CONTENT_SOURCE_DIR/$repo_name" ]; then
+        find "$CONTENT_SOURCE_DIR/$repo_name" -name "20[0-9][0-9][0-1][0-9].md" -exec basename {} .md \; 2>/dev/null | sort -r | tr '\n' ',' | sed 's/,$//'
         return
     fi
-    
-    # 查找所有6位数字.md文件（年月格式：YYYYMM.md）
-    find "$repo_path" -name "20[0-9][0-9][0-1][0-9].md" -exec basename {} .md \; 2>/dev/null | sort -r | tr '\n' ',' | sed 's/,$//'
+
+    # 优先级2: 本地开发环境 — 源仓库与本脚本所在仓库同级
+    local repo_path="$(dirname "$SCRIPT_DIR")/../$repo_name"
+    if [ -d "$repo_path" ]; then
+        find "$repo_path" -name "20[0-9][0-9][0-1][0-9].md" -exec basename {} .md \; 2>/dev/null | sort -r | tr '\n' ',' | sed 's/,$//'
+        return
+    fi
+
+    # 优先级3: 回退 — 从 docs/public/{repo}/ 中推断已有的年月文件
+    local public_path="$DOCS_DIR/public/$repo_name"
+    if [ -d "$public_path" ]; then
+        find "$public_path" -name "20[0-9][0-9][0-1][0-9].md" -exec basename {} .md \; 2>/dev/null | sort -r | tr '\n' ',' | sed 's/,$//'
+        return
+    fi
+
+    echo ""
 }
 
 # 函数：更新页面的ResourceTabs配置

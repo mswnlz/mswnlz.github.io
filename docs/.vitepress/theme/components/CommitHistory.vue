@@ -74,38 +74,16 @@ const formatDate = (dateString) => {
 };
 
 onMounted(async () => {
-  console.log('CommitHistory component mounted - loading dynamic data');
   try {
-    // 尝试获取最新数据
-    const possiblePaths = ['/commits.json', '../commits.json', './commits.json'];
-    let data = null;
-    
-    for (const path of possiblePaths) {
-      try {
-        console.log(`Trying to fetch from: ${path}`);
-        const response = await fetch(path);
-        if (response.ok) {
-          data = await response.json();
-          console.log(`Successfully loaded data from ${path}:`, data);
-          break;
-        }
-      } catch (e) {
-        console.log(`Failed to fetch from ${path}:`, e);
+    const response = await fetch('/commits.json');
+    if (response.ok) {
+      const data = await response.json();
+      if (data && data.length > 0) {
+        commits.value = data.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 4);
       }
     }
-    
-    if (data && data.length > 0) {
-      // 按日期排序，最新的在前面
-      const sortedData = data.sort((a, b) => new Date(b.date) - new Date(a.date));
-      // 只显示前4个最新的更新
-      commits.value = sortedData.slice(0, 4);
-      console.log('Updated with real data:', commits.value.length);
-    } else {
-      console.log('Using default data');
-    }
   } catch (error) {
-    console.error('Failed to load commit history:', error);
-    console.log('Using fallback static data');
+    // fall back to static default data
   }
 });
 </script>

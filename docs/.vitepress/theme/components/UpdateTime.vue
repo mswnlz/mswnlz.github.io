@@ -7,7 +7,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const updateTime = ref('2025年7月');
 const isLoading = ref(true);
 
 const formatTime = (dateString) => {
@@ -31,35 +30,15 @@ const formattedTime = ref('2025年7月');
 
 onMounted(async () => {
   try {
-    console.log('UpdateTime component mounted - loading update time');
-    const possiblePaths = ['/update-time.json', '../update-time.json', './update-time.json'];
-    let data = null;
-    
-    for (const path of possiblePaths) {
-      try {
-        console.log(`Trying to fetch update time from: ${path}`);
-        const response = await fetch(path);
-        if (response.ok) {
-          data = await response.json();
-          console.log(`Successfully loaded update time from ${path}:`, data);
-          break;
-        }
-      } catch (e) {
-        console.log(`Failed to fetch update time from ${path}:`, e);
+    const response = await fetch('/update-time.json');
+    if (response.ok) {
+      const data = await response.json();
+      if (data && data.time) {
+        formattedTime.value = formatTime(data.time);
       }
     }
-    
-    if (data && data.time) {
-      updateTime.value = data.time;
-      formattedTime.value = formatTime(data.time);
-      console.log('Updated with real update time:', formattedTime.value);
-    } else {
-      console.log('Using default update time');
-      formattedTime.value = '2025年7月';
-    }
   } catch (error) {
-    console.error('Failed to load update time:', error);
-    formattedTime.value = '2025年7月';
+    // fall back to static default
   } finally {
     isLoading.value = false;
   }

@@ -66,6 +66,8 @@ jobs:
           bash ./copy_content.sh
 
       - name: Sync ResourceTabs configuration
+        env:
+          CONTENT_SOURCE_DIR: ./content-source
         run: |
           # 同步各分类 index.md 中的 ResourceTabs months 配置
           bash ./scripts/sync-tabs.sh --auto || true
