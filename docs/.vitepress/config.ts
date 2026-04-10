@@ -3,6 +3,8 @@ import { defineConfig } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
 
+const SITE_URL = 'https://doc.869hr.uk'
+
 function getSidebarItems(dir: string) {
   const files = fs.readdirSync(path.join(__dirname, '../', dir))
     .filter(file => file.endsWith('.md') && file !== 'index.md')
@@ -26,7 +28,20 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   sitemap: {
-    hostname: 'https://doc.869hr.uk'
+    hostname: SITE_URL
+  },
+
+  // 为每个页面动态注入 canonical 标签，防止重复内容问题
+  transformHead({ pageData }) {
+    const heads = []
+    const relativePath = pageData.relativePath
+      .replace(/\.md$/, '')
+      .replace(/\/index$/, '/')
+    const canonicalUrl = relativePath === 'index'
+      ? SITE_URL + '/'
+      : SITE_URL + '/' + relativePath
+    heads.push(['link', { rel: 'canonical', href: canonicalUrl }])
+    return heads
   },
   vite: {
     assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
@@ -60,28 +75,32 @@ export default defineConfig({
     ['meta', { name: 'msapplication-config', content: '/browserconfig.xml' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
     
+    // hreflang 语言定向
+    ['link', { rel: 'alternate', hreflang: 'zh-CN', href: 'https://doc.869hr.uk' }],
+    ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://doc.869hr.uk' }],
+
     // Open Graph / 社交媒体分享图标
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: '大坝的资源收集站 | 超过 100T+ 资源' }],
-    ['meta', { property: 'og:description', content: 'A collection of resources including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.' }],
-    ['meta', { property: 'og:image', content: '/og-image.png' }],
+    ['meta', { property: 'og:title', content: '大坝的资源收集站 | 超过 100T+ 免费资源下载' }],
+    ['meta', { property: 'og:description', content: '免费提供超过100T海量资源下载，包含AI知识、书籍资料、跨境电商、自媒体运营、教育学习、健康养生、影视娱乐、工具软件等，持续更新中' }],
+    ['meta', { property: 'og:image', content: 'https://doc.869hr.uk/og-image.png' }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { property: 'og:image:alt', content: '大坝的资源收集站 - 超过100T免费资源' }],
     ['meta', { property: 'og:url', content: 'https://doc.869hr.uk' }],
-    
-    // Twitter Card
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: '大坝的资源收集站 | 超过 100T+ 资源' }],
-    ['meta', { name: 'twitter:description', content: 'A collection of resources including AI, books, traditional Chinese culture, cross-border e-commerce, self-media, education, health, movies, and tools.' }],
-    ['meta', { name: 'twitter:image', content: '/og-image.png' }],
-    
-    // SEO 关键字和其他元标签
-    ['meta', { name: 'keywords', content: '免费资源下载,AI知识,书籍资料,跨境电商,自媒体,教育资源,健康养生,影视资源,工具软件,100T资源,网盘资源,夸克网盘,阿里网盘' }],
-    ['meta', { name: 'author', content: '大坝的资源收集站' }],
-    ['meta', { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' }],
-    ['meta', { name: 'revisit-after', content: '1 days' }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { property: 'og:site_name', content: '大坝的资源收集站' }],
+
+    // Twitter Card
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: '大坝的资源收集站 | 超过 100T+ 免费资源下载' }],
+    ['meta', { name: 'twitter:description', content: '免费提供超过100T海量资源下载，包含AI知识、书籍资料、跨境电商、自媒体运营、教育学习、健康养生、影视娱乐、工具软件等，持续更新中' }],
+    ['meta', { name: 'twitter:image', content: 'https://doc.869hr.uk/og-image.png' }],
+
+    // SEO 关键字和其他元标签
+    ['meta', { name: 'keywords', content: '免费资源下载,AI知识,书籍资料,跨境电商,自媒体运营,教育资源,健康养生,影视资源,工具软件,100T资源,网盘资源,夸克网盘,阿里云盘,ChatGPT教程,AI工具' }],
+    ['meta', { name: 'author', content: '大坝的资源收集站' }],
+    ['meta', { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' }],
     
     // 结构化数据 (JSON-LD)
     [
@@ -91,22 +110,34 @@ export default defineConfig({
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: '大坝的资源收集站',
-        description: '超过100T免费资源下载站，包含AI知识、书籍资料、跨境电商、自媒体、教育、健康、影视、工具等海量资源',
+        alternateName: '100T免费资源下载站',
+        description: '超过100T免费资源下载站，包含AI知识、书籍资料、跨境电商、自媒体、教育、健康、影视、工具等海量资源，持续更新',
         url: 'https://doc.869hr.uk',
+        inLanguage: 'zh-CN',
         potentialAction: {
           '@type': 'SearchAction',
-          target: 'https://doc.869hr.uk/?q={search_term_string}',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: 'https://doc.869hr.uk/?s={search_term_string}'
+          },
           'query-input': 'required name=search_term_string'
-        },
-        author: {
-          '@type': 'Organization',
-          name: '大坝的资源收集站',
-          url: 'https://doc.869hr.uk'
         },
         publisher: {
           '@type': 'Organization',
           name: '大坝的资源收集站',
-          url: 'https://doc.869hr.uk'
+          url: 'https://doc.869hr.uk',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://doc.869hr.uk/android-chrome-512x512.png',
+            width: 512,
+            height: 512
+          },
+          sameAs: [
+            'https://youtube.com/@gxjdian',
+            'https://x.com/gxjdian',
+            'https://t.me/tgmShareAI',
+            'https://github.com/mswnlz'
+          ]
         }
       })
     ],

@@ -1,7 +1,7 @@
 ---
 title: AI知识资源下载 - 人工智能学习教程大全
 description: 免费提供AI知识资源下载，包含人工智能学习教程、提示词工程、AI工具使用指南、机器学习视频课程等优质资源，持续更新中
-keywords: AI知识,人工智能教程,提示词工程,机器学习,深度学习,AI工具,ChatGPT教程,免费AI资源
+keywords: AI知识,人工智能教程,提示词工程,机器学习,深度学习,AI工具,ChatGPT教程,免费AI资源,Midjourney,Stable Diffusion,DeepSeek,Coze工作流,AI绘画
 ---
 
 # 🤖 AI知识资源下载 - 人工智能学习教程大全

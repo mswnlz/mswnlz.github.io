@@ -15,10 +15,18 @@ echo ""
 echo "📋 第1步：检查并同步ResourceTabs配置"
 echo "----------------------------------------"
 if [ -f "$SCRIPT_DIR/scripts/sync-tabs.sh" ]; then
-    # 运行Tab同步脚本（静默模式，自动提交）
     bash "$SCRIPT_DIR/scripts/sync-tabs.sh" --auto
 else
     echo "⚠️  Tab同步脚本不存在，跳过Tab配置检查"
+fi
+
+echo ""
+echo "🔍 第1.5步：SEO frontmatter增强"
+echo "----------------------------------------"
+if [ -f "$SCRIPT_DIR/scripts/seo-enhance.sh" ]; then
+    bash "$SCRIPT_DIR/scripts/seo-enhance.sh" --auto
+else
+    echo "⚠️  SEO增强脚本不存在，跳过"
 fi
 
 echo ""

@@ -103,3 +103,16 @@ done
 
 echo "Content copying and image path modification complete."
 echo "Summary: Processed ${#CONTENT_REPOS[@]} repositories"
+
+# ============================================================
+# 运行 SEO frontmatter 增强脚本
+# 在内容复制完成后，为月份页面添加 SEO 元数据
+# ============================================================
+SEO_SCRIPT="$(dirname "$0")/scripts/seo-enhance.sh"
+if [ -f "$SEO_SCRIPT" ]; then
+  echo ""
+  echo "Running SEO enhancement..."
+  bash "$SEO_SCRIPT" --auto
+else
+  echo "Warning: SEO enhancement script not found at $SEO_SCRIPT, skipping"
+fi

@@ -60,9 +60,15 @@ jobs:
           # Set up paths
           export SOURCE_BASE_DIR="./content-source"
           export TARGET_DOCS_DIR="./docs"
-          
+
           # Run the content synchronization
+          # Note: copy_content.sh automatically calls scripts/seo-enhance.sh after copying
           bash ./copy_content.sh
+
+      - name: Sync ResourceTabs configuration
+        run: |
+          # 同步各分类 index.md 中的 ResourceTabs months 配置
+          bash ./scripts/sync-tabs.sh --auto || true
 
       - name: Fetch latest commits
         run: npm run fetch-commits
