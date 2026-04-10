@@ -31,9 +31,11 @@ export default defineConfig({
     hostname: SITE_URL
   },
 
-  // 为每个页面动态注入 canonical 标签，防止重复内容问题
+  // 为每个页面动态注入 canonical + 独立 Twitter/OG 卡片标签
   transformHead({ pageData }) {
     const heads = []
+
+    // ── 1. Canonical URL ──────────────────────────────────────────
     const relativePath = pageData.relativePath
       .replace(/\.md$/, '')
       .replace(/\/index$/, '/')
@@ -41,6 +43,26 @@ export default defineConfig({
       ? SITE_URL + '/'
       : SITE_URL + '/' + relativePath
     heads.push(['link', { rel: 'canonical', href: canonicalUrl }])
+
+    // ── 2. 动态 OG / Twitter Card（每页独立 title + description）──
+    const fm = pageData.frontmatter
+    const siteTitle = '大坝的资源收集站'
+    const defaultDesc = '免费提供超过100T海量资源下载，包含AI知识、书籍资料、跨境电商、自媒体运营、教育学习、健康养生、影视娱乐、工具软件等，持续更新中'
+
+    const pageTitle = fm.title
+      ? `${fm.title} | ${siteTitle}`
+      : `${siteTitle} | 超过 100T+ 免费资源下载`
+    const pageDesc = fm.description || defaultDesc
+
+    // OG 动态标题 + 描述（覆盖全局默认值）
+    heads.push(['meta', { property: 'og:title', content: pageTitle }])
+    heads.push(['meta', { property: 'og:description', content: pageDesc }])
+    heads.push(['meta', { property: 'og:url', content: canonicalUrl }])
+
+    // Twitter Card 动态标题 + 描述（覆盖全局默认值）
+    heads.push(['meta', { name: 'twitter:title', content: pageTitle }])
+    heads.push(['meta', { name: 'twitter:description', content: pageDesc }])
+
     return heads
   },
   vite: {
@@ -80,22 +102,23 @@ export default defineConfig({
     ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://doc.869hr.uk' }],
 
     // Open Graph / 社交媒体分享图标
+    // 注意：og:title / og:description / og:url 由 transformHead 按页面动态注入，此处为全局兜底
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: '大坝的资源收集站 | 超过 100T+ 免费资源下载' }],
-    ['meta', { property: 'og:description', content: '免费提供超过100T海量资源下载，包含AI知识、书籍资料、跨境电商、自媒体运营、教育学习、健康养生、影视娱乐、工具软件等，持续更新中' }],
-    ['meta', { property: 'og:image', content: 'https://doc.869hr.uk/og-image.png' }],
+    ['meta', { property: 'og:image', content: `${SITE_URL}/og-image.png` }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
-    ['meta', { property: 'og:image:alt', content: '大坝的资源收集站 - 超过100T免费资源' }],
-    ['meta', { property: 'og:url', content: 'https://doc.869hr.uk' }],
+    ['meta', { property: 'og:image:type', content: 'image/png' }],
+    ['meta', { property: 'og:image:alt', content: '大坝的资源收集站 - 超过100T免费资源下载' }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { property: 'og:site_name', content: '大坝的资源收集站' }],
 
     // Twitter Card
+    // 注意：twitter:title / twitter:description 由 transformHead 按页面动态注入
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: '大坝的资源收集站 | 超过 100T+ 免费资源下载' }],
-    ['meta', { name: 'twitter:description', content: '免费提供超过100T海量资源下载，包含AI知识、书籍资料、跨境电商、自媒体运营、教育学习、健康养生、影视娱乐、工具软件等，持续更新中' }],
-    ['meta', { name: 'twitter:image', content: 'https://doc.869hr.uk/og-image.png' }],
+    ['meta', { name: 'twitter:site', content: '@gxjdian' }],
+    ['meta', { name: 'twitter:creator', content: '@gxjdian' }],
+    ['meta', { name: 'twitter:image', content: `${SITE_URL}/og-image.png` }],
+    ['meta', { name: 'twitter:image:alt', content: '大坝的资源收集站 - 超过100T免费资源下载' }],
 
     // SEO 关键字和其他元标签
     ['meta', { name: 'keywords', content: '免费资源下载,AI知识,书籍资料,跨境电商,自媒体运营,教育资源,健康养生,影视资源,工具软件,100T资源,网盘资源,夸克网盘,阿里云盘,ChatGPT教程,AI工具' }],
