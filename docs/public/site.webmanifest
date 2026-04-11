@@ -18,5 +18,7 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "start_url": "/",
-  "scope": "/"
+  "scope": "/",
+  "lang": "zh-CN",
+  "dir": "ltr"
 }

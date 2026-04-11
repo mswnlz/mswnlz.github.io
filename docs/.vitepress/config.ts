@@ -63,6 +63,12 @@ export default defineConfig({
     heads.push(['meta', { name: 'twitter:title', content: pageTitle }])
     heads.push(['meta', { name: 'twitter:description', content: pageDesc }])
 
+    // ── 3. 每页独立 hreflang（指向当前页 canonical，而非固定首页）──
+    // 单语言站用 hreflang 的意义：告知 Google 这是简体中文页，适用全球华语用户
+    heads.push(['link', { rel: 'alternate', hreflang: 'zh-CN',   href: canonicalUrl }])
+    heads.push(['link', { rel: 'alternate', hreflang: 'zh-Hans', href: canonicalUrl }])
+    heads.push(['link', { rel: 'alternate', hreflang: 'x-default', href: canonicalUrl }])
+
     return heads
   },
   vite: {
@@ -97,9 +103,12 @@ export default defineConfig({
     ['meta', { name: 'msapplication-config', content: '/browserconfig.xml' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
     
-    // hreflang 语言定向
-    ['link', { rel: 'alternate', hreflang: 'zh-CN', href: 'https://doc.869hr.uk' }],
-    ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://doc.869hr.uk' }],
+    // 语言信号（不绑定单一国家，面向全球华语用户）
+    // 注意：hreflang 已移至 transformHead，按每页 canonical URL 动态注入，此处不重复
+    ['meta', { 'http-equiv': 'content-language', content: 'zh-CN' }],
+    // Dublin Core 语言声明
+    ['meta', { name: 'DC.language', content: 'zh-CN' }],
+    ['meta', { name: 'DC.coverage', content: 'Worldwide' }],
 
     // Open Graph / 社交媒体分享图标
     // 注意：og:title / og:description / og:url 由 transformHead 按页面动态注入，此处为全局兜底
@@ -110,6 +119,10 @@ export default defineConfig({
     ['meta', { property: 'og:image:type', content: 'image/png' }],
     ['meta', { property: 'og:image:alt', content: '大坝的资源收集站 - 超过100T免费资源下载' }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    // og:locale:alternate 告知社交平台（FB/Telegram/Line）内容同样适用于繁中区域华语用户
+    ['meta', { property: 'og:locale:alternate', content: 'zh_TW' }],
+    ['meta', { property: 'og:locale:alternate', content: 'zh_HK' }],
+    ['meta', { property: 'og:locale:alternate', content: 'zh_SG' }],
     ['meta', { property: 'og:site_name', content: '大坝的资源收集站' }],
 
     // Twitter Card
@@ -137,6 +150,12 @@ export default defineConfig({
         description: '超过100T免费资源下载站，包含AI知识、书籍资料、跨境电商、自媒体、教育、健康、影视、工具等海量资源，持续更新',
         url: 'https://doc.869hr.uk',
         inLanguage: 'zh-CN',
+        availableLanguage: {
+          '@type': 'Language',
+          name: 'Chinese Simplified',
+          alternateName: 'zh-CN'
+        },
+        areaServed: 'Worldwide',
         potentialAction: {
           '@type': 'SearchAction',
           target: {
