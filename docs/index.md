@@ -16,6 +16,9 @@ hero:
       text: "📞 加入QQ群交流"
       link: "https://qm.qq.com/q/Mv9zQI1vW0"
     - theme: alt
+      text: "💬 加入微信群交流"
+      link: "https://qr.869hr.uk/aitech"
+    - theme: alt
       text: "⭐ 项目开源 GitHub"
       link: "https://github.com/mswnlz"
 
@@ -119,7 +122,7 @@ features:
 支持夸克网盘、阿里网盘、百度网盘等主流平台，下载便捷
 
 **👥 社区互动**  
-加入QQ群与万千用户交流，分享资源，共建知识社区
+加入QQ群或微信群与万千用户交流，分享资源，共建知识社区
 
 </div>
 
@@ -162,7 +165,7 @@ QQ群 1078469298
 
 💡 **温馨提示**: 所有资源仅供学习交流使用，请支持正版。如有版权问题，请及时联系我们处理。
 
-📧 **联系方式**: mswnlz@gmail.com | QQ群: [1078469298](https://qm.qq.com/q/Mv9zQI1vW0)
+📧 **联系方式**: mswnlz@gmail.com | QQ群: [1078469298](https://qm.qq.com/q/Mv9zQI1vW0) | 微信群: [点击加入](https://qr.869hr.uk/aitech)
 
 <UpdateTime />
 

@@ -102,6 +102,7 @@
 如果您有任何问题或建议，请通过以下方式联系我们：
 
 - **QQ群**：[1078469298](https://qm.qq.com/q/Mv9zQI1vW0)
+- **微信群**：[点击加入](https://qr.869hr.uk/aitech)
 - **邮箱**：mswnlz@gmail.com
 
 ---
