@@ -191,14 +191,15 @@ export default defineConfig({
         content: 'lI-wB0SQ6fXo-tUmUtTvz_9Qa65EMnPl_9PUuxhCJoI'
       }
     ],
-    [
-      'script',
-      {
-        async: true,
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2634092855285462',
-        crossorigin: 'anonymous'
-      },
-    ],
+    // Google AdSense 暂停展示：站点内容质量优化期间先注释掉广告脚本
+    // [
+    //   'script',
+    //   {
+    //     async: true,
+    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2634092855285462',
+    //     crossorigin: 'anonymous'
+    //   },
+    // ],
     [
       'script',
       {
