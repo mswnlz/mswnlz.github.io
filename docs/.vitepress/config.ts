@@ -329,7 +329,7 @@ export default defineConfig({
       }
     ],
     nav: [
-      { text: '点击加入QQ群：1019984660', link: 'https://qm.qq.com/q/M9U9Hhd1wQ' },
+      { text: '点击加入QQ群：1078469298', link: 'https://qm.qq.com/q/IqbSknGAay' },
       { text: '首页', link: '/' },
       { text: '📂 资源', link: '/AIknowledge/' }
     ],

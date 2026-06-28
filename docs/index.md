@@ -14,7 +14,7 @@ hero:
       link: "/AIknowledge/"
     - theme: alt
       text: "📞 加入QQ群交流"
-      link: "https://qm.qq.com/q/Mv9zQI1vW0"
+      link: "https://qm.qq.com/q/IqbSknGAay"
     - theme: alt
       text: "💬 加入微信群交流"
       link: "https://qr.869hr.uk/aitech"
@@ -165,7 +165,7 @@ QQ群 1078469298
 
 💡 **温馨提示**: 所有资源仅供学习交流使用，请支持正版。如有版权问题，请及时联系我们处理。
 
-📧 **联系方式**: mswnlz@gmail.com | QQ群: [1078469298](https://qm.qq.com/q/Mv9zQI1vW0) | 微信群: [点击加入](https://qr.869hr.uk/aitech)
+📧 **联系方式**: mswnlz@gmail.com | QQ群: [1078469298](https://qm.qq.com/q/IqbSknGAay) | 微信群: [点击加入](https://qr.869hr.uk/aitech)
 
 <UpdateTime />
 

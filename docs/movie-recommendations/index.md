@@ -150,7 +150,7 @@ LibreTV 适合需要使用第三方播放器的用户，支持更多视频格式
 
 ## 👥 联系与支持
 
-**QQ交流群：** [1078469298](https://qm.qq.com/q/Mv9zQI1vW0) | **微信群：** [点击加入](https://qr.869hr.uk/aitech)  
+**QQ交流群：** [1078469298](https://qm.qq.com/q/IqbSknGAay) | **微信群：** [点击加入](https://qr.869hr.uk/aitech)  
 - 获取最新密码和访问地址  
 - 申请独立账号  
 - 分享使用经验和问题反馈  

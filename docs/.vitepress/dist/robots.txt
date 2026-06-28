@@ -27,12 +27,30 @@ Sitemap: https://doc.869hr.uk/sitemap.xml
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
 
-# 热门搜索引擎特定设置
+# 搜索引擎特定设置
 User-agent: Googlebot
 Crawl-delay: 0
+Allow: /
 
-User-agent: Baiduspider
-Crawl-delay: 1
+# Googlebot 图片/视频爬虫
+User-agent: Googlebot-Image
+Crawl-delay: 0
+Allow: /
+
+User-agent: Googlebot-Video
+Crawl-delay: 0
+Allow: /
 
 User-agent: Bingbot
 Crawl-delay: 1
+Allow: /
+
+# Bing 图片爬虫
+User-agent: adidxbot
+Crawl-delay: 1
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Crawl-delay: 1
+Allow: /
