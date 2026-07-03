@@ -13,6 +13,9 @@ hero:
       text: "🚀 开始探索免费资源"
       link: "/AIknowledge/"
     - theme: alt
+      text: "✈️ 加入Telegram群交流"
+      link: "https://t.me/tgmShareAI"
+    - theme: alt
       text: "📞 加入QQ群交流"
       link: "https://qm.qq.com/q/IqbSknGAay"
     - theme: alt
