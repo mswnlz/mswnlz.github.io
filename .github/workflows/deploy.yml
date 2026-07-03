@@ -73,6 +73,8 @@ jobs:
           bash ./scripts/sync-tabs.sh --auto || true
 
       - name: Fetch latest commits
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run fetch-commits
 
       - name: Build VitePress site
