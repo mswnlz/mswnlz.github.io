@@ -4,8 +4,8 @@
 # 功能：在 copy_content.sh 同步内容后运行，为每个月份页面添加
 #       标准化的 title / description / keywords frontmatter，
 #       提升 Google 收录质量，从而增加 Google Ads 曝光和收益。
-# 注意：只修改 docs/{category}/ 下的文件（VitePress 源文件），
-#       不修改 docs/public/{category}/ 下的文件（ResourceTabs静态资源）
+# 注意：只修改 docs/{category}/ 下的月份归档页。
+#       ResourceTabs 已改为读取构建期 catalog，不再依赖 docs/public/{category}/ Markdown。
 #
 # 用法：
 #   bash scripts/seo-enhance.sh            # 普通模式，打印每步操作

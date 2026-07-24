@@ -1,174 +1,114 @@
 ---
 layout: home
 
-title: 大坝的资源收集站 - 超过100T免费资源下载
-description: 免费提供超过100T海量资源下载，包含AI知识、书籍资料、跨境电商、自媒体、教育、健康、影视、工具等各类资源，持续更新，全部免费下载
+title: 大坝的资源收集站
+description: 中文免费资源目录，按分类、关键词、网盘平台和月份归档整理 AI、书籍、课程、教育、工具、影视、健康、自媒体和跨境电商资料。
 
 hero:
   name: "大坝的资源收集站"
-  text: "超过100T免费资源下载"
-  tagline: "🚀 免费 · 海量 · 持续更新 | 专注提供优质免费资源下载"
+  text: "更快找到可用资源"
+  tagline: "按分类、关键词、平台和月份归档整理资料。月份用于追溯，搜索和筛选才是主要入口。"
   actions:
-    - theme: alt
-      text: "🚀 开始探索免费资源"
+    - theme: brand
+      text: "浏览 AI 资源"
       link: "/AIknowledge/"
     - theme: alt
-      text: "✈️ 加入Telegram群交流"
-      link: "https://t.me/tgmShareAI"
-    - theme: alt
-      text: "📞 加入QQ群交流"
-      link: "https://qm.qq.com/q/IqbSknGAay"
-    - theme: alt
-      text: "💬 加入微信群交流"
-      link: "https://qr.869hr.uk/aitech"
-    - theme: alt
-      text: "⭐ 项目开源 GitHub"
-      link: "https://github.com/mswnlz"
+      text: "查看全部分类"
+      link: "#resource-categories"
 
 features:
-  - icon: "🤖"
-    title: "AI 知识"
-    details: "人工智能学习资料、提示词工程、AI工具教程、机器学习课程等前沿技术内容"
+  - title: "AI 知识"
+    details: "大语言模型、提示词、AI 绘画、机器学习、智能体和 AI 办公教程。"
     link: "/AIknowledge/"
-    linkText: "探索AI资源 →"
-  
-  - icon: "📖"
-    title: "书籍资料"
-    details: "电子书、技术文档、学术论文、小说文学、专业教材等丰富阅读资源"
+    linkText: "进入分类"
+  - title: "书籍资料"
+    details: "电子书、技术文档、教材、文学、商业管理和专业阅读资料。"
     link: "/book/"
-    linkText: "浏览书籍 →"
-  
-  - icon: "🌍"
-    title: "跨境电商"
-    details: "亚马逊开店、TikTok营销、外贸实操、选品工具、数据分析完整教程"
-    link: "/cross-border/"
-    linkText: "学习电商 →"
-  
-  - icon: "📱"
-    title: "自媒体运营"
-    details: "流量获取、内容创作、变现策略、短视频制作、直播运营全套资料"
-    link: "/self-media/"
-    linkText: "运营技巧 →"
-  
-  - icon: "🎓"
-    title: "教育资源"
-    details: "从幼儿园到大学全阶段教育材料、考试资料、职业培训精选内容"
-    link: "/edu-knowlege/"
-    linkText: "教育资料 →"
-  
-  - icon: "🔧"
-    title: "工具合集"
-    details: "软件工具、浏览器插件、系统优化、开发工具、设计素材应有尽有"
-    link: "/tools/"
-    linkText: "实用工具 →"
-  
-  - icon: "🎬"
-    title: "影视娱乐"
-    details: "高清电影、纪录片、音乐资源、演唱会、综艺节目海量收藏"
-    link: "/movies/"
-    linkText: "影视资源 →"
-  
-  - icon: "💪"
-    title: "健康养生"
-    details: "健身教程、营养指南、心理健康、中医养生、康复训练系统资源"
-    link: "/healthy/"
-    linkText: "健康生活 →"
-  
-  - icon: "🎭"
-    title: "影视在线观看"
-    details: "免费观看影视资源，资源丰富更新快，含使用说明和访问密码"
-    link: "/movie-recommendations/"
-    linkText: "在线观看 →"
-  
-  - icon: "📝"
-    title: "课程资料"
-    details: "得到、网上流行课程等综合学习资料精选合集"
+    linkText: "进入分类"
+  - title: "课程资料"
+    details: "得到、知识付费、职业技能、商业思维和个人成长课程合集。"
     link: "/curriculum/"
-    linkText: "课程学习 →"
-  
-  - icon: "🏛️"
-    title: "传统文化"
-    details: "中医课程、传统文化资料等国学精华内容"
-    link: "/chinese-traditional/"
-    linkText: "文化传承 →"
-  
-  - icon: "💻"
-    title: "自动化工具"
-    details: "各种自动化脚本和工具，提升工作效率必备"
-    link: "/auto/"
-    linkText: "效率提升 →"
+    linkText: "进入分类"
+  - title: "影视娱乐"
+    details: "电影、纪录片、音乐、演唱会、综艺和影视媒体资源。"
+    link: "/movies/"
+    linkText: "进入分类"
+  - title: "工具合集"
+    details: "软件、插件、开发工具、办公效率、系统镜像和设计素材。"
+    link: "/tools/"
+    linkText: "进入分类"
+  - title: "教育资源"
+    details: "幼儿园到大学、考试、机构课程、学习资料和培训内容。"
+    link: "/edu-knowlege/"
+    linkText: "进入分类"
+  - title: "自媒体运营"
+    details: "短视频、直播、流量、内容创作、账号运营和变现策略。"
+    link: "/self-media/"
+    linkText: "进入分类"
+  - title: "健康养生"
+    details: "健身、营养、睡眠、心理健康、中医养生和康复训练。"
+    link: "/healthy/"
+    linkText: "进入分类"
+  - title: "跨境电商"
+    details: "亚马逊、TikTok、外贸、支付收款、独立站和选品运营。"
+    link: "/cross-border/"
+    linkText: "进入分类"
 ---
 
-## 🚀 关于大坝的资源收集站
+<div id="resource-categories" class="home-panel">
 
-> 🎯 **专注免费** · 🌟 **品质保证** · 📈 **持续更新** · 🔥 **社区驱动**
+## 资源如何组织
 
-大坝的资源收集站是一个专注于提供**免费优质资源下载**的开放平台。我们坚信知识和资源应该人人可得，致力于为全球用户提供超过**100T的海量优质资源**，覆盖学习、工作、娱乐等各个生活场景。
+本站保留每个分类下的月份归档页，例如 `/AIknowledge/202510`，方便追溯某个月新增了什么。分类首页不再按月份 Tab 切换，而是直接展示可搜索、可筛选的资源目录。
 
-### 🎯 为什么选择我们？
+<div class="home-grid">
 
-<div class="advantages">
+<div>
+<strong>分类优先</strong>
+<p>先按主题进入分类，再用关键词缩小范围，避免只靠月份猜资源在哪。</p>
+</div>
 
-**💯 完全免费**  
-所有资源100%免费下载，永无隐藏费用，让知识传播无障碍
+<div>
+<strong>平台可筛</strong>
+<p>目录会识别夸克网盘、阿里云盘、百度网盘、GitHub 等来源，方便按使用习惯筛选。</p>
+</div>
 
-**🔄 持续更新**  
-每日更新最新优质资源，紧跟时代潮流，保持内容新鲜度
-
-**⭐ 品质保证**  
-专业团队精心筛选，严格把关资源质量，拒绝低质灌水内容
-
-**🎯 分类清晰**  
-科学的分类体系和智能搜索，帮您快速精准找到所需资源
-
-**🌐 多平台支持**  
-支持夸克网盘、阿里网盘、百度网盘等主流平台，下载便捷
-
-**👥 社区互动**  
-加入QQ群或微信群与万千用户交流，分享资源，共建知识社区
+<div>
+<strong>归档保留</strong>
+<p>旧月份 URL 不删除，所有原始月份 Markdown 仍作为归档页保留，降低 SEO 和外链迁移风险。</p>
+</div>
 
 </div>
 
-### 📈 平台数据一览
-
-<div class="platform-stats">
-
-**📦 资源总量**  
-超过 100TB
-
-**🏷️ 分类数量**  
-12 个主要类别
-
-**📅 更新频率**  
-每日更新
-
-**👥 用户群体**  
-QQ群 1078469298
-
-**🌍 支持平台**  
-夸克网盘、阿里网盘等
-
 </div>
 
-### 🔍 热门搜索关键词
+<div class="home-panel">
+
+## 常用搜索词
 
 <div class="keyword-tags">
 
-`免费资源下载` `AI教程` `电子书下载` `跨境电商教程` `自媒体运营` `在线教育` `健身视频` `电影资源` `软件工具` `设计素材` `编程教程` `考试资料` `夸克网盘` `阿里网盘` `TikTok营销` `亚马逊开店` `提示词工程` `机器学习`
+`ChatGPT` `DeepSeek` `提示词` `Excel` `电子书` `得到课程` `纪录片` `健身` `跨境电商` `短视频运营` `夸克网盘` `AI 绘画` `机器学习` `办公效率`
 
 </div>
+
+</div>
+
+<div class="home-panel">
+
+## 收录与版权
+
+本站是资料索引目录，资源信息用于学习交流和检索整理。请优先支持正版内容；如有侵权或失效链接，可以通过邮箱联系处理。
 
 <GitHubLink />
 
 <SupportSection />
 
----
+</div>
 
 <div class="footer-info">
 
-💡 **温馨提示**: 所有资源仅供学习交流使用，请支持正版。如有版权问题，请及时联系我们处理。
-
-📧 **联系方式**: mswnlz@gmail.com | QQ群: [1078469298](https://qm.qq.com/q/IqbSknGAay) | 微信群: [点击加入](https://qr.869hr.uk/aitech)
+联系方式：mswnlz@gmail.com | QQ群：[1078469298](https://qm.qq.com/q/IqbSknGAay) | 微信群：[点击加入](https://qr.869hr.uk/aitech)
 
 <UpdateTime />
 

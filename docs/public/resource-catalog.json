@@ -1,0 +1,7555 @@
+{
+  "stats": {
+    "generatedAt": "2026-07-24T13:44:17.650Z",
+    "categoryCount": 11,
+    "resourceCount": 431,
+    "duplicateAliasCount": 2,
+    "categories": [
+      {
+        "id": "AIknowledge",
+        "name": "AI 知识",
+        "description": "AI 教程、提示词、工具、机器学习与智能体资料",
+        "count": 30,
+        "months": [
+          "202510",
+          "202509",
+          "202508",
+          "202507",
+          "202506",
+          "202505"
+        ],
+        "latestMonth": "202510"
+      },
+      {
+        "id": "book",
+        "name": "书籍资料",
+        "description": "电子书、技术文档、教材、文学与专业资料",
+        "count": 33,
+        "months": [
+          "202509",
+          "202508",
+          "202507",
+          "202506",
+          "202505"
+        ],
+        "latestMonth": "202509"
+      },
+      {
+        "id": "cross-border",
+        "name": "跨境电商",
+        "description": "外贸、亚马逊、TikTok、支付、选品与运营资料",
+        "count": 6,
+        "months": [
+          "202508",
+          "202507",
+          "202506"
+        ],
+        "latestMonth": "202508"
+      },
+      {
+        "id": "self-media",
+        "name": "自媒体运营",
+        "description": "内容创作、流量、直播、短视频与变现资料",
+        "count": 37,
+        "months": [
+          "202508",
+          "202507",
+          "202506",
+          "202505"
+        ],
+        "latestMonth": "202508"
+      },
+      {
+        "id": "edu-knowlege",
+        "name": "教育资源",
+        "description": "幼儿园到大学、考试、培训与学习资料",
+        "count": 30,
+        "months": [
+          "202510",
+          "202509",
+          "202508",
+          "202507",
+          "202506",
+          "202505"
+        ],
+        "latestMonth": "202510"
+      },
+      {
+        "id": "tools",
+        "name": "工具合集",
+        "description": "软件、插件、开发、办公、设计与效率工具",
+        "count": 31,
+        "months": [
+          "202510",
+          "202509",
+          "202508",
+          "202507",
+          "202506",
+          "202505"
+        ],
+        "latestMonth": "202510"
+      },
+      {
+        "id": "movies",
+        "name": "影视娱乐",
+        "description": "电影、纪录片、音乐、演唱会与综艺资料",
+        "count": 171,
+        "months": [
+          "202510",
+          "202508",
+          "202507",
+          "202506",
+          "202505"
+        ],
+        "latestMonth": "202510"
+      },
+      {
+        "id": "healthy",
+        "name": "健康养生",
+        "description": "健身、营养、睡眠、心理健康与中医养生资料",
+        "count": 15,
+        "months": [
+          "202510",
+          "202509",
+          "202508",
+          "202507",
+          "202506",
+          "202505"
+        ],
+        "latestMonth": "202510"
+      },
+      {
+        "id": "curriculum",
+        "name": "课程资料",
+        "description": "综合课程、知识付费课程与系统学习材料",
+        "count": 75,
+        "months": [
+          "202510",
+          "202508",
+          "202507",
+          "202506",
+          "202505"
+        ],
+        "latestMonth": "202510"
+      },
+      {
+        "id": "chinese-traditional",
+        "name": "传统文化",
+        "description": "中医、国学、传统文化课程与资料",
+        "count": 3,
+        "months": [
+          "202510"
+        ],
+        "latestMonth": "202510"
+      },
+      {
+        "id": "auto",
+        "name": "自动化工具",
+        "description": "自动化脚本、效率工具与工作流资料",
+        "count": 0,
+        "months": [],
+        "latestMonth": null
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "AIknowledge",
+      "name": "AI 知识",
+      "description": "AI 教程、提示词、工具、机器学习与智能体资料"
+    },
+    {
+      "id": "book",
+      "name": "书籍资料",
+      "description": "电子书、技术文档、教材、文学与专业资料"
+    },
+    {
+      "id": "cross-border",
+      "name": "跨境电商",
+      "description": "外贸、亚马逊、TikTok、支付、选品与运营资料"
+    },
+    {
+      "id": "self-media",
+      "name": "自媒体运营",
+      "description": "内容创作、流量、直播、短视频与变现资料"
+    },
+    {
+      "id": "edu-knowlege",
+      "name": "教育资源",
+      "description": "幼儿园到大学、考试、培训与学习资料"
+    },
+    {
+      "id": "tools",
+      "name": "工具合集",
+      "description": "软件、插件、开发、办公、设计与效率工具"
+    },
+    {
+      "id": "movies",
+      "name": "影视娱乐",
+      "description": "电影、纪录片、音乐、演唱会与综艺资料"
+    },
+    {
+      "id": "healthy",
+      "name": "健康养生",
+      "description": "健身、营养、睡眠、心理健康与中医养生资料"
+    },
+    {
+      "id": "curriculum",
+      "name": "课程资料",
+      "description": "综合课程、知识付费课程与系统学习材料"
+    },
+    {
+      "id": "chinese-traditional",
+      "name": "传统文化",
+      "description": "中医、国学、传统文化课程与资料"
+    },
+    {
+      "id": "auto",
+      "name": "自动化工具",
+      "description": "自动化脚本、效率工具与工作流资料"
+    }
+  ],
+  "resources": [
+    {
+      "id": "d8c102991aad",
+      "title": "北京大学《软件工程》",
+      "url": "https://pan.quark.cn/s/ccdad564448e",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202510",
+      "archivePath": "/AIknowledge/202510",
+      "sourceFile": "docs/AIknowledge/202510.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "4fd48666469a",
+      "title": "零基础上手Procreate（完结）",
+      "url": "https://pan.quark.cn/s/e9ff452384d5",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202510",
+      "archivePath": "/AIknowledge/202510",
+      "sourceFile": "docs/AIknowledge/202510.md",
+      "tags": [
+        "AI 创作"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "38cfec4db285",
+      "title": "深度学习计算机视觉实战",
+      "url": "https://pan.quark.cn/s/d043e4fc15e8",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202510",
+      "archivePath": "/AIknowledge/202510",
+      "sourceFile": "docs/AIknowledge/202510.md",
+      "tags": [
+        "机器学习"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "a31512dc19fd",
+      "title": "实用数据挖掘（共48节）",
+      "url": "https://pan.quark.cn/s/123236400edf",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202510",
+      "archivePath": "/AIknowledge/202510",
+      "sourceFile": "docs/AIknowledge/202510.md",
+      "tags": [
+        "机器学习"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "f58d26476013",
+      "title": "新能源汽车维修",
+      "url": "https://pan.quark.cn/s/ef512f08bfb4",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202510",
+      "archivePath": "/AIknowledge/202510",
+      "sourceFile": "docs/AIknowledge/202510.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "b7bf377a80fd",
+      "title": "四库全书子部（医家类·489本）",
+      "url": "https://pan.quark.cn/s/9945013de595",
+      "provider": "夸克网盘",
+      "category": "chinese-traditional",
+      "categoryName": "传统文化",
+      "month": "202510",
+      "archivePath": "/chinese-traditional/202510",
+      "sourceFile": "docs/chinese-traditional/202510.md",
+      "tags": [
+        "传统文化"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "2024af66c55b",
+      "title": "张至顺道长资料",
+      "url": "https://pan.quark.cn/s/083b33f821ac",
+      "provider": "夸克网盘",
+      "category": "chinese-traditional",
+      "categoryName": "传统文化",
+      "month": "202510",
+      "archivePath": "/chinese-traditional/202510",
+      "sourceFile": "docs/chinese-traditional/202510.md",
+      "tags": [
+        "传统文化"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "e1dc0f1005b7",
+      "title": "中医骨伤科学-长春中医药大学【赵文海】（71讲完整版）",
+      "url": "https://pan.quark.cn/s/11c26df00945",
+      "provider": "夸克网盘",
+      "category": "chinese-traditional",
+      "categoryName": "传统文化",
+      "month": "202510",
+      "archivePath": "/chinese-traditional/202510",
+      "sourceFile": "docs/chinese-traditional/202510.md",
+      "tags": [
+        "传统文化"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "8372e1014d51",
+      "title": "【专业咖啡师教学课程】咖啡设备及花式咖啡的制作",
+      "url": "https://pan.quark.cn/s/724c20b7eed5",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "d8ad08437b64",
+      "title": "6个万能公式搞定职场PPT（完结）",
+      "url": "https://pan.quark.cn/s/3e2e28852290",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "00aeadd9d334",
+      "title": "白金游戏工作室：爆款游戏 创作心法（完结）",
+      "url": "https://pan.quark.cn/s/652b3b2555f5",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "8fa6a13b5470",
+      "title": "包爱民教授：脑科学新知20讲（完结）",
+      "url": "https://pan.quark.cn/s/0f2bb28f5f06",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "b5c0dea3fdf5",
+      "title": "不刷题的吴姥姥：牛顿爱因斯坦的时空观（完结）",
+      "url": "https://pan.quark.cn/s/4b66222eb910",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "3134c0b134c6",
+      "title": "超硬核沟通课：关于说话的一切（完结）",
+      "url": "https://pan.quark.cn/s/b14de2ee017c",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "ec0a67f1d66c",
+      "title": "戴建业精讲世说新语（完结）",
+      "url": "https://pan.quark.cn/s/674e99a9a1a7",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "5e5d9e8e5920",
+      "title": "蛋白检测技术实验视频高清教程",
+      "url": "https://pan.quark.cn/s/9be24e1cf8f5",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "fc076ed12990",
+      "title": "度阴山讲阳明心学：教你修炼强大内心【完结】",
+      "url": "https://pan.quark.cn/s/2a6da62c98ce",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "0e75ec71ceb6",
+      "title": "凡人逆袭宝典-超强学习能力养成术（完结）",
+      "url": "https://pan.quark.cn/s/2abbbb7c0f45",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "4956a88b04e2",
+      "title": "方志远教授讲明史：明朝之亡（完结）",
+      "url": "https://pan.quark.cn/s/b459022cfd0d",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "b517726751c9",
+      "title": "傅佩荣的人生哲学",
+      "url": "https://pan.quark.cn/s/158c2613813f",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "6060f11fe001",
+      "title": "爵士舞零基础入门",
+      "url": "https://pan.quark.cn/s/c5e6ace2125d",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "adc0253495ab",
+      "title": "李淼：三体中的物理学（完结）",
+      "url": "https://pan.quark.cn/s/1ce918d2d275",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "831cbb82c18d",
+      "title": "临床研究的选题、设计与实施",
+      "url": "https://pan.quark.cn/s/03fb8415684a",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "8336ae8a9d6f",
+      "title": "零基础漫画入门课｜12节课从分镜到上色（角色设计+手绘技巧+完整创作流程）",
+      "url": "https://pan.quark.cn/s/f1a47273c91b",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "5439ee5650b1",
+      "title": "磨砺社交技能的10种方法",
+      "url": "https://pan.quark.cn/s/aea90b77336b",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "1c0fa7a86322",
+      "title": "普通人必备的超实用逆袭法，轻松突破现状，实现人生跃迁【完结】",
+      "url": "https://pan.quark.cn/s/72374d43aca7",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "b53846f27f9a",
+      "title": "笑傲职场，别让负面情绪绑架你",
+      "url": "https://pan.quark.cn/s/0b3429d80157",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "fad62ccf082a",
+      "title": "心理学通识与新知（完结）",
+      "url": "https://pan.quark.cn/s/11ce18c4f866",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "1f268bfb63bb",
+      "title": "Meta分析资料",
+      "url": "https://pan.quark.cn/s/15d4d6c360b9",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202510",
+      "archivePath": "/curriculum/202510",
+      "sourceFile": "docs/curriculum/202510.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "c40f31bb8f50",
+      "title": "大语文名师团：四大名著精讲",
+      "url": "https://pan.quark.cn/s/141e2c8b35c6",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202510",
+      "archivePath": "/edu-knowlege/202510",
+      "sourceFile": "docs/edu-knowlege/202510.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "58cf48c76070",
+      "title": "凯叔讲故事《神奇图书馆》",
+      "url": "https://pan.quark.cn/s/2877242c5da8",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202510",
+      "archivePath": "/edu-knowlege/202510",
+      "sourceFile": "docs/edu-knowlege/202510.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "85fc2df83e7b",
+      "title": "王芳《中国近代史 1840-1919 (音频+思维导图) 》",
+      "url": "https://pan.quark.cn/s/d2446e251116",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202510",
+      "archivePath": "/edu-knowlege/202510",
+      "sourceFile": "docs/edu-knowlege/202510.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "afb9a2ffeed1",
+      "title": "小学数学跟着动画学 《大智与呆呆动漫数学》",
+      "url": "https://pan.quark.cn/s/c445708f5872",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202510",
+      "archivePath": "/edu-knowlege/202510",
+      "sourceFile": "docs/edu-knowlege/202510.md",
+      "tags": [
+        "教育学习"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "f0967d95df08",
+      "title": "零基础减脂塑性·男女适用（完结）",
+      "url": "https://pan.quark.cn/s/4b68b01cce36",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202510",
+      "archivePath": "/healthy/202510",
+      "sourceFile": "docs/healthy/202510.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "700806b1533c",
+      "title": "强身健体 道家秘法",
+      "url": "https://pan.quark.cn/s/cc0478dae647",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202510",
+      "archivePath": "/healthy/202510",
+      "sourceFile": "docs/healthy/202510.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "d2a358f8b748",
+      "title": "328首付费绝版歌曲-转存即听",
+      "url": "https://pan.quark.cn/s/b1cdd4bb9143",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202510",
+      "archivePath": "/movies/202510",
+      "sourceFile": "docs/movies/202510.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "1961737fddf7",
+      "title": "【87time】OCtane c4d商业渲染教程（原价1280）",
+      "url": "https://pan.quark.cn/s/08e546848e45",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202510",
+      "archivePath": "/tools/202510",
+      "sourceFile": "docs/tools/202510.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "31d45b3ae8f6",
+      "title": "超实用Word隐藏技巧",
+      "url": "https://pan.quark.cn/s/8ac925749dd8",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202510",
+      "archivePath": "/tools/202510",
+      "sourceFile": "docs/tools/202510.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "ffad749d559a",
+      "title": "国内手机esim使用视频教程，含 9esim、XeSIM、eSTK等工具",
+      "url": "https://pan.quark.cn/s/cab006a4a1bd",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202510",
+      "archivePath": "/tools/202510",
+      "sourceFile": "docs/tools/202510.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "78be8b28deec",
+      "title": "和方骥一起学Excel",
+      "url": "https://pan.quark.cn/s/f0c26bbf2826",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202510",
+      "archivePath": "/tools/202510",
+      "sourceFile": "docs/tools/202510.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "f13cd21505d1",
+      "title": "和顾建一起学Word",
+      "url": "https://pan.quark.cn/s/b92d7870906b",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202510",
+      "archivePath": "/tools/202510",
+      "sourceFile": "docs/tools/202510.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "62f45ea0a989",
+      "title": "如何打造高颜值简历",
+      "url": "https://pan.quark.cn/s/57d2ebc0f93b",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202510",
+      "archivePath": "/tools/202510",
+      "sourceFile": "docs/tools/202510.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "226b5a15873e",
+      "title": "Spec Coding 实践指南",
+      "url": "https://pan.quark.cn/s/dbb2a6800811",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202510",
+      "archivePath": "/tools/202510",
+      "sourceFile": "docs/tools/202510.md",
+      "tags": [
+        "开发工具"
+      ],
+      "aliasMonths": [
+        "202510"
+      ]
+    },
+    {
+      "id": "fc02162310a1",
+      "title": "2025最新Google Gemini Pro学生认证薅羊毛教程及教育邮箱二验教程 | 无需学校资料快速通过验证",
+      "url": "https://s.869hr.uk/d47",
+      "provider": "s.869hr.uk",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202509",
+      "archivePath": "/AIknowledge/202509",
+      "sourceFile": "docs/AIknowledge/202509.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202509"
+      ]
+    },
+    {
+      "id": "726b90b553a5",
+      "title": "北大才子邵鑫精讲《古文观止》",
+      "url": "https://pan.quark.cn/s/d00cb42b982a",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202509",
+      "archivePath": "/book/202509",
+      "sourceFile": "docs/book/202509.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202509"
+      ]
+    },
+    {
+      "id": "541c571b4022",
+      "title": "邵鑫《古文观止》MP3",
+      "url": "https://pan.quark.cn/s/631302d23624",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202509",
+      "archivePath": "/book/202509",
+      "sourceFile": "docs/book/202509.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202509"
+      ]
+    },
+    {
+      "id": "73291345a49e",
+      "title": "邵鑫《宜读经典·解读10本经典名著》-超过100T资料总站网站-doc.0202dce4be56",
+      "url": "https://pan.quark.cn/s/0202dce4be56",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202509",
+      "archivePath": "/book/202509",
+      "sourceFile": "docs/book/202509.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202509"
+      ]
+    },
+    {
+      "id": "5391688a0cb2",
+      "title": "2025事业单位资料合集",
+      "url": "https://pan.quark.cn/s/44d0d86a6402",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202509",
+      "archivePath": "/edu-knowlege/202509",
+      "sourceFile": "docs/edu-knowlege/202509.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202509"
+      ]
+    },
+    {
+      "id": "f9cf8d184984",
+      "title": "卓叔增重：增肌入门教学课（完结）",
+      "url": "https://pan.quark.cn/s/768fab20c1e0",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202509",
+      "archivePath": "/healthy/202509",
+      "sourceFile": "docs/healthy/202509.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202509"
+      ]
+    },
+    {
+      "id": "1a9f4c399d9b",
+      "title": "9eSIM/XeSIM/eSTK优缺点对比，到底如何选择！国产手机秒变eSIM手机：多号切换、全球流量，一卡搞定，注册各种国外AI及应用！支持安卓和苹果手机",
+      "url": "https://s.869hr.uk/mcc",
+      "provider": "s.869hr.uk",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202509",
+      "archivePath": "/tools/202509",
+      "sourceFile": "docs/tools/202509.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202509"
+      ]
+    },
+    {
+      "id": "b8fb09ca7baf",
+      "title": "安卓手机国内使用官方TikTok APP，修改手部分教程免拔SIM卡，绕过手机号码属地检测，可免Root的SIM卡国家码工具，教程及工具链接",
+      "url": "https://x.com/wlzh/status/1964333384072933817",
+      "provider": "x.com",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202509",
+      "archivePath": "/tools/202509",
+      "sourceFile": "docs/tools/202509.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202509"
+      ]
+    },
+    {
+      "id": "ae9b1a1bd53d",
+      "title": "100+COZE扣子工作流合集",
+      "url": "https://pan.quark.cn/s/9abb7865231e",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202508",
+      "archivePath": "/AIknowledge/202508",
+      "sourceFile": "docs/AIknowledge/202508.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "a6b9e7af3f33",
+      "title": "《看透人性逆袭成神》：人性真相与快速逆袭绝招",
+      "url": "https://pan.quark.cn/s/5f5b8be3d065",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202508",
+      "archivePath": "/book/202508",
+      "sourceFile": "docs/book/202508.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "0f6085e11dd5",
+      "title": "凡人修仙传",
+      "url": "https://pan.baidu.com/s/1473gjvhIMgSzM6c6xqCGNw?pwd=7xea",
+      "provider": "百度网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202508",
+      "archivePath": "/book/202508",
+      "sourceFile": "docs/book/202508.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "7411e5e941ea",
+      "title": "凡人修仙传",
+      "url": "https://pan.quark.cn/s/68cbac79df6b",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202508",
+      "archivePath": "/book/202508",
+      "sourceFile": "docs/book/202508.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "b0f3f6af3ffd",
+      "title": "红楼梦性爱揭秘 (聂鑫森, 聂鑫汉)",
+      "url": "https://pan.quark.cn/s/917b22c57638",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202508",
+      "archivePath": "/book/202508",
+      "sourceFile": "docs/book/202508.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "a592eae8a53c",
+      "title": "央视推荐书单40部，权威精选必读经典与优质好书推荐",
+      "url": "https://pan.quark.cn/s/5889b2a48a32",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202508",
+      "archivePath": "/book/202508",
+      "sourceFile": "docs/book/202508.md",
+      "tags": [
+        "阅读资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "644b4659802b",
+      "title": "国外SIM卡 VOXI eSIM 免费领取与激活全攻略，需要edu学生教育邮箱",
+      "url": "https://s.869hr.uk/ng3",
+      "provider": "s.869hr.uk",
+      "category": "cross-border",
+      "categoryName": "跨境电商",
+      "month": "202508",
+      "archivePath": "/cross-border/202508",
+      "sourceFile": "docs/cross-border/202508.md",
+      "tags": [
+        "跨境电商"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "4344c0ae6ee3",
+      "title": "免费获取美国教育邮箱（.edu）终极指南 | 轻松解锁学生福利",
+      "url": "https://s.869hr.uk/ttr",
+      "provider": "s.869hr.uk",
+      "category": "cross-border",
+      "categoryName": "跨境电商",
+      "month": "202508",
+      "archivePath": "/cross-border/202508",
+      "sourceFile": "docs/cross-border/202508.md",
+      "tags": [
+        "跨境电商"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "49b41eb93540",
+      "title": "英国giffgaff实体SIM卡激活使用全攻略",
+      "url": "https://s.869hr.uk/ywe",
+      "provider": "s.869hr.uk",
+      "category": "cross-border",
+      "categoryName": "跨境电商",
+      "month": "202508",
+      "archivePath": "/cross-border/202508",
+      "sourceFile": "docs/cross-border/202508.md",
+      "tags": [
+        "跨境电商"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "761d7248e6f1",
+      "title": "《李笑来付费课程资料合集》",
+      "url": "https://pan.quark.cn/s/1d1de6c29510",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "d831ad1bd269",
+      "title": "《让你说话富有逻辑的10种说话技巧》让你说话有力度 有气场!",
+      "url": "https://pan.quark.cn/s/4be2d5bb977f",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "bfe05ec1ad91",
+      "title": "2024软考高级系统架构设计师",
+      "url": "https://pan.quark.cn/s/e9b020c14fc2",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "56473e00928d",
+      "title": "2025年7月31日付费文章合集，大佬精华+实战干货+热点趋势解析",
+      "url": "https://pan.quark.cn/s/5880e1a4e1e7",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "63a10429f0e1",
+      "title": "2025软考高级系统架构设计师",
+      "url": "https://pan.quark.cn/s/883fbb4dd2e9",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "b1d34e9b1a71",
+      "title": "2025最新软考高级系统规划与管理师资料合集-doc.869hr.uk",
+      "url": "https://pan.quark.cn/s/7ea736d13c10",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "d3bdca8b7248",
+      "title": "何刚课程《投资参考2023-2024》",
+      "url": "https://pan.quark.cn/s/d55619b11e91",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "efb261c03c51",
+      "title": "华尔街学堂丨全面解析企业估值与建模（完结）",
+      "url": "https://pan.quark.cn/s/802ab202da94",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "b79ee0b21f2c",
+      "title": "景瑶阴瑜伽初级精进教培20课",
+      "url": "https://pan.quark.cn/s/18223aec6777",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "100bc6a14422",
+      "title": "魔术教程大合集",
+      "url": "https://pan.quark.cn/s/5006b996c6d3",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "2d8d5c8d8c7a",
+      "title": "奈学教育-全学科年卡超1000个专栏课程",
+      "url": "https://pan.quark.cn/s/b9d7a7b0fc2d",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "739d8251a47f",
+      "title": "扔掉无效健身！每周3小时，拥有完美身材",
+      "url": "https://pan.quark.cn/s/db2dc8deb150",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "53f9e621047e",
+      "title": "软考高级系统架构设计师",
+      "url": "https://pan.baidu.com/s/10waVt75AQzqew-3mLXrliA?pwd=ddxm",
+      "provider": "百度网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "f7ed151bca05",
+      "title": "软考高级系统架构设计师整套教程（偏老）",
+      "url": "https://pan.baidu.com/s/1Q2IVMBqzEzUjYCuhbOrC7w?pwd=hc79",
+      "provider": "百度网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "7ade5cb90307",
+      "title": "软考高级系统架构设计师XMind总结",
+      "url": "https://pan.baidu.com/s/1hE5-p1kTbn7lN9NwsRI8gA?pwd=x897",
+      "provider": "百度网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "d3f95108f5d4",
+      "title": "省钱秘籍：手把手教你用尼日利亚区AppleID订阅 ChatGPT Plus，每月从 💲20降到$8",
+      "url": "https://s.869hr.uk/aps",
+      "provider": "s.869hr.uk",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "04b89867a0c7",
+      "title": "销售-高手特训营-doc.869hr.uk",
+      "url": "https://pan.quark.cn/s/32e79f1eeb7b",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "e915d021a1d8",
+      "title": "中医十二经络易堵点自我疏通手法课程",
+      "url": "https://pan.quark.cn/s/ac559d60c3da",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "ffd23f2014a4",
+      "title": "M146.夫唯Google独立站SEO系统教程2025年",
+      "url": "https://pan.quark.cn/s/4a7e958ef9a7",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202508",
+      "archivePath": "/curriculum/202508",
+      "sourceFile": "docs/curriculum/202508.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "fb3e6e1beadd",
+      "title": "《皮普和波西 Pip and Posy》少儿英语启蒙全集，动画+绘本+配套资料",
+      "url": "https://pan.quark.cn/s/4a01feccdd31",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202508",
+      "archivePath": "/edu-knowlege/202508",
+      "sourceFile": "docs/edu-knowlege/202508.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "3ccf0b120ac3",
+      "title": "16天超级记忆力训练课程",
+      "url": "https://pan.quark.cn/s/738b0de7016f",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202508",
+      "archivePath": "/edu-knowlege/202508",
+      "sourceFile": "docs/edu-knowlege/202508.md",
+      "tags": [
+        "教育学习"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "dd914a24f4bd",
+      "title": "2024行业报告合集1722份",
+      "url": "https://pan.quark.cn/s/4447450f8ecf",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202508",
+      "archivePath": "/edu-knowlege/202508",
+      "sourceFile": "docs/edu-knowlege/202508.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "88e42c314f62",
+      "title": "2025最新软考高级系统规划与管理师资料合集",
+      "url": "https://pan.quark.cn/s/7ea736d13c10",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202508",
+      "archivePath": "/edu-knowlege/202508",
+      "sourceFile": "docs/edu-knowlege/202508.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202508",
+        "202508"
+      ]
+    },
+    {
+      "id": "6e6fd06490f7",
+      "title": "420套涉及33个领域的行业报告",
+      "url": "https://pan.quark.cn/s/f2884f877d46",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202508",
+      "archivePath": "/edu-knowlege/202508",
+      "sourceFile": "docs/edu-knowlege/202508.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "b6848d1cabfe",
+      "title": "各行业报告-持续更新中",
+      "url": "https://pan.quark.cn/s/91496adfd813",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202508",
+      "archivePath": "/edu-knowlege/202508",
+      "sourceFile": "docs/edu-knowlege/202508.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "921cf340a843",
+      "title": "零基础学英语",
+      "url": "https://pan.quark.cn/s/72b47733a52b",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202508",
+      "archivePath": "/edu-knowlege/202508",
+      "sourceFile": "docs/edu-knowlege/202508.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "7e4fa2525d0a",
+      "title": "沈奕旐家庭教育直播回放合集",
+      "url": "https://pan.quark.cn/s/eeb0dc7ddce0",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202508",
+      "archivePath": "/edu-knowlege/202508",
+      "sourceFile": "docs/edu-knowlege/202508.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "c6c789dd0090",
+      "title": "中医舌诊图解大全",
+      "url": "https://pan.baidu.com/s/1VFE-EqKrPBa6uwwbAsBYyA?pwd=d3hw",
+      "provider": "百度网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202508",
+      "archivePath": "/healthy/202508",
+      "sourceFile": "docs/healthy/202508.md",
+      "tags": [
+        "健康生活"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "0ec4212967dc",
+      "title": "电影 浪丨浪丨山 丨小妖怪（2025）",
+      "url": "https://pan.quark.cn/s/95736108fcf8",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202508",
+      "archivePath": "/movies/202508",
+      "sourceFile": "docs/movies/202508.md",
+      "tags": [
+        "影视音频"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "b5643a894943",
+      "title": "电影 浪丨浪丨山 丨小妖怪（2025）",
+      "url": "https://pan.baidu.com/s/1q44-DP-0lHIaY_Y95GvzGw?pwd=m1xi",
+      "provider": "百度网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202508",
+      "archivePath": "/movies/202508",
+      "sourceFile": "docs/movies/202508.md",
+      "tags": [
+        "影视音频"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "e97c8e9e7eb2",
+      "title": "搞钱必看四部记录片",
+      "url": "https://pan.quark.cn/s/27dd709cd44f",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202508",
+      "archivePath": "/movies/202508",
+      "sourceFile": "docs/movies/202508.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "190dba99693e",
+      "title": "特朗普爱上在白宫干保洁的我【热门短剧】【英语中字】",
+      "url": "https://pan.quark.cn/s/3815ff440c67",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202508",
+      "archivePath": "/movies/202508",
+      "sourceFile": "docs/movies/202508.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "07167f1b68dc",
+      "title": "央视力荐342部儿童必看纪录片合集",
+      "url": "https://pan.quark.cn/s/df980ba129e2",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202508",
+      "archivePath": "/movies/202508",
+      "sourceFile": "docs/movies/202508.md",
+      "tags": [
+        "影视音频"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "6f0c426766c0",
+      "title": "06012、Tiktok实战从0-1运营教学课程",
+      "url": "https://pan.quark.cn/s/f2cd7fa8d7aa",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202508",
+      "archivePath": "/self-media/202508",
+      "sourceFile": "docs/self-media/202508.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "fcc9e189a2f3",
+      "title": "快手无人直播实战营：0基础到精通，打造永不落幕的日不落带货直播间(1)",
+      "url": "https://pan.quark.cn/s/e3e9cee7d5c7",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202508",
+      "archivePath": "/self-media/202508",
+      "sourceFile": "docs/self-media/202508.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "9dfd3cbacf24",
+      "title": "销售-高手特训营",
+      "url": "https://pan.quark.cn/s/32e79f1eeb7b",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202508",
+      "archivePath": "/self-media/202508",
+      "sourceFile": "docs/self-media/202508.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "f3984899e4e5",
+      "title": "小红书博主爆款训练营第11期，手把手教你从0-1做小红书，从定位到起号到变现",
+      "url": "https://pan.quark.cn/s/1ef3fa20022a",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202508",
+      "archivePath": "/self-media/202508",
+      "sourceFile": "docs/self-media/202508.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "c63cf65151b7",
+      "title": "小红书流量最新野路子揭秘，认知升级带动精准引流与变现",
+      "url": "https://pan.quark.cn/s/afd3a8e13634",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202508",
+      "archivePath": "/self-media/202508",
+      "sourceFile": "docs/self-media/202508.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "38f7568bfdbf",
+      "title": "文件时间修改器",
+      "url": "https://pan.quark.cn/s/4b519456ca46",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202508",
+      "archivePath": "/tools/202508",
+      "sourceFile": "docs/tools/202508.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "e1f177255cb8",
+      "title": "DirectoryOpus",
+      "url": "https://pan.quark.cn/s/0125148c9887",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202508",
+      "archivePath": "/tools/202508",
+      "sourceFile": "docs/tools/202508.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "0f1d5a4f93d1",
+      "title": "office19 for mac",
+      "url": "https://pan.baidu.com/s/1j8wBniyF7BMtNU0TqSpVLA?pwd=4fp9",
+      "provider": "百度网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202508",
+      "archivePath": "/tools/202508",
+      "sourceFile": "docs/tools/202508.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "8334778d2767",
+      "title": "office2024 4合1",
+      "url": "https://pan.quark.cn/s/8a96010c5740",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202508",
+      "archivePath": "/tools/202508",
+      "sourceFile": "docs/tools/202508.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "d35af5b1756b",
+      "title": "office2024直装激活版，无需激活、直装即是专业增强版",
+      "url": "https://pan.quark.cn/s/ecda6d05fbfd",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202508",
+      "archivePath": "/tools/202508",
+      "sourceFile": "docs/tools/202508.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202508"
+      ]
+    },
+    {
+      "id": "abce1e69a9aa",
+      "title": "AI绘画进阶课：手把手详细教学，30堂从入门到高手，掌握主流AI绘画技法",
+      "url": "https://pan.quark.cn/s/279d76d31f5d",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202507",
+      "archivePath": "/AIknowledge/202507",
+      "sourceFile": "docs/AIknowledge/202507.md",
+      "tags": [
+        "AI 创作"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "3b3b1b46ab8a",
+      "title": "《100+精选套装书合集》精选必读经典，高质量套装推荐",
+      "url": "https://pan.quark.cn/s/27018a1b5f67",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202507",
+      "archivePath": "/book/202507",
+      "sourceFile": "docs/book/202507.md",
+      "tags": [
+        "阅读资料"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "f111b4eeaaf5",
+      "title": "《樊登读书 (帆书) 》2025年合集",
+      "url": "https://pan.quark.cn/s/3be6fe6946b2",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202507",
+      "archivePath": "/book/202507",
+      "sourceFile": "docs/book/202507.md",
+      "tags": [
+        "阅读资料"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "56ccf40d7555",
+      "title": "2 | 罗翔荐读书单（50部）",
+      "url": "https://pan.quark.cn/s/78842141a8ca",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202507",
+      "archivePath": "/book/202507",
+      "sourceFile": "docs/book/202507.md",
+      "tags": [
+        "阅读资料"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "f85551df720a",
+      "title": "老齐读书圈2020-2025全集·知识星球付费资源｜精品书单+音频解读【持续更新】",
+      "url": "https://pan.quark.cn/s/b691239ed2ec",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202507",
+      "archivePath": "/book/202507",
+      "sourceFile": "docs/book/202507.md",
+      "tags": [
+        "阅读资料"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "8c0ff1e2e95e",
+      "title": "图灵编程电子书合集｜229本PDF下载（Python 机器学习 全栈开发+技术教程）",
+      "url": "https://pan.quark.cn/s/e9bfa548c04f",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202507",
+      "archivePath": "/book/202507",
+      "sourceFile": "docs/book/202507.md",
+      "tags": [
+        "阅读资料"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "9153e64a3a7a",
+      "title": "永恒的科幻经典阿西莫夫经典作品集（共18册）",
+      "url": "https://pan.quark.cn/s/6a716ea21db9",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202507",
+      "archivePath": "/book/202507",
+      "sourceFile": "docs/book/202507.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "eb6573cd0312",
+      "title": "妙有电商闲鱼无货源陪跑课，最全、最新、最干，零基础实战",
+      "url": "https://pan.quark.cn/s/d54b71646602",
+      "provider": "夸克网盘",
+      "category": "cross-border",
+      "categoryName": "跨境电商",
+      "month": "202507",
+      "archivePath": "/cross-border/202507",
+      "sourceFile": "docs/cross-border/202507.md",
+      "tags": [
+        "跨境运营"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "53df2aab94f3",
+      "title": "B站摄影教程｜雷雨风光摄影课（高清视频下载+实战技巧+学习资源分享）",
+      "url": "https://pan.quark.cn/s/9b6e4e5360ca",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202507",
+      "archivePath": "/curriculum/202507",
+      "sourceFile": "docs/curriculum/202507.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "d555a951ee8a",
+      "title": "1 | 1000 Basic English Words 精讲视频",
+      "url": "https://pan.quark.cn/s/75e62610f53e",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202507",
+      "archivePath": "/edu-knowlege/202507",
+      "sourceFile": "docs/edu-knowlege/202507.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "f74ac9efff27",
+      "title": "2022-2024版【初中必刷题】",
+      "url": "https://pan.quark.cn/s/77a16a4b3f47",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202507",
+      "archivePath": "/edu-knowlege/202507",
+      "sourceFile": "docs/edu-knowlege/202507.md",
+      "tags": [
+        "教育学习"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "21f514de119c",
+      "title": "6 | 【董宇辉全套英语课程】",
+      "url": "https://pan.quark.cn/s/50e42d63d4f2",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202507",
+      "archivePath": "/edu-knowlege/202507",
+      "sourceFile": "docs/edu-knowlege/202507.md",
+      "tags": [
+        "教育学习"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "3b24cb9face3",
+      "title": "铭师道高中数学系列",
+      "url": "https://pan.quark.cn/s/a00e16041307",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202507",
+      "archivePath": "/edu-knowlege/202507",
+      "sourceFile": "docs/edu-knowlege/202507.md",
+      "tags": [
+        "教育学习"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "57b55ff1f575",
+      "title": "12堂维密超模健身瑜伽课【高清视频教程】｜每日跟练燃脂塑形（完整版课程）",
+      "url": "https://pan.quark.cn/s/50bd7220f632",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202507",
+      "archivePath": "/healthy/202507",
+      "sourceFile": "docs/healthy/202507.md",
+      "tags": [
+        "健康生活"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "b1e9c07754c0",
+      "title": "4 | 《keep运动健身》合集 付费课+会员课 练出一个好身形",
+      "url": "https://pan.quark.cn/s/b459974274af",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202507",
+      "archivePath": "/healthy/202507",
+      "sourceFile": "docs/healthy/202507.md",
+      "tags": [
+        "健康生活"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "0839e6a0c1f6",
+      "title": "塑身操全集视频课",
+      "url": "https://pan.quark.cn/s/2cc2ca13b0f9",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202507",
+      "archivePath": "/healthy/202507",
+      "sourceFile": "docs/healthy/202507.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "1ffba2586513",
+      "title": "【无损音乐】周杰伦生涯所有歌曲 20G【收藏】",
+      "url": "https://pan.quark.cn/s/6103b25a20a4",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202507",
+      "archivePath": "/movies/202507",
+      "sourceFile": "docs/movies/202507.md",
+      "tags": [
+        "影视音频"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "5e255448efe7",
+      "title": "私人纯音乐合集",
+      "url": "https://pan.quark.cn/s/3f62aa12e867",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202507",
+      "archivePath": "/movies/202507",
+      "sourceFile": "docs/movies/202507.md",
+      "tags": [
+        "影视音频"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "548cc9cb556a",
+      "title": "7天涨粉10W解说爆款视频课",
+      "url": "https://pan.quark.cn/s/802cf3ce1a66",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202507",
+      "archivePath": "/self-media/202507",
+      "sourceFile": "docs/self-media/202507.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "a9e9efb6deab",
+      "title": "【PS素材】字体+图标+图表+图片包",
+      "url": "https://pan.quark.cn/s/26824cb19ca0",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202507",
+      "archivePath": "/tools/202507",
+      "sourceFile": "docs/tools/202507.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "dcbcc7c1cfa0",
+      "title": "2025年全球免费VPS白嫖指南（16个免费服务器资源大盘点）",
+      "url": "https://s.869hr.uk/r55",
+      "provider": "s.869hr.uk",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202507",
+      "archivePath": "/tools/202507",
+      "sourceFile": "docs/tools/202507.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202507"
+      ]
+    },
+    {
+      "id": "ec87a07af16f",
+      "title": "【2025豆包AI高阶视频教程】【多行业精准提示词合集】附教程资料大全【大模型通用】",
+      "url": "https://pan.quark.cn/s/7926b21d8bf5",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "大语言模型"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "357731372c27",
+      "title": "给职场人的AI写作课（完结）",
+      "url": "https://pan.quark.cn/s/90bdd6547623",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e4bf5a03f47b",
+      "title": "智能AI训练营自媒体必看课程",
+      "url": "https://pan.quark.cn/s/b953c5b9b3f0",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "2a3eca79e448",
+      "title": "https://pan.quark.cn/s/07e335c040fd",
+      "url": "https://pan.quark.cn/s/07e335c040fd",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "56de057f49d5",
+      "title": "https://pan.quark.cn/s/0e0b11c43185",
+      "url": "https://pan.quark.cn/s/0e0b11c43185",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "f92c3d293077",
+      "title": "https://pan.quark.cn/s/138046db9330",
+      "url": "https://pan.quark.cn/s/138046db9330",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c251e3bccf5e",
+      "title": "https://pan.quark.cn/s/17f72ab7b263",
+      "url": "https://pan.quark.cn/s/17f72ab7b263",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "7547da96bd60",
+      "title": "https://pan.quark.cn/s/262d3b2a52fd",
+      "url": "https://pan.quark.cn/s/262d3b2a52fd",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c7aef4d0dc04",
+      "title": "https://pan.quark.cn/s/2a18071d37f3",
+      "url": "https://pan.quark.cn/s/2a18071d37f3",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "18e778986a4e",
+      "title": "https://pan.quark.cn/s/2e6787714726",
+      "url": "https://pan.quark.cn/s/2e6787714726",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "2e21f7e000cd",
+      "title": "https://pan.quark.cn/s/3c4674f3e2bd",
+      "url": "https://pan.quark.cn/s/3c4674f3e2bd",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "88c2917effdd",
+      "title": "https://pan.quark.cn/s/3c7166ec605c",
+      "url": "https://pan.quark.cn/s/3c7166ec605c",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "126915d6cfae",
+      "title": "https://pan.quark.cn/s/3d30cb462d4a",
+      "url": "https://pan.quark.cn/s/3d30cb462d4a",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "7640fb5187aa",
+      "title": "https://pan.quark.cn/s/841785083671",
+      "url": "https://pan.quark.cn/s/841785083671",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "58273c9aba95",
+      "title": "https://pan.quark.cn/s/953d183c8b91",
+      "url": "https://pan.quark.cn/s/953d183c8b91",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e2497b851a1a",
+      "title": "https://pan.quark.cn/s/aa4689ce3dfc",
+      "url": "https://pan.quark.cn/s/aa4689ce3dfc",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "59cffe3f5caf",
+      "title": "https://pan.quark.cn/s/aeb144ea90ec",
+      "url": "https://pan.quark.cn/s/aeb144ea90ec",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "03ca38deed32",
+      "title": "https://pan.quark.cn/s/c52cfe4266cb",
+      "url": "https://pan.quark.cn/s/c52cfe4266cb",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "abd9ec487420",
+      "title": "https://pan.quark.cn/s/efec95e93867",
+      "url": "https://pan.quark.cn/s/efec95e93867",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3bd0fff1947d",
+      "title": "https://pan.quark.cn/s/fcb80eff25fb",
+      "url": "https://pan.quark.cn/s/fcb80eff25fb",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202506",
+      "archivePath": "/AIknowledge/202506",
+      "sourceFile": "docs/AIknowledge/202506.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "75a58035397e",
+      "title": "【05】900+份各行各业实用合同",
+      "url": "https://pan.quark.cn/s/b35a1fd521d4",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "9bec22e54979",
+      "title": "简明世界史（全8册）",
+      "url": "https://pan.quark.cn/s/1b207011a6f4",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "59fbcbf3a3d2",
+      "title": "剑桥古代史（套装共8册）",
+      "url": "https://pan.quark.cn/s/c80934bc99a2",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ff1bf776baf0",
+      "title": "金庸经典版全集（全36册）(1)",
+      "url": "https://pan.quark.cn/s/5c2e0de50069",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "4e5846c2ac6b",
+      "title": "长丨安的荔枝",
+      "url": "https://pan.quark.cn/s/49bec3852b90",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "5782b35bfecb",
+      "title": "中华文明史（全四卷）",
+      "url": "https://pan.quark.cn/s/892c842b5406",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "35f1dfb105c6",
+      "title": "CSDN会员免费电子书1000本",
+      "url": "https://pan.quark.cn/s/fbd6d35d0504",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "阅读资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "4342685b7f03",
+      "title": "https://pan.quark.cn/s/3f8ab5814d74",
+      "url": "https://pan.quark.cn/s/3f8ab5814d74",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "7e591201cd77",
+      "title": "https://pan.quark.cn/s/40e9b7f7d598",
+      "url": "https://pan.quark.cn/s/40e9b7f7d598",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1de6fe5aa2cc",
+      "title": "https://pan.quark.cn/s/4c55a8a15b21",
+      "url": "https://pan.quark.cn/s/4c55a8a15b21",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "f85f69a840b3",
+      "title": "https://pan.quark.cn/s/6ae26a8bd08a",
+      "url": "https://pan.quark.cn/s/6ae26a8bd08a",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1b106b81cb67",
+      "title": "https://pan.quark.cn/s/727f96d19b53",
+      "url": "https://pan.quark.cn/s/727f96d19b53",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "46738e205430",
+      "title": "https://pan.quark.cn/s/9630bb4b4740",
+      "url": "https://pan.quark.cn/s/9630bb4b4740",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1e0b4674c7d9",
+      "title": "https://pan.quark.cn/s/f29f49521eeb",
+      "url": "https://pan.quark.cn/s/f29f49521eeb",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "361ab7ab1d20",
+      "title": "https://pan.quark.cn/s/f4e45eb35fda",
+      "url": "https://pan.quark.cn/s/f4e45eb35fda",
+      "provider": "夸克网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202506",
+      "archivePath": "/book/202506",
+      "sourceFile": "docs/book/202506.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "118458021e27",
+      "title": "https://pan.quark.cn/s/5229be6dd3c6",
+      "url": "https://pan.quark.cn/s/5229be6dd3c6",
+      "provider": "夸克网盘",
+      "category": "cross-border",
+      "categoryName": "跨境电商",
+      "month": "202506",
+      "archivePath": "/cross-border/202506",
+      "sourceFile": "docs/cross-border/202506.md",
+      "tags": [
+        "跨境电商"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3fbd21207ba0",
+      "title": "https://s.869hr.uk/2hm",
+      "url": "https://s.869hr.uk/2hm",
+      "provider": "s.869hr.uk",
+      "category": "cross-border",
+      "categoryName": "跨境电商",
+      "month": "202506",
+      "archivePath": "/cross-border/202506",
+      "sourceFile": "docs/cross-border/202506.md",
+      "tags": [
+        "跨境电商"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "02b076eaa5e6",
+      "title": "《非凡精读》2025年5月合集，视频讲解+MP3音频+文字思维导图",
+      "url": "https://pan.quark.cn/s/d05b047b36e7",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "cf8e100e43bc",
+      "title": "【01-1】10000+套PPT模板",
+      "url": "https://pan.quark.cn/s/2871944cd8dc",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "9a1e3f59374d",
+      "title": "【01-3】288套毕业答辩PPT模板",
+      "url": "https://pan.quark.cn/s/a8d90cb73729",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c0b9ec37e9fb",
+      "title": "【01-4】PPT模板精选分类",
+      "url": "https://pan.quark.cn/s/f449f7dcd2dd",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "0bbedfc68a40",
+      "title": "【01】2.6W+付费PPT模板【70.6GB】",
+      "url": "https://pan.quark.cn/s/879f4ef7169f",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "b4bcdf9f2ec7",
+      "title": "【02-1】常用的Excel办公模板",
+      "url": "https://pan.quark.cn/s/91e46d3880ad",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "95bdaea0f010",
+      "title": "【02-2】2900份企业日常管理常用表格",
+      "url": "https://pan.quark.cn/s/38da85f8dd73",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "7be9e0266dd8",
+      "title": "【03】常用的Word办公模板",
+      "url": "https://pan.quark.cn/s/fcbd2bd36ad3",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "65084be19670",
+      "title": "【04-4】抖音短视频剪辑分类配乐库",
+      "url": "https://pan.quark.cn/s/a745c83954d6",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c023cdcb06f5",
+      "title": "【05】900+份各行各业实用合同",
+      "url": "https://pan.quark.cn/s/b35a1fd521d4",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "f1b813d93063",
+      "title": "【邢不行】量化投资 视频课 25集",
+      "url": "https://pan.quark.cn/s/948f2dfe9c29",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "d4e7564e0ba6",
+      "title": "🎱 全网最全台球教程",
+      "url": "https://pan.quark.cn/s/3b2ec0a71c30",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8ddf36e0c2c6",
+      "title": "创业资料价值几万的小吃美食教程（522道）",
+      "url": "https://pan.quark.cn/s/235e4baeaa16",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "5c5d9e880cf6",
+      "title": "范勇鹏：美国的诞生--制度的起源与本质（完结）",
+      "url": "https://pan.quark.cn/s/80ef9e856308",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "edc4f15a62fa",
+      "title": "刘坚强 麻将学技术训练与技巧（完结）",
+      "url": "https://pan.quark.cn/s/8c968a8129a9",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "84f6de4de0a4",
+      "title": "刘谦第一课《零基础魔术教学》(完结)",
+      "url": "https://pan.quark.cn/s/2ddb35518737",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "9cb8684742c6",
+      "title": "魔术视频教学大全",
+      "url": "https://pan.quark.cn/s/ee4a822f913a",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "9d43234b94bc",
+      "title": "https://pan.quark.cn/s/1c3402349404",
+      "url": "https://pan.quark.cn/s/1c3402349404",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "0afcdf420bd8",
+      "title": "https://pan.quark.cn/s/1d93f29da343",
+      "url": "https://pan.quark.cn/s/1d93f29da343",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ce66b7a722d8",
+      "title": "https://pan.quark.cn/s/47ed5f56bc27",
+      "url": "https://pan.quark.cn/s/47ed5f56bc27",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1b327583f72f",
+      "title": "https://pan.quark.cn/s/7db3af978974",
+      "url": "https://pan.quark.cn/s/7db3af978974",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "87a037c80b24",
+      "title": "https://pan.quark.cn/s/9e3162b09917",
+      "url": "https://pan.quark.cn/s/9e3162b09917",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "476e8a172719",
+      "title": "https://pan.quark.cn/s/a415c81c93d2",
+      "url": "https://pan.quark.cn/s/a415c81c93d2",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "002e9353d1bb",
+      "title": "https://pan.quark.cn/s/a9322e51906a",
+      "url": "https://pan.quark.cn/s/a9322e51906a",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202506",
+      "archivePath": "/curriculum/202506",
+      "sourceFile": "docs/curriculum/202506.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "70d219f17626",
+      "title": "新版-洋葱学院小初高学科课程全套视频",
+      "url": "https://pan.quark.cn/s/17b3e2f884e7",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202506",
+      "archivePath": "/edu-knowlege/202506",
+      "sourceFile": "docs/edu-knowlege/202506.md",
+      "tags": [
+        "教育学习"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "51e1b6a34e63",
+      "title": "https://pan.quark.cn/s/1dc30bd29832",
+      "url": "https://pan.quark.cn/s/1dc30bd29832",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202506",
+      "archivePath": "/edu-knowlege/202506",
+      "sourceFile": "docs/edu-knowlege/202506.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c02d3e9e61e0",
+      "title": "https://pan.quark.cn/s/30cbbea7d56a",
+      "url": "https://pan.quark.cn/s/30cbbea7d56a",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202506",
+      "archivePath": "/edu-knowlege/202506",
+      "sourceFile": "docs/edu-knowlege/202506.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "2f8e87a70f5a",
+      "title": "https://pan.quark.cn/s/9f2c477b969c",
+      "url": "https://pan.quark.cn/s/9f2c477b969c",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202506",
+      "archivePath": "/edu-knowlege/202506",
+      "sourceFile": "docs/edu-knowlege/202506.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a7b1dd24e731",
+      "title": "https://pan.quark.cn/s/b55c1432f969",
+      "url": "https://pan.quark.cn/s/b55c1432f969",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202506",
+      "archivePath": "/edu-knowlege/202506",
+      "sourceFile": "docs/edu-knowlege/202506.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a0bdce5c3930",
+      "title": "https://pan.quark.cn/s/b77d0ff334b6",
+      "url": "https://pan.quark.cn/s/b77d0ff334b6",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202506",
+      "archivePath": "/edu-knowlege/202506",
+      "sourceFile": "docs/edu-knowlege/202506.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "0dd3ccdc072d",
+      "title": "https://pan.quark.cn/s/ea386f8cd74c",
+      "url": "https://pan.quark.cn/s/ea386f8cd74c",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202506",
+      "archivePath": "/edu-knowlege/202506",
+      "sourceFile": "docs/edu-knowlege/202506.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e2b72f148b0a",
+      "title": "https://pan.quark.cn/s/ff41fe002fd6",
+      "url": "https://pan.quark.cn/s/ff41fe002fd6",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202506",
+      "archivePath": "/edu-knowlege/202506",
+      "sourceFile": "docs/edu-knowlege/202506.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "4035d97461e2",
+      "title": "21天瘦身训练营课程｜超模私教天团（丁宝鹏 李霄雪 吴印涛）+塑形计划+免费下载",
+      "url": "https://pan.quark.cn/s/0d79343c267b",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202506",
+      "archivePath": "/healthy/202506",
+      "sourceFile": "docs/healthy/202506.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "95d41579d7a0",
+      "title": "情绪力（帮助1000000+人摆脱情绪控制，逆转社交困）",
+      "url": "https://pan.quark.cn/s/41ce7a0f1c1c",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202506",
+      "archivePath": "/healthy/202506",
+      "sourceFile": "docs/healthy/202506.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "bd47cabdbd2c",
+      "title": "如何克服社交焦虑(1)",
+      "url": "https://pan.quark.cn/s/905991acfa60",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202506",
+      "archivePath": "/healthy/202506",
+      "sourceFile": "docs/healthy/202506.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "cccfdf55d98c",
+      "title": "瘦身·瑜伽课程·全套（超全超详细）",
+      "url": "https://pan.quark.cn/s/3abd434d8462",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202506",
+      "archivePath": "/healthy/202506",
+      "sourceFile": "docs/healthy/202506.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "2327963e7fff",
+      "title": "https://pan.quark.cn/s/1c6ba022767c",
+      "url": "https://pan.quark.cn/s/1c6ba022767c",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202506",
+      "archivePath": "/healthy/202506",
+      "sourceFile": "docs/healthy/202506.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "dbe9c33393d4",
+      "title": "https://pan.quark.cn/s/494504c67ca7",
+      "url": "https://pan.quark.cn/s/494504c67ca7",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202506",
+      "archivePath": "/healthy/202506",
+      "sourceFile": "docs/healthy/202506.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3f0f5b096686",
+      "title": "https://pan.quark.cn/s/b0ce5d4f4cfa",
+      "url": "https://pan.quark.cn/s/b0ce5d4f4cfa",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202506",
+      "archivePath": "/healthy/202506",
+      "sourceFile": "docs/healthy/202506.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "f717258fc478",
+      "title": "【05】900+份各行各业实用合同",
+      "url": "https://pan.quark.cn/s/b35a1fd521d4",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "49f46eef9d34",
+      "title": "【24bit 96kHZ Flac】莫文蔚 - 莫文蔚NO.1新曲加精选全纪录20首（Weiss Saracon升频）",
+      "url": "https://pan.quark.cn/s/d2467806f7e1",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ca8b24609c82",
+      "title": "007：大破量子危机 2160p remux (2008)",
+      "url": "https://pan.quark.cn/s/21e8a3f64335",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "eb41a525e02d",
+      "title": "007：大破天幕杀机 2160p remux (2012)",
+      "url": "https://pan.quark.cn/s/fedc8d1a8f8d",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e231d54ce93c",
+      "title": "007：大战皇家赌场 2160p remux (2006)",
+      "url": "https://pan.quark.cn/s/b7fedcfa5ad4",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1d1594c6ece2",
+      "title": "007：无暇赴死 2160p remux (2021)",
+      "url": "https://pan.quark.cn/s/c6a940912cca",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3edf3399d399",
+      "title": "007：幽灵党 2160p remux (2015)",
+      "url": "https://pan.quark.cn/s/3743cba4af81",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "334e244295b4",
+      "title": "12勇士 2160p remux (2018)",
+      "url": "https://pan.quark.cn/s/16de3a4e1ee3",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8e8a1391e1f6",
+      "title": "2012 2160p remux (2009)",
+      "url": "https://pan.quark.cn/s/053de56766bd",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a05124880a34",
+      "title": "21座桥 2160p remux (2019)",
+      "url": "https://pan.quark.cn/s/56a084ffce34",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8427750bc8b8",
+      "title": "355：谍影特攻 2160p remux (2022)",
+      "url": "https://pan.quark.cn/s/6b308cbfc474",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8113083d26ec",
+      "title": "44号孩子 1080p remux (2015)",
+      "url": "https://pan.quark.cn/s/f5bf1e78b9c8",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "4f8d402e2c32",
+      "title": "760号犯人 2160p remux (2021)",
+      "url": "https://pan.quark.cn/s/2ec618dff3a9",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a9783aced1bb",
+      "title": "97家有喜事 1080p remux (1997)",
+      "url": "https://pan.quark.cn/s/af58f9727601",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a117b1f52c07",
+      "title": "阿波罗11号 2160p remux (2019)",
+      "url": "https://pan.quark.cn/s/9c79cfe8a5b8",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "bab009d9c901",
+      "title": "阿波罗13号 2160p remux (1995)",
+      "url": "https://pan.quark.cn/s/75952ec02a55",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a0844fe7741c",
+      "title": "阿凡达 2160p remux (2009)",
+      "url": "https://pan.quark.cn/s/8ea9cf4c0177",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1e9ad41ffefc",
+      "title": "阿凡达：水之道 2160p remux (2022)",
+      "url": "https://pan.quark.cn/s/9d5a27adbcbc",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "d5c866b2c706",
+      "title": "阿飞正传 2160p remux (1990)",
+      "url": "https://pan.quark.cn/s/861ef1694cc4",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "6f7b5647ee3c",
+      "title": "阿甘正传 2160p remux (1994)",
+      "url": "https://pan.quark.cn/s/322045ab7686",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a0975fa8a32b",
+      "title": "阿拉伯的劳伦斯 2160p remux (1962)",
+      "url": "https://pan.quark.cn/s/543beb1f081a",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3852c7fc85c6",
+      "title": "阿拉丁 2160p remux (1992)",
+      "url": "https://pan.quark.cn/s/e9d420519a62",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "80aa13a7da4e",
+      "title": "阿拉丁 2160p remux (2019)",
+      "url": "https://pan.quark.cn/s/09d70e198c9d",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e5ee7b8730b1",
+      "title": "阿郎的故事 1080p remux (1989)",
+      "url": "https://pan.quark.cn/s/47e2878e923b",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "19b0223280a4",
+      "title": "阿丽塔：战斗天使 2160p remux (2019)",
+      "url": "https://pan.quark.cn/s/fd552f4c7f5c",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "01f7c2ec8b1a",
+      "title": "阿姆斯特丹 2160p remux (2022)",
+      "url": "https://pan.quark.cn/s/bb24473e45f5",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "f4faad1079f1",
+      "title": "阿修罗 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/9e7fccd3001b",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "41d8ea713b42",
+      "title": "阿雅与魔女 1080p remux (2021)",
+      "url": "https://pan.quark.cn/s/deb2547222b0",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "04a1ff539b20",
+      "title": "埃菲尔铁塔 2160p remux (2021)",
+      "url": "https://pan.quark.cn/s/5adca8260145",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "bd49913a9b81",
+      "title": "埃及艳后 1080p remux (1963)",
+      "url": "https://pan.quark.cn/s/53bdef5a4105",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "16a7cf482f3a",
+      "title": "艾娃 1080p remux (2020)",
+      "url": "https://pan.quark.cn/s/194c42c27f71",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "0fe23ff8b69c",
+      "title": "爱宠 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/ff3a0892e0f8",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "2bfd8e125645",
+      "title": "爱宠大机密 2160p remux (2016)",
+      "url": "https://pan.quark.cn/s/f9dd7ffd3f61",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "6badbb691cb0",
+      "title": "爱宠大机密2 2160p remux (2019)",
+      "url": "https://pan.quark.cn/s/3325d4cd6664",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "28811e064742",
+      "title": "爱国者 2160p remux (2000)",
+      "url": "https://pan.quark.cn/s/86ce396c1667",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8b0c15f62752",
+      "title": "爱乐之城 2160p remux (2016)",
+      "url": "https://pan.quark.cn/s/7a94db430dcb",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "321ccd2efb4c",
+      "title": "爱丽丝梦游仙境 1080p remux (2010)",
+      "url": "https://pan.quark.cn/s/5cbe59d7bd96",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ec910acb4550",
+      "title": "爱丽丝梦游仙境2：镜中奇遇记 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/d2f51a41b46f",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "71b4873bc378",
+      "title": "爱玛 1080p remux (2020)",
+      "url": "https://pan.quark.cn/s/7c3dc6d6541f",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e151c0f4a5de",
+      "title": "爱你，西蒙 2160p remux (2018)",
+      "url": "https://pan.quark.cn/s/3ecef67094f3",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "da24790c9f32",
+      "title": "爱情与友谊 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/4f7d8a6de65d",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8b326ec01213",
+      "title": "爱人的最后一封情书 1080p remux (2021)",
+      "url": "https://pan.quark.cn/s/5b90898097d0",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8acc33df0ac4",
+      "title": "爱是永恒 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/73b5e0abfe5e",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ee4acf1de815",
+      "title": "爱与怪物 2160p remux (2021)",
+      "url": "https://pan.quark.cn/s/af9b88663c69",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "046d57a0c613",
+      "title": "爱与黑暗的故事 1080p remux (2015)",
+      "url": "https://pan.quark.cn/s/c75139cefeb6",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "7649755d9213",
+      "title": "爱之女巫 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/3986eb5d0b2a",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "feaa6e06a58b",
+      "title": "安德的游戏 2160p remux (2013)",
+      "url": "https://pan.quark.cn/s/504279f61deb",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "fc60bb8b16b0",
+      "title": "安德烈：黑色的迷宫 1080p remux (2015)",
+      "url": "https://pan.quark.cn/s/c71227370ea3",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3fd1359c63c8",
+      "title": "安洁丽卡表妹 1080p remux (1974)",
+      "url": "https://pan.quark.cn/s/2e206fe46386",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1e443d9cadab",
+      "title": "安娜 2160p remux (2019)",
+      "url": "https://pan.quark.cn/s/3bb0dd17d703",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3bdcb949e37c",
+      "title": "安娜贝尔 1080p remux (2014)",
+      "url": "https://pan.quark.cn/s/f8a5cf15ef8c",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "f615ae49123c",
+      "title": "安娜贝尔2：诞生 1080p remux (2017)",
+      "url": "https://pan.quark.cn/s/467ef99201e8",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8badb87f484e",
+      "title": "安娜贝尔3：回家 1080p remux (2019)",
+      "url": "https://pan.quark.cn/s/021b5cd097e3",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a017d6cfc240",
+      "title": "安妮特 2160p remux (2021)",
+      "url": "https://pan.quark.cn/s/33586ecf47af",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "0f12d35115b8",
+      "title": "安全邻域 1080p remux (2017)",
+      "url": "https://pan.quark.cn/s/4b7550373ef9",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "99cacec6d125",
+      "title": "暗夜博士 2160p remux (2022)",
+      "url": "https://pan.quark.cn/s/32d1d851e6a7",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "074ba41cf064",
+      "title": "暗夜之女 2160p remux (1971)",
+      "url": "https://pan.quark.cn/s/205baa5a1a82",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "03293cec8bf4",
+      "title": "傲慢与偏见与僵尸 2160p remux (2016)",
+      "url": "https://pan.quark.cn/s/58eaa301b217",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "144299300b20",
+      "title": "奥本海默 2160p remux (2023)",
+      "url": "https://pan.quark.cn/s/d50680414ed9",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e7b6012839ab",
+      "title": "奥斯曼中尉 1080p remux (2017)",
+      "url": "https://pan.quark.cn/s/c814ff1dd898",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "bac35fcba997",
+      "title": "八佰 1080p remux (2020)",
+      "url": "https://pan.quark.cn/s/cec6507e01ad",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3a1944dbfd13",
+      "title": "八宝奇兵 1080p remux (1989)",
+      "url": "https://pan.quark.cn/s/4d0f7d76c35d",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "7f64af9bd54d",
+      "title": "八年级 1080p remux (2018)",
+      "url": "https://pan.quark.cn/s/7ca2f5933f5d",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "75df28de4f39",
+      "title": "八四年夏天 2160p remux (2018)",
+      "url": "https://pan.quark.cn/s/d9e51145b4c1",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1540cc753a84",
+      "title": "巴比龙 1080p remux (2017)",
+      "url": "https://pan.quark.cn/s/c40a8d3af297",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8d7c391b43fd",
+      "title": "巴尔干边界 1080p remux (2019)",
+      "url": "https://pan.quark.cn/s/f56cacbb3b44",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c6eca669fe3c",
+      "title": "巴黎危机 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/85b3c14c679d",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "afa473e9f029",
+      "title": "巴尼·汤姆森传奇 1080p remux (2015)",
+      "url": "https://pan.quark.cn/s/4b7c0c3262db",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a04c9d681d5a",
+      "title": "芭比 2160p remux (2023)",
+      "url": "https://pan.quark.cn/s/bc673cdede95",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c96935904597",
+      "title": "疤面煞星 2160p remux (1983)",
+      "url": "https://pan.quark.cn/s/2f3cedc7c10c",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "9b639601efc1",
+      "title": "霸王花 1080p remux (1988)",
+      "url": "https://pan.quark.cn/s/a8d16da81b67",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "d00d45b0101b",
+      "title": "霸主 2160p remux (2018)",
+      "url": "https://pan.quark.cn/s/5d6ae87668ba",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1567ceaec568",
+      "title": "白发魔女传 1080p remux (1993)",
+      "url": "https://pan.quark.cn/s/b2df702f1de4",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c9fea777f327",
+      "title": "白宫陷落 2160p remux (2013)",
+      "url": "https://pan.quark.cn/s/b44c0db9d50e",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "97b74e2b7859",
+      "title": "白鲸记 1080p remux (2010)",
+      "url": "https://pan.quark.cn/s/0660d8413baa",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ad9c59176daa",
+      "title": "白日梦想家 1080p remux (2013)",
+      "url": "https://pan.quark.cn/s/daf0a81034cb",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "9e851b1bc49b",
+      "title": "白日末路 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/1d4ac40fd9fa",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c69ddcfc6e72",
+      "title": "白蛇：缘起 1080p remux (2019)",
+      "url": "https://pan.quark.cn/s/e58541e6e4bf",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "dc66467404d3",
+      "title": "白蛇传说 1080p remux (2011)",
+      "url": "https://pan.quark.cn/s/ff2c834bcac3",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1110dc1572da",
+      "title": "白头山 1080p remux (2019)",
+      "url": "https://pan.quark.cn/s/6924e414fc2b",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1a0fb4e37856",
+      "title": "白头神探 2160p remux (1988)",
+      "url": "https://pan.quark.cn/s/64e230a4e32d",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "0813291bba06",
+      "title": "白头神探2½：恐怖的气味 1080p remux (1991)",
+      "url": "https://pan.quark.cn/s/c9812757d658",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "55f4929e8640",
+      "title": "白头神探33⅓：最后的耻辱 1080p remux (1994)",
+      "url": "https://pan.quark.cn/s/1d4987357802",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "96074fcb78cd",
+      "title": "白雪公主和七个小矮人 2160p remux (1937)",
+      "url": "https://pan.quark.cn/s/465e2cb792d8",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "aa6cb27226ab",
+      "title": "白雪公主与猎人 2160p remux (2012)",
+      "url": "https://pan.quark.cn/s/a188150cc556",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "64743bddde0e",
+      "title": "百变星君 1080p remux (1995)",
+      "url": "https://pan.quark.cn/s/6fc36c16a319",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8760c0a95873",
+      "title": "百变侏罗纪 2160p remux (1994)",
+      "url": "https://pan.quark.cn/s/81f01a17fb5f",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "45857c04dc36",
+      "title": "百条大道 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/68cd91259f1d",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ac21a9a1ee56",
+      "title": "百万美元宝贝 1080p remux (2004)",
+      "url": "https://pan.quark.cn/s/157d6482dcb7",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "863c3f12b5bf",
+      "title": "柏林孤影 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/7e22c286fbd0",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "9316926e1b33",
+      "title": "败家仔 1080p remux (1981)",
+      "url": "https://pan.quark.cn/s/bd83ef69863a",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ece71e1f36e1",
+      "title": "拜见布莱克一家 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/1c4b2f5bc069",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a2ec61b86115",
+      "title": "拜见岳父大人 1080p remux (2000)",
+      "url": "https://pan.quark.cn/s/57968935db79",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8f7f23e38cc5",
+      "title": "拜见岳父大人2 1080p remux (2004)",
+      "url": "https://pan.quark.cn/s/96f2a77d42eb",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "6c0f62a4be7a",
+      "title": "拜见岳父大人3 1080p remux (2010)",
+      "url": "https://pan.quark.cn/s/d72cf8779ffc",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "0ac3429eb429",
+      "title": "半机械人 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/9fe497726114",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "af28aa2980e7",
+      "title": "半血缘兄弟 1080p remux (2020)",
+      "url": "https://pan.quark.cn/s/599b66b68586",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8d925b9b6031",
+      "title": "伴我同行 2160p remux (1986)",
+      "url": "https://pan.quark.cn/s/b915c473d8d5",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "0b3bc0c73a83",
+      "title": "绑架 1080p remux (2017)",
+      "url": "https://pan.quark.cn/s/ffbe3fa8db5d",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e00f334c1cbd",
+      "title": "薄荷 1080p remux (2018)",
+      "url": "https://pan.quark.cn/s/2292a60ced41",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "b7cb4351cefc",
+      "title": "薄荷糖 1080p remux (2000)",
+      "url": "https://pan.quark.cn/s/ed9dcfc935a4",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e1566e43a867",
+      "title": "宝贝老板 2160p remux (2017)",
+      "url": "https://pan.quark.cn/s/cdd95573843e",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "0ddc171694e6",
+      "title": "地球：神奇的一天 2160p remux (2017)",
+      "url": "https://pan.quark.cn/s/86152fc6b435",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "b50e662a641c",
+      "title": "地球上的星星 1080p remux (2007)",
+      "url": "https://pan.quark.cn/s/2a9d64035db6",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "69f39e3e3eba",
+      "title": "地球四季 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/5a8539b3215a",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "5aec38331263",
+      "title": "地球在尖叫声中毁灭 1080p remux (2016)",
+      "url": "https://pan.quark.cn/s/79f86178a2bd",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e1c8ba1191e5",
+      "title": "地下室 1080p remux (2017)",
+      "url": "https://pan.quark.cn/s/13115fd6d784",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e29684d3b3de",
+      "title": "地心引力 1080p remux (2013)",
+      "url": "https://pan.quark.cn/s/6e0fcf76bd68",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "fd60cf9fb212",
+      "title": "帝国的毁灭 1080p remux (2004)",
+      "url": "https://pan.quark.cn/s/194933df5e67",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "183499ff3ebd",
+      "title": "帝企鹅日记2：召唤 2160p remux (2017)",
+      "url": "https://pan.quark.cn/s/92e58c3fe7cb",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "f4abd8962599",
+      "title": "帝王蝶的迁徙 2160p remux (2012)",
+      "url": "https://pan.quark.cn/s/769290799512",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "259e94eea2cd",
+      "title": "第39号案件 1080p remux (2009)",
+      "url": "https://pan.quark.cn/s/c7e8f24a7221",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "766af11efa73",
+      "title": "第九区 2160p remux (2009)",
+      "url": "https://pan.quark.cn/s/745b1d77ba94",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "cb87c883b449",
+      "title": "第九突击队 1080p remux (2005)",
+      "url": "https://pan.quark.cn/s/abfef722d35b",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "d6c0892598bd",
+      "title": "第六感生死缘 1080p remux (1998)",
+      "url": "https://pan.quark.cn/s/2678c6709fd4",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "259ccc937ac3",
+      "title": "第三类接触 2160p remux (1977)",
+      "url": "https://pan.quark.cn/s/b5eb9f73582c",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "6ee9dc03a129",
+      "title": "第十二个人 1080p remux (2017)",
+      "url": "https://pan.quark.cn/s/ad547464b24c",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ab25922da5a5",
+      "title": "第四阶段 2160p remux (2016)",
+      "url": "https://pan.quark.cn/s/b8e70e7e4680",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "d8115b38f2c8",
+      "title": "第五波 2160p remux (2016)",
+      "url": "https://pan.quark.cn/s/ed94b09ea205",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "9cc99421748e",
+      "title": "第五丨元素 2160p remux (1997)",
+      "url": "https://pan.quark.cn/s/41b0b83f71e0",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "da12b39b3761",
+      "title": "电锯惊魂 2160p remux (2004)",
+      "url": "https://pan.quark.cn/s/90627629b40b",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "bf3f989ec4d7",
+      "title": "电锯惊魂10 2160p remux (2023)",
+      "url": "https://pan.quark.cn/s/c234c903b457",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "128b5c2b9905",
+      "title": "电锯惊魂2 - Unrated 1080p remux (2005)",
+      "url": "https://pan.quark.cn/s/ab0f88420639",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "d20cc1fe3149",
+      "title": "电锯惊魂3 1080p remux (2006)",
+      "url": "https://pan.quark.cn/s/7e366881b894",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "47c6f1163f02",
+      "title": "电锯惊魂4 1080p remux (2007)",
+      "url": "https://pan.quark.cn/s/fe802ac43e87",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "81b4be79b01f",
+      "title": "电锯惊魂5 1080p remux (2008)",
+      "url": "https://pan.quark.cn/s/7d3758402255",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c2ec8ec5a4cc",
+      "title": "电锯惊魂6 1080p remux (2009)",
+      "url": "https://pan.quark.cn/s/8635a03e706e",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a71332a8d412",
+      "title": "电锯惊魂7 1080p remux (2010)",
+      "url": "https://pan.quark.cn/s/3262a8720a16",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "4dd413a6cc42",
+      "title": "电锯惊魂8：竖锯 2160p remux (2017)",
+      "url": "https://pan.quark.cn/s/ceb09b7a2a90",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "09dc7af3ba71",
+      "title": "电锯惊魂9：漩涡 2160p remux (2021)",
+      "url": "https://pan.quark.cn/s/8b064d0b3bb9",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "cdb91b99b008",
+      "title": "简明世界史（全8册）",
+      "url": "https://pan.quark.cn/s/1b207011a6f4",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a58caeaa6a6c",
+      "title": "剑桥古代史（套装共8册）",
+      "url": "https://pan.quark.cn/s/c80934bc99a2",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "649539eb3a1e",
+      "title": "金庸经典版全集（全36册）(1)",
+      "url": "https://pan.quark.cn/s/5c2e0de50069",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "777f93b67372",
+      "title": "长丨安的荔枝",
+      "url": "https://pan.quark.cn/s/49bec3852b90",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "f5711cff23cd",
+      "title": "中华文明史（全四卷）",
+      "url": "https://pan.quark.cn/s/892c842b5406",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e22080dfc6ac",
+      "title": "A计划 1080p remux (1983)",
+      "url": "https://pan.quark.cn/s/74292221488f",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "42f35f7e5e3a",
+      "title": "A计划续集 1080p remux (1987)",
+      "url": "https://pan.quark.cn/s/3d86e0e76d9d",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "109a7df9da31",
+      "title": "AI创世者 2160p remux (2023)",
+      "url": "https://pan.quark.cn/s/124e251c5f47",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "65353dbe01d3",
+      "title": "AI创世者 2160p remux (2023)(1)",
+      "url": "https://pan.quark.cn/s/bc671979d527",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "4070ee879d41",
+      "title": "BEYOND日记之莫欺少年穷 1080p remux (1991)",
+      "url": "https://pan.quark.cn/s/61d466a20221",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "b7676bc4d26a",
+      "title": "CSDN会员免费电子书1000本",
+      "url": "https://pan.quark.cn/s/fbd6d35d0504",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ef41a3e70262",
+      "title": "DC萌宠特遣队 2160p remux (2022)",
+      "url": "https://pan.quark.cn/s/53d0da985391",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a46645b772f7",
+      "title": "https://pan.quark.cn/s/126d656acf5c",
+      "url": "https://pan.quark.cn/s/126d656acf5c",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "61189a1f31c0",
+      "title": "https://pan.quark.cn/s/371dea3687de",
+      "url": "https://pan.quark.cn/s/371dea3687de",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "13b2e825de80",
+      "title": "https://pan.quark.cn/s/3bb7cfb30045",
+      "url": "https://pan.quark.cn/s/3bb7cfb30045",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "8a6c1f8d7537",
+      "title": "https://pan.quark.cn/s/3f8ab5814d74",
+      "url": "https://pan.quark.cn/s/3f8ab5814d74",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "7d63fc77ea9a",
+      "title": "https://pan.quark.cn/s/40e9b7f7d598",
+      "url": "https://pan.quark.cn/s/40e9b7f7d598",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ea158bed37f1",
+      "title": "https://pan.quark.cn/s/4c55a8a15b21",
+      "url": "https://pan.quark.cn/s/4c55a8a15b21",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "b387769a4fb4",
+      "title": "https://pan.quark.cn/s/5d546cc8ec3f",
+      "url": "https://pan.quark.cn/s/5d546cc8ec3f",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1159d7431c05",
+      "title": "https://pan.quark.cn/s/6ae26a8bd08a",
+      "url": "https://pan.quark.cn/s/6ae26a8bd08a",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "39b520547fec",
+      "title": "https://pan.quark.cn/s/727f96d19b53",
+      "url": "https://pan.quark.cn/s/727f96d19b53",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "181a199b00f4",
+      "title": "https://pan.quark.cn/s/7c62471c1704",
+      "url": "https://pan.quark.cn/s/7c62471c1704",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "6c5e8f27f8d5",
+      "title": "https://pan.quark.cn/s/9630bb4b4740",
+      "url": "https://pan.quark.cn/s/9630bb4b4740",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "41362942a0e6",
+      "title": "https://pan.quark.cn/s/99c8ee0f0fde",
+      "url": "https://pan.quark.cn/s/99c8ee0f0fde",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "1313f7c45954",
+      "title": "https://pan.quark.cn/s/a6287d78cc6b",
+      "url": "https://pan.quark.cn/s/a6287d78cc6b",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ccef21e4c0aa",
+      "title": "https://pan.quark.cn/s/db9d6eb99835",
+      "url": "https://pan.quark.cn/s/db9d6eb99835",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "63bf1314afd1",
+      "title": "https://pan.quark.cn/s/f29f49521eeb",
+      "url": "https://pan.quark.cn/s/f29f49521eeb",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "991e821179b8",
+      "title": "https://pan.quark.cn/s/f4e45eb35fda",
+      "url": "https://pan.quark.cn/s/f4e45eb35fda",
+      "provider": "夸克网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202506",
+      "archivePath": "/movies/202506",
+      "sourceFile": "docs/movies/202506.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "b24f4abe69d7",
+      "title": "✂剪映PC模板250+（预览版+源文件）【13.7GB】",
+      "url": "https://pan.quark.cn/s/acda97e23403",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "5168a2fa6166",
+      "title": "2023-2025淘宝店群运营玩法",
+      "url": "https://pan.quark.cn/s/bd4b12bce8f4",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a12a948d25ee",
+      "title": "2025 手机剪映剪辑从零到爆款（手机版）",
+      "url": "https://pan.quark.cn/s/9a4608b46c1d",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "cfbd580b13f5",
+      "title": "2025剪映专业版剪辑学习教学课程（剪映电脑版）",
+      "url": "https://pan.quark.cn/s/5e6d18ab06a8",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "d6c212e54e25",
+      "title": "抖音短视频剪辑分类配乐库",
+      "url": "https://pan.quark.cn/s/a745c83954d6",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "2d7dce0fe899",
+      "title": "抖音图文带货16.0基础+精英课，新增原创实拍、视频混剪、选品实操，各细分赛道实操",
+      "url": "https://pan.quark.cn/s/60cb7ef723de",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "2d771a962a5f",
+      "title": "短视频拍摄零基础进阶实战学习教程",
+      "url": "https://pan.quark.cn/s/0f37a6f5a665",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "6ef069b5074c",
+      "title": "韩松-手机摄影全系课程：入门·创作·创意·精通（全）(1)",
+      "url": "https://pan.quark.cn/s/98e29e9d1824",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "41140fd91570",
+      "title": "恒大歌舞团",
+      "url": "https://pan.quark.cn/s/39121ee448d4",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "965f6fbfd137",
+      "title": "剪映+即梦AI短视频创作实战课",
+      "url": "https://pan.quark.cn/s/3d30cb462d4a",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "28cefc57d4ca",
+      "title": "老师教学",
+      "url": "https://pan.quark.cn/s/b77d0ff334b6",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3694fd3a680e",
+      "title": "拍摄剪辑全套短视频实操方案",
+      "url": "https://pan.quark.cn/s/ff7b87a946c8",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "f03251ea8fda",
+      "title": "情绪力（帮助1000000+人摆脱情绪控制，逆转社交困）",
+      "url": "https://pan.quark.cn/s/41ce7a0f1c1c",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "4abbf4051af2",
+      "title": "如何克服社交焦虑(1)",
+      "url": "https://pan.quark.cn/s/905991acfa60",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "fa6ebfafd5d0",
+      "title": "上万款常用字体库【31600+款】",
+      "url": "https://pan.quark.cn/s/2d565f024704",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "fb93606ebe3b",
+      "title": "视频号短视频带货 + 直播系统",
+      "url": "https://pan.quark.cn/s/43ac8e175f46",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "5879b8b16890",
+      "title": "玩转剪映制作，特效、运镜转场（113节视频）",
+      "url": "https://pan.quark.cn/s/f59b82f243fe",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "432d5f74b89d",
+      "title": "小红书电商从0-1实操运营课，0基础小白轻松上手",
+      "url": "https://pan.quark.cn/s/28b9488eb21c",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "c271869520ad",
+      "title": "修图变现课 10秒修出高点赞照片",
+      "url": "https://pan.quark.cn/s/4ec49b1c7c95",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "06aeac8e48b8",
+      "title": "用手机拍摄专业级视频短片 全套视频课程(1)",
+      "url": "https://pan.quark.cn/s/058958134162",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "内容运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "e42a34e759b5",
+      "title": "https://pan.quark.cn/s/013025bc59a8",
+      "url": "https://pan.quark.cn/s/013025bc59a8",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "35bcc5118eae",
+      "title": "https://pan.quark.cn/s/1a693d467d05",
+      "url": "https://pan.quark.cn/s/1a693d467d05",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "672e6901b53a",
+      "title": "https://pan.quark.cn/s/2ed6237af6d2",
+      "url": "https://pan.quark.cn/s/2ed6237af6d2",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "5b5b67a9c196",
+      "title": "https://pan.quark.cn/s/41956c938271",
+      "url": "https://pan.quark.cn/s/41956c938271",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3678d6f84547",
+      "title": "https://pan.quark.cn/s/7750e328c182",
+      "url": "https://pan.quark.cn/s/7750e328c182",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "4762b47db491",
+      "title": "https://pan.quark.cn/s/793f356d9024",
+      "url": "https://pan.quark.cn/s/793f356d9024",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "972ec7d17b61",
+      "title": "https://pan.quark.cn/s/9679403f5cad",
+      "url": "https://pan.quark.cn/s/9679403f5cad",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3f71ddb2794c",
+      "title": "https://pan.quark.cn/s/ffe5caa3405f",
+      "url": "https://pan.quark.cn/s/ffe5caa3405f",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202506",
+      "archivePath": "/self-media/202506",
+      "sourceFile": "docs/self-media/202506.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "93c8a529acd3",
+      "title": "【01-1】10000+套PPT模板",
+      "url": "https://pan.quark.cn/s/2871944cd8dc",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "bc87e59f92ca",
+      "title": "【01-3】288套毕业答辩PPT模板",
+      "url": "https://pan.quark.cn/s/a8d90cb73729",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ceffe17edd95",
+      "title": "【01-4】PPT模板精选分类",
+      "url": "https://pan.quark.cn/s/f449f7dcd2dd",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "3c4cf9562e78",
+      "title": "【01】2.6W+付费PPT模板【70.6GB】",
+      "url": "https://pan.quark.cn/s/879f4ef7169f",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "7a5d47222583",
+      "title": "【02-1】常用的Excel办公模板",
+      "url": "https://pan.quark.cn/s/91e46d3880ad",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ae850bec5f78",
+      "title": "【02-2】2900份企业日常管理常用表格",
+      "url": "https://pan.quark.cn/s/38da85f8dd73",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "6cae0742ed46",
+      "title": "【03】常用的Word办公模板",
+      "url": "https://pan.quark.cn/s/fcbd2bd36ad3",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "办公效率"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "a98d3fec4d75",
+      "title": "上万款常用字体库【31600+款】",
+      "url": "https://pan.quark.cn/s/2d565f024704",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "7d319ba9deb5",
+      "title": "微信视频号下载工具 (稀有版，无限制)",
+      "url": "https://pan.quark.cn/s/b0db800df5b9",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "f04c3d8b148c",
+      "title": "https://pan.quark.cn/s/107aa0d6ea74",
+      "url": "https://pan.quark.cn/s/107aa0d6ea74",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "5afa6e7f48d8",
+      "title": "https://pan.quark.cn/s/f4d04f02317b",
+      "url": "https://pan.quark.cn/s/f4d04f02317b",
+      "provider": "夸克网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202506",
+      "archivePath": "/tools/202506",
+      "sourceFile": "docs/tools/202506.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202506"
+      ]
+    },
+    {
+      "id": "ad5b10404bae",
+      "title": "### 0成本用国内身份证注册SafePal万事达卡：GCP/Cloudflare绑卡实测保姆级教程",
+      "url": "https://s.869hr.uk/2hm",
+      "provider": "s.869hr.uk",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202505",
+      "archivePath": "/AIknowledge/202505",
+      "sourceFile": "docs/AIknowledge/202505.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "b49f2b23a2af",
+      "title": "这几个很火的项目，可以去试试哦",
+      "url": "https://pan.quark.cn/s/e9b9de0df191",
+      "provider": "夸克网盘",
+      "category": "AIknowledge",
+      "categoryName": "AI 知识",
+      "month": "202505",
+      "archivePath": "/AIknowledge/202505",
+      "sourceFile": "docs/AIknowledge/202505.md",
+      "tags": [
+        "AI 知识"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "b1613b4795e3",
+      "title": "### 计算机电子书，上万本电子书汇总",
+      "url": "https://github.com/it-ebooks-0",
+      "provider": "GitHub",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202505",
+      "archivePath": "/book/202505",
+      "sourceFile": "docs/book/202505.md",
+      "tags": [
+        "阅读资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "9122ed5ef633",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1dopH_eaPhYyETInEAVJYXQ?pwd=4kq6",
+      "provider": "百度网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202505",
+      "archivePath": "/book/202505",
+      "sourceFile": "docs/book/202505.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "238d7502cf76",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/18E8O590X6kYaJl81C6r20Q?pwd=8dyh",
+      "provider": "百度网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202505",
+      "archivePath": "/book/202505",
+      "sourceFile": "docs/book/202505.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "f8afa689c9e5",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1BnkF8by1fOIeALeCDPFSew?pwd=wru3",
+      "provider": "百度网盘",
+      "category": "book",
+      "categoryName": "书籍资料",
+      "month": "202505",
+      "archivePath": "/book/202505",
+      "sourceFile": "docs/book/202505.md",
+      "tags": [
+        "书籍资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "ec87d2057700",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1G3w8yq9AhRXojlQxhIy4Ug?pwd=8h7d",
+      "provider": "百度网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202505",
+      "archivePath": "/curriculum/202505",
+      "sourceFile": "docs/curriculum/202505.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "b5b9311c85c8",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1eN6dUcLTPuWSKwxFhpCDXQ?pwd=4q7z",
+      "provider": "百度网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202505",
+      "archivePath": "/curriculum/202505",
+      "sourceFile": "docs/curriculum/202505.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "b376bea8c37a",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/169Liv1IEDldKcfUSYAmFAw?pwd=xj2d",
+      "provider": "百度网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202505",
+      "archivePath": "/curriculum/202505",
+      "sourceFile": "docs/curriculum/202505.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "636237c7915b",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1fXD7RMGygIciS5himJqIZw?pwd=47km",
+      "provider": "百度网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202505",
+      "archivePath": "/curriculum/202505",
+      "sourceFile": "docs/curriculum/202505.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "cc05041ec49f",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/16WewfD0k6m2zh606UvKKWA?pwd=banf",
+      "provider": "百度网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202505",
+      "archivePath": "/curriculum/202505",
+      "sourceFile": "docs/curriculum/202505.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "b06dc39a281d",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1KzHbdpBFlZoAqezdDdaIzw?pwd=35sp",
+      "provider": "百度网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202505",
+      "archivePath": "/curriculum/202505",
+      "sourceFile": "docs/curriculum/202505.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "5f387fd593a8",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1ClXIGmJ7lFX22Yt2LgSOYA?pwd=r8nh",
+      "provider": "百度网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202505",
+      "archivePath": "/curriculum/202505",
+      "sourceFile": "docs/curriculum/202505.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "95cdf7eb8761",
+      "title": "夸克网盘",
+      "url": "https://pan.quark.cn/s/9146a3fe87cb",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202505",
+      "archivePath": "/curriculum/202505",
+      "sourceFile": "docs/curriculum/202505.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "ff2112c95972",
+      "title": "夸克网盘",
+      "url": "https://pan.quark.cn/s/2d0d9aef13bb",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202505",
+      "archivePath": "/curriculum/202505",
+      "sourceFile": "docs/curriculum/202505.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "facb063cb877",
+      "title": "夸克网盘",
+      "url": "https://pan.quark.cn/s/a2ad185608b0",
+      "provider": "夸克网盘",
+      "category": "curriculum",
+      "categoryName": "课程资料",
+      "month": "202505",
+      "archivePath": "/curriculum/202505",
+      "sourceFile": "docs/curriculum/202505.md",
+      "tags": [
+        "课程资料"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "971755adaad1",
+      "title": "## 中小学生的教材的Pdf （非常全和庞大），所有小初高、大学PDF教材。",
+      "url": "https://github.com/TapXWorld/ChinaTextbook",
+      "provider": "GitHub",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202505",
+      "archivePath": "/edu-knowlege/202505",
+      "sourceFile": "docs/edu-knowlege/202505.md",
+      "tags": [
+        "教育学习"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "5af6835957c5",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1QmNs0bj7JGC_7-YgF2dwiQ?pwd=dtgt",
+      "provider": "百度网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202505",
+      "archivePath": "/edu-knowlege/202505",
+      "sourceFile": "docs/edu-knowlege/202505.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "0f5d4a961125",
+      "title": "夸克网盘",
+      "url": "https://pan.quark.cn/s/3b44afaa9cc7",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202505",
+      "archivePath": "/edu-knowlege/202505",
+      "sourceFile": "docs/edu-knowlege/202505.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "d65deb19923a",
+      "title": "夸克网盘",
+      "url": "https://pan.quark.cn/s/66cb29456930",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202505",
+      "archivePath": "/edu-knowlege/202505",
+      "sourceFile": "docs/edu-knowlege/202505.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "59c9d845b300",
+      "title": "夸克网盘",
+      "url": "https://pan.quark.cn/s/b4ad91696b7a",
+      "provider": "夸克网盘",
+      "category": "edu-knowlege",
+      "categoryName": "教育资源",
+      "month": "202505",
+      "archivePath": "/edu-knowlege/202505",
+      "sourceFile": "docs/edu-knowlege/202505.md",
+      "tags": [
+        "教育资源"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "395847096356",
+      "title": "夸克网盘",
+      "url": "https://pan.quark.cn/s/ee2367c779ed",
+      "provider": "夸克网盘",
+      "category": "healthy",
+      "categoryName": "健康养生",
+      "month": "202505",
+      "archivePath": "/healthy/202505",
+      "sourceFile": "docs/healthy/202505.md",
+      "tags": [
+        "健康养生"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "9080085180f5",
+      "title": "### 大片电影：鬼干部.1991",
+      "url": "https://www.alipan.com/s/fAu2XG9aj5x",
+      "provider": "阿里云盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202505",
+      "archivePath": "/movies/202505",
+      "sourceFile": "docs/movies/202505.md",
+      "tags": [
+        "影视音频"
+      ],
+      "aliasMonths": [
+        "202505",
+        "202505"
+      ]
+    },
+    {
+      "id": "902cfb763f7f",
+      "title": "### 热播电视剧，蛮好的人生（1-36集全）",
+      "url": "https://www.alipan.com/s/ShvUQHN3i1b",
+      "provider": "阿里云盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202505",
+      "archivePath": "/movies/202505",
+      "sourceFile": "docs/movies/202505.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "be5cae5e3f3a",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1c21J9S92JdPQga9hT5NOcw?pwd=hxjt",
+      "provider": "百度网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202505",
+      "archivePath": "/movies/202505",
+      "sourceFile": "docs/movies/202505.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "d5926d21e5b5",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1svRiwCj-iZleNoC8FMOdxg?pwd=1n4m",
+      "provider": "百度网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202505",
+      "archivePath": "/movies/202505",
+      "sourceFile": "docs/movies/202505.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "688cf42b9d5b",
+      "title": "描述：Deborah和Ava努力让她们的深夜节目开播并创造历史，紧张气氛随之升温。",
+      "url": "https://pan.baidu.com/s/1Yxcqq4Y4SoKFlVSSGXr0sw?pwd=6ahc",
+      "provider": "百度网盘",
+      "category": "movies",
+      "categoryName": "影视娱乐",
+      "month": "202505",
+      "archivePath": "/movies/202505",
+      "sourceFile": "docs/movies/202505.md",
+      "tags": [
+        "影视娱乐"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "8fa963c146da",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1PfbClgpwuti99VOGwHWpoA?pwd=ekb6",
+      "provider": "百度网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202505",
+      "archivePath": "/self-media/202505",
+      "sourceFile": "docs/self-media/202505.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "a595e6acf936",
+      "title": "夸克网盘",
+      "url": "https://pan.quark.cn/s/e4661567a1a7",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202505",
+      "archivePath": "/self-media/202505",
+      "sourceFile": "docs/self-media/202505.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "49e9bf73056a",
+      "title": "夸克网盘",
+      "url": "https://pan.quark.cn/s/8b7c6025f91f",
+      "provider": "夸克网盘",
+      "category": "self-media",
+      "categoryName": "自媒体运营",
+      "month": "202505",
+      "archivePath": "/self-media/202505",
+      "sourceFile": "docs/self-media/202505.md",
+      "tags": [
+        "自媒体运营"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "6a141c4eef98",
+      "title": "### 0成本用国内身份证注册SafePal万事达卡：GCP/Cloudflare绑卡实测保姆级教程",
+      "url": "https://s.869hr.uk/2hm",
+      "provider": "s.869hr.uk",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202505",
+      "archivePath": "/tools/202505",
+      "sourceFile": "docs/tools/202505.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "8a12056f0425",
+      "title": "### 剪映破解绿色版：全面解析与使用指南 | 技术教程",
+      "url": "https://869hr.uk/2025/tech/jianying/",
+      "provider": "869hr.uk",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202505",
+      "archivePath": "/tools/202505",
+      "sourceFile": "docs/tools/202505.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "0db3d245acf8",
+      "title": "百度网盘",
+      "url": "https://pan.baidu.com/s/1dTTZeLShVKgN7dFdZ_m21Q?pwd=vc94",
+      "provider": "百度网盘",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202505",
+      "archivePath": "/tools/202505",
+      "sourceFile": "docs/tools/202505.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    },
+    {
+      "id": "603551f4695f",
+      "title": "GitHub",
+      "url": "https://github.com/stackia/best-windows-apps",
+      "provider": "GitHub",
+      "category": "tools",
+      "categoryName": "工具合集",
+      "month": "202505",
+      "archivePath": "/tools/202505",
+      "sourceFile": "docs/tools/202505.md",
+      "tags": [
+        "工具合集"
+      ],
+      "aliasMonths": [
+        "202505"
+      ]
+    }
+  ],
+  "duplicateAliases": [
+    {
+      "id": "88e42c314f62",
+      "month": "202508",
+      "sourceFile": "docs/edu-knowlege/202508.md"
+    },
+    {
+      "id": "9080085180f5",
+      "month": "202505",
+      "sourceFile": "docs/movies/202505.md"
+    }
+  ]
+}

@@ -50,9 +50,7 @@ jobs:
           # Clone each repository
           for repo in "${repos[@]}"; do
             echo "Cloning $repo..."
-            git clone "https://github.com/mswnlz/$repo.git" "content-source/$repo" || {
-              echo "Warning: Failed to clone $repo, skipping..."
-            }
+            git clone "https://github.com/mswnlz/$repo.git" "content-source/$repo"
           done
 
       - name: Copy latest content from all repositories
@@ -69,8 +67,8 @@ jobs:
         env:
           CONTENT_SOURCE_DIR: ./content-source
         run: |
-          # 同步各分类 index.md 中的 ResourceTabs months 配置
-          bash ./scripts/sync-tabs.sh --auto || true
+          # ResourceTabs now reads generated catalog data instead of hard-coded month arrays.
+          bash ./scripts/sync-tabs.sh --auto
 
       - name: Fetch latest commits
         env:
@@ -79,6 +77,9 @@ jobs:
 
       - name: Build VitePress site
         run: npm run build
+
+      - name: Validate generated catalog and sitemap
+        run: npm run validate
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4

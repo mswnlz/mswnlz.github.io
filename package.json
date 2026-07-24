@@ -4,7 +4,11 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
+    "predev": "node scripts/build-catalog.js",
+    "prebuild": "node scripts/build-catalog.js",
     "build": "vitepress build docs",
+    "build:catalog": "node scripts/build-catalog.js",
+    "validate": "node scripts/validate-catalog.js",
     "serve": "vitepress serve docs",
     "fetch-commits": "node scripts/fetch-commits.js"
   },

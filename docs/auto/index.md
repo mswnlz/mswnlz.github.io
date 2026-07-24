@@ -1,15 +1,16 @@
 ---
-title: 自动化工具与脚本 - AI驱动资源管理 | 大坝的资源收集站
+title: 自动化工具与脚本
 description: 基于AI+GitHub的自动化资源管理工具，包含批量转存、分类提交、网站自动更新等脚本与配置说明
 keywords: 自动化工具,AI工具,GitHub自动化,批量转存,资源管理,vscode,cline,DeepSeek,Gemini
 ---
 
-# auto
-此项目自动化相关（涉及到的工具，vscode+cline插件+各种AI的key，下面主要使用了DeepSeek，Gemini等）
+# 自动化工具与脚本
+
+此页记录资源收集、批量转存、分类提交和网站更新相关的自动化流程。
 
 ------
 
-# 一、生成url.txt url文件
+## 一、生成url.txt url文件
 
  复制要批量转存和转发生成url的所有文本bbbb，然后进入vs + cline插件中，写下下面这段prompt
 
@@ -17,14 +18,14 @@ keywords: 自动化工具,AI工具,GitHub自动化,批量转存,资源管理,vsc
 
 ------
 
-# 二、执行批量转存工具
+## 二、执行批量转存工具
 
 1. python python quark.py
 2. 按步骤，完成生成批量的转发URL
 
 ------
 
-# 三、按⬇️的mcp的prompt，实现github的自动识别分类及仓库提交
+## 三、用 MCP prompt 实现 GitHub 自动识别分类及仓库提交
 
 ----------
 
@@ -61,14 +62,14 @@ https://s.869hr.uk/2hm
 
 ----------
 
-# 四、配置了github workflow action，自动发送更新的资源到TG群组：
+## 四、配置 GitHub workflow action，自动发送更新的资源到 TG 群组
 
 ![image](https://github.com/user-attachments/assets/33d8cd8d-36ca-451d-a783-3d4362601a6b)
 
 
 ----------
 
-# 五、自动发推
+## 五、自动发推
 
 
 <img width="587" alt="iShot_2025-06-17_09 34 40" src="https://github.com/user-attachments/assets/a5141896-840e-44f2-96c3-ea9b0900c504" />
@@ -83,7 +84,7 @@ https://s.869hr.uk/2hm
 
 
 ------------------
-# 六，基于github仓库，做了个网站，https://doc.869hr.uk
+## 六、基于 GitHub 仓库生成网站
 <img width="1103" alt="image" src="https://github.com/user-attachments/assets/921f54d6-82b2-4376-8594-cca9ac968d4f" />
 并支持搜索
 <img width="1091" alt="image" src="https://github.com/user-attachments/assets/500c9118-7366-43da-a6d5-324f69c4ca32" />
@@ -91,7 +92,7 @@ https://s.869hr.uk/2hm
 
 ---------------
 
-# 待办TODO
+## 待办 TODO
 
 自动生成转存地址，需要mcp server封装，或者n8n等的api调用，
 可以改造工程，夸克批量转存这个Python：https://github.com/ihmily/QuarkPanTool?tab=readme-ov-file

@@ -4,11 +4,25 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 const SITE_URL = 'https://doc.869hr.uk'
+const ADSENSE_CLIENT = process.env.ADSENSE_CLIENT || 'ca-pub-2634092855285462'
+const ENABLE_ADSENSE = process.env.ENABLE_ADSENSE === 'true'
+
+const adsenseHead = ENABLE_ADSENSE
+  ? [[
+      'script',
+      {
+        async: true,
+        src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`,
+        crossorigin: 'anonymous'
+      }
+    ]]
+  : []
 
 function getSidebarItems(dir: string) {
   const files = fs.readdirSync(path.join(__dirname, '../', dir))
-    .filter(file => file.endsWith('.md') && file !== 'index.md')
-    .sort() // Sort files alphabetically or by date if naming convention allows
+    .filter(file => /^\d{6}\.md$/.test(file))
+    .sort()
+    .reverse()
 
   return files.map(file => {
     const name = path.basename(file, '.md')
@@ -22,11 +36,12 @@ function getSidebarItems(dir: string) {
 // https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
   base: '/',
-  title: "超过 100T 的资源",
-  titleTemplate: ":title - 大坝的资源收集站 | 免费资源下载",
+  title: "大坝的资源收集站",
+  titleTemplate: ":title | 免费资源下载",
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
+  srcExclude: ['public/**/*.md'],
   sitemap: {
     hostname: SITE_URL
   },
@@ -39,7 +54,7 @@ export default defineConfig({
     const relativePath = pageData.relativePath
       .replace(/\.md$/, '')
       .replace(/\/index$/, '/')
-    const canonicalUrl = relativePath === 'index'
+    const canonicalUrl = relativePath === 'index' || relativePath === '/'
       ? SITE_URL + '/'
       : SITE_URL + '/' + relativePath
     heads.push(['link', { rel: 'canonical', href: canonicalUrl }])
@@ -50,7 +65,7 @@ export default defineConfig({
     const defaultDesc = '免费提供超过100T海量资源下载，包含AI知识、书籍资料、跨境电商、自媒体运营、教育学习、健康养生、影视娱乐、工具软件等，持续更新中'
 
     const pageTitle = fm.title
-      ? `${fm.title} | ${siteTitle}`
+      ? fm.title.replace(/\s*[|-]\s*大坝的资源收集站.*$/, '')
       : `${siteTitle} | 超过 100T+ 免费资源下载`
     const pageDesc = fm.description || defaultDesc
 
@@ -62,12 +77,6 @@ export default defineConfig({
     // Twitter Card 动态标题 + 描述（覆盖全局默认值）
     heads.push(['meta', { name: 'twitter:title', content: pageTitle }])
     heads.push(['meta', { name: 'twitter:description', content: pageDesc }])
-
-    // ── 3. 每页独立 hreflang（指向当前页 canonical，而非固定首页）──
-    // 单语言站用 hreflang 的意义：告知 Google 这是简体中文页，适用全球华语用户
-    heads.push(['link', { rel: 'alternate', hreflang: 'zh-CN',   href: canonicalUrl }])
-    heads.push(['link', { rel: 'alternate', hreflang: 'zh-Hans', href: canonicalUrl }])
-    heads.push(['link', { rel: 'alternate', hreflang: 'x-default', href: canonicalUrl }])
 
     return heads
   },
@@ -101,7 +110,8 @@ export default defineConfig({
     ['meta', { name: 'msapplication-TileColor', content: '#2d89ef' }],
     ['meta', { name: 'msapplication-TileImage', content: '/mstile-144x144.png' }],
     ['meta', { name: 'msapplication-config', content: '/browserconfig.xml' }],
-    ['meta', { name: 'theme-color', content: '#ffffff' }],
+    ['meta', { name: 'theme-color', content: '#f5f7fb', media: '(prefers-color-scheme: light)' }],
+    ['meta', { name: 'theme-color', content: '#111827', media: '(prefers-color-scheme: dark)' }],
     
     // 语言信号（不绑定单一国家，面向全球华语用户）
     // 注意：hreflang 已移至 transformHead，按每页 canonical URL 动态注入，此处不重复
@@ -156,14 +166,6 @@ export default defineConfig({
           alternateName: 'zh-CN'
         },
         areaServed: 'Worldwide',
-        potentialAction: {
-          '@type': 'SearchAction',
-          target: {
-            '@type': 'EntryPoint',
-            urlTemplate: 'https://doc.869hr.uk/?s={search_term_string}'
-          },
-          'query-input': 'required name=search_term_string'
-        },
         publisher: {
           '@type': 'Organization',
           name: '大坝的资源收集站',
@@ -191,15 +193,9 @@ export default defineConfig({
         content: 'lI-wB0SQ6fXo-tUmUtTvz_9Qa65EMnPl_9PUuxhCJoI'
       }
     ],
-    // Google AdSense 暂停展示：站点内容质量优化期间先注释掉广告脚本
-    // [
-    //   'script',
-    //   {
-    //     async: true,
-    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2634092855285462',
-    //     crossorigin: 'anonymous'
-    //   },
-    // ],
+    // Google AdSense script switch.
+    // Set ENABLE_ADSENSE=true to load the platform script only. No ad slots or containers are rendered here.
+    ...adsenseHead,
     [
       'script',
       {
@@ -329,9 +325,9 @@ export default defineConfig({
       }
     ],
     nav: [
-      { text: '点击加入QQ群：1078469298', link: 'https://qm.qq.com/q/IqbSknGAay' },
       { text: '首页', link: '/' },
-      { text: '📂 资源', link: '/AIknowledge/' }
+      { text: '资源目录', link: '/AIknowledge/' },
+      { text: '免责声明', link: '/disclaimer' }
     ],
     search: {
       provider: 'local'
