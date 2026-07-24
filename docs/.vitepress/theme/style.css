@@ -1,256 +1,314 @@
-:root {
-  --vp-c-brand-1: #184cb1;
-  --vp-c-brand-2: #245fcb;
-  --vp-c-brand-3: #4778d8;
-  --vp-c-brand-soft: rgba(24, 76, 177, 0.12);
-  --vp-c-bg: #fbfcff;
-  --vp-c-bg-alt: #f1f5fb;
-  --vp-c-bg-soft: #eef3fa;
-  --vp-c-text-1: #152033;
-  --vp-c-text-2: #4d5b72;
-  --vp-c-text-3: #718096;
-  --vp-font-family-base: "Avenir Next", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  --vp-font-family-mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", monospace;
-  --vp-button-brand-border: var(--vp-c-brand-1);
-  --vp-button-brand-text: #fff;
-  --vp-button-brand-bg: var(--vp-c-brand-1);
-  --vp-button-brand-hover-border: var(--vp-c-brand-2);
-  --vp-button-brand-hover-text: #fff;
-  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+/* 优化首页卡片样式 */
+
+/* Hero 区域优化 */
+.VPHero .name, .VPHero .text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.dark {
-  --vp-c-bg: #101725;
-  --vp-c-bg-alt: #0c1220;
-  --vp-c-bg-soft: #182234;
-  --vp-c-text-1: #f5f8ff;
-  --vp-c-text-2: #c4cede;
-  --vp-c-text-3: #94a3b8;
-  --vp-c-brand-soft: rgba(71, 120, 216, 0.18);
+.VPHero .tagline {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 1rem;
 }
 
-html {
-  scroll-behavior: smooth;
+.VPHomeHero .main {
+  max-width: 100%;
 }
 
-body {
-  background:
-    linear-gradient(120deg, rgba(24, 76, 177, 0.06), transparent 34%),
-    var(--vp-c-bg);
+.VPHomeHero .actions {
+  justify-content: center;
+  gap: 10px;
+  max-width: none;
+  flex-wrap: wrap;
 }
 
-a {
-  text-underline-offset: 3px;
+.VPHomeHero .actions .action {
+  flex-shrink: 0;
 }
 
-.VPNavBarTitle .title {
-  font-weight: 800;
-  letter-spacing: -0.02em;
+.VPHomeHero .actions .VPButton {
+  min-width: auto;
+  padding: 0 14px;
+  font-size: 13px;
+  line-height: 34px;
 }
 
-.VPHome .VPHomeHero {
-  padding: 56px 24px 36px !important;
-  background:
-    linear-gradient(135deg, rgba(24, 76, 177, 0.12), transparent 46%),
-    linear-gradient(180deg, var(--vp-c-bg-soft), var(--vp-c-bg));
-  border-bottom: 1px solid var(--vp-c-divider);
+@media (min-width: 960px) {
+  .VPHomeHero .actions {
+    flex-wrap: nowrap;
+  }
 }
 
-.VPHome .VPHomeHero .container {
-  max-width: 1180px;
-}
-
-.VPHome .VPHomeHero .main {
-  max-width: 760px;
-}
-
-.VPHome .VPHomeHero .name {
-  color: var(--vp-c-text-1);
-  font-size: clamp(42px, 7vw, 72px);
-  line-height: 1.04;
-  letter-spacing: -0.06em;
-}
-
-.VPHome .VPHomeHero .text {
-  max-width: 640px;
-  color: var(--vp-c-text-1);
-  font-size: clamp(22px, 3vw, 34px);
-  line-height: 1.25;
-  letter-spacing: -0.03em;
-}
-
-.VPHome .VPHomeHero .tagline {
-  max-width: 560px;
-  color: var(--vp-c-text-2);
-  font-size: 17px;
-  line-height: 1.7;
-}
-
-.VPHome .VPHomeHero .actions {
-  justify-content: flex-start;
-  gap: 12px;
-}
-
-.VPHome .VPHomeHero .actions .VPButton {
-  min-width: 132px;
-  border-radius: 999px;
-  font-weight: 800;
-}
-
-.VPHome .VPHomeFeatures {
-  padding: 36px 24px 28px;
-}
-
-.VPHome .VPHomeFeatures .container {
-  max-width: 1180px;
-}
-
-.VPHome .VPHomeFeatures .items {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.VPHome .VPHomeFeatures .item {
-  grid-column: span 4;
-}
-
-.VPHome .VPHomeFeatures .item:nth-child(1),
-.VPHome .VPHomeFeatures .item:nth-child(2) {
-  grid-column: span 6;
+/* 功能卡片优化 */
+.VPFeatures {
+  padding: 2rem 0;
 }
 
 .VPFeature {
-  height: 100%;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 18px;
-  background: var(--vp-c-bg);
-  box-shadow: none;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 16px;
+  padding: 2rem;
+  height: auto;
+  min-height: 180px;
+  transition: all 0.3s ease;
+  background: var(--vp-c-bg-soft);
+  position: relative;
+  overflow: hidden;
 }
 
 .VPFeature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
   border-color: var(--vp-c-brand-1);
-  background: var(--vp-c-bg-soft);
+}
+
+.VPFeature:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  opacity: 1;
 }
 
 .VPFeature .icon {
-  margin-bottom: 12px;
-  font-size: 26px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
 }
 
 .VPFeature .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
   color: var(--vp-c-text-1);
-  font-size: 18px;
-  font-weight: 800;
+  text-align: center;
 }
 
 .VPFeature .details {
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: var(--vp-c-text-2);
-  line-height: 1.65;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.vp-doc h1 {
-  letter-spacing: -0.04em;
+/* 添加卡片底部链接样式 */
+.VPFeature .link-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.vp-doc h2 {
-  border-top: 0;
+.VPFeature:hover .link-text {
+  opacity: 1;
 }
 
-.home-panel {
-  margin: 22px 0;
-  padding: 24px;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 22px;
-  background: var(--vp-c-bg-soft);
-}
-
-.home-panel h2,
-.home-panel h3 {
-  margin-top: 0;
-}
-
-.home-grid {
+/* 优势介绍区域 */
+.advantages {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin: 20px 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
-.home-grid > p {
+.advantages p {
+  background: var(--vp-c-bg-soft);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--vp-c-brand-1);
   margin: 0;
-  padding: 18px;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 16px;
-  background: var(--vp-c-bg);
 }
 
+/* 平台数据展示 */
+.platform-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.platform-stats p {
+  background: linear-gradient(135deg, var(--vp-c-brand-soft), var(--vp-c-bg-soft));
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 0;
+  border: 1px solid var(--vp-c-border);
+}
+
+/* 关键词标签优化 */
 .keyword-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 18px 0;
+  margin: 2rem 0;
 }
 
 .keyword-tags code {
-  padding: 6px 10px;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 999px;
-  background: var(--vp-c-bg);
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  background: var(--vp-c-brand-soft);
   color: var(--vp-c-brand-1);
-  font-size: 13px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--vp-c-brand-1);
+  transition: all 0.2s ease;
 }
 
+.keyword-tags code:hover {
+  background: var(--vp-c-brand-1);
+  color: var(--vp-c-white);
+  transform: scale(1.05);
+}
+
+/* 页脚信息优化 */
 .footer-info {
-  margin: 30px 0 18px;
-  padding: 20px;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 18px;
-  background: var(--vp-c-bg-soft);
+  background: var(--vp-c-bg-alt);
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+  text-align: center;
+  border: 1px solid var(--vp-c-border);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .VPButton,
-  .VPFeature,
-  .resource-card {
-    transition: border-color 0.18s ease, background-color 0.18s ease, transform 0.18s ease;
-  }
-
-  .VPButton:active {
-    transform: translateY(1px);
-  }
+.footer-info p {
+  margin: 0.5rem 0;
 }
 
-@media (max-width: 960px) {
-  .VPHome .VPHomeFeatures .items {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+/* 响应式优化 */
+@media (max-width: 768px) {
+  .VPFeature {
+    min-height: 150px;
+    padding: 1.5rem;
   }
 
-  .VPHome .VPHomeFeatures .item,
-  .VPHome .VPHomeFeatures .item:nth-child(1),
-  .VPHome .VPHomeFeatures .item:nth-child(2) {
-    grid-column: auto;
+  .VPFeature .icon {
+    font-size: 2.5rem;
   }
 
-  .home-grid {
+  .VPFeature .title {
+    font-size: 1.1rem;
+  }
+
+  .VPFeature .details {
+    font-size: 0.9rem;
+  }
+
+  .advantages {
     grid-template-columns: 1fr;
   }
+
+  .platform-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .VPHomeHero .actions {
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .VPHomeHero .actions .action {
+    width: 100%;
+  }
+
+  .VPHomeHero .actions .VPButton {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 38px;
+  }
+}
+
+/* 暗黑模式适配 */
+.dark .VPFeature {
+  background: var(--vp-c-bg-elv);
+  border-color: var(--vp-c-divider);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* 添加渐变边框效果 */
+.VPFeature {
+  background: linear-gradient(var(--vp-c-bg-soft), var(--vp-c-bg-soft)) padding-box,
+              linear-gradient(135deg, transparent, var(--vp-c-brand-soft)) border-box;
+}
+
+.dark .VPFeature {
+  background: linear-gradient(var(--vp-c-bg-elv), var(--vp-c-bg-elv)) padding-box,
+              linear-gradient(135deg, transparent, var(--vp-c-brand-soft)) border-box;
+}
+
+/* Support button styles */
+.support-button {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+stripe-buy-button {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* Footer social links */
+.VPFooter .footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.VPFooter .footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--vp-c-text-2) !important;
+  text-decoration: none !important;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--vp-c-divider-light);
+  transition: all 0.25s ease;
+  background: var(--vp-c-bg);
+}
+
+.VPFooter .footer-social-link:hover {
+  color: var(--vp-c-brand-1) !important;
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  text-decoration: none !important;
+}
+
+.VPFooter .footer-social-link svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 640px) {
-  .VPHome .VPHomeHero {
-    padding: 38px 18px 28px !important;
+  .VPFooter .footer-social-links {
+    gap: 6px;
   }
-
-  .VPHome .VPHomeHero .actions {
-    flex-direction: row;
-  }
-
-  .VPHome .VPHomeFeatures {
-    padding: 24px 18px;
-  }
-
-  .VPHome .VPHomeFeatures .items {
-    grid-template-columns: 1fr;
+  .VPFooter .footer-social-link {
+    padding: 3px 7px;
+    font-size: 12px;
   }
 }

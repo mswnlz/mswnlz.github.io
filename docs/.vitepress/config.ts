@@ -5,7 +5,7 @@ import path from 'node:path'
 
 const SITE_URL = 'https://doc.869hr.uk'
 const ADSENSE_CLIENT = process.env.ADSENSE_CLIENT || 'ca-pub-2634092855285462'
-const ENABLE_ADSENSE = process.env.ENABLE_ADSENSE === 'true'
+const ENABLE_ADSENSE = process.env.ENABLE_ADSENSE !== 'false'
 
 const adsenseHead = ENABLE_ADSENSE
   ? [[
@@ -194,7 +194,7 @@ export default defineConfig({
       }
     ],
     // Google AdSense script switch.
-    // Set ENABLE_ADSENSE=true to load the platform script only. No ad slots or containers are rendered here.
+    // Loaded by default. Set ENABLE_ADSENSE=false to disable it. No ad slots or containers are rendered here.
     ...adsenseHead,
     [
       'script',
