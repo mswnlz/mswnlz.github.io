@@ -137,6 +137,13 @@ function listMonths(categoryId) {
     .sort()
 }
 
+function monthToCatalogTimestamp(month) {
+  if (!/^\d{6}$/.test(month || '')) return null
+  const year = Number(month.slice(0, 4))
+  const monthNumber = Number(month.slice(4, 6))
+  return new Date(Date.UTC(year, monthNumber, 0, 23, 59, 59)).toISOString()
+}
+
 function buildCatalog() {
   const records = []
   const duplicateAliases = []
@@ -165,9 +172,10 @@ function buildCatalog() {
   }
 
   records.sort((a, b) => b.month.localeCompare(a.month) || a.category.localeCompare(b.category) || a.title.localeCompare(b.title, 'zh-CN'))
+  const latestCatalogMonth = records[0]?.month || null
 
   const stats = {
-    generatedAt: new Date().toISOString(),
+    generatedAt: monthToCatalogTimestamp(latestCatalogMonth),
     categoryCount: CATEGORIES.length,
     resourceCount: records.length,
     duplicateAliasCount: duplicateAliases.length,
