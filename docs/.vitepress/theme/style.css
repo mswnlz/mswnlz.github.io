@@ -441,6 +441,25 @@ stripe-buy-button {
   box-sizing: border-box;
 }
 
+/* Replace the old build-specific data-v width overrides with stable selectors. */
+.VPHome .VPHomeFeatures .items > .item {
+  width: 100% !important;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.VPHome .VPHomeFeatures .items > .item > .VPFeature {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.VPHome .VPHomeFeatures .items > .item > .VPFeature > .box {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 .VPHome .VPHomeFeatures .item .VPFeature {
   background: linear-gradient(135deg, var(--vp-c-bg) 0%, var(--vp-c-bg-soft) 100%);
   border: 1px solid var(--vp-c-divider-light);
@@ -776,5 +795,30 @@ stripe-buy-button {
   .footer-info {
     padding: 24px 20px;
     margin: 2rem 0 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  .VPHome .VPHomeHero .actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .VPHome .VPHomeHero .actions .action .VPButton,
+  .VPHome .VPHomeHero .actions .action .VPButton::before,
+  .VPHome .VPHomeFeatures .item .VPFeature,
+  .advantages > p,
+  .platform-stats > p,
+  .keyword-tags code {
+    transition: none;
+  }
+
+  .VPHome .VPHomeHero .actions .action .VPButton:hover,
+  .VPHome .VPHomeFeatures .item .VPFeature:hover,
+  .advantages > p:hover,
+  .platform-stats > p:hover,
+  .keyword-tags code:hover {
+    transform: none;
   }
 }
