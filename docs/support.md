@@ -1,5 +1,6 @@
 ---
 title: 赞赏支持
+description: 大坝的资源收集站赞赏支持页。如果您觉得本站免费资源对您有帮助，欢迎通过支付宝、微信或 Stripe 打赏支持，帮助我们持续更新更多优质资源。
 date: 2024-02-18
 layout: page
 comment: false

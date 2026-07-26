@@ -218,6 +218,9 @@ ${sections}
             original_content="本月资源持续整理中，请关注后续更新。"
         fi
 
+        # 去除原文开头冗余的 "# YYYYMM" 一级标题，避免与上方生成的 H1 重复（修复一页双 H1 问题）
+        original_content="$(printf '%s\n' "$original_content" | sed -E '/^#[[:space:]]*[0-9]{6}[[:space:]]*$/d' | sed -e '/./,$!d')"
+
         # 写入新文件
         {
             echo "$frontmatter"
